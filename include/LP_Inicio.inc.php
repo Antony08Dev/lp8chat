@@ -91,18 +91,6 @@
 	
 	<!--adbanner-->
 
-			
-	<div class="container-custom">
-
-		<div class="top-banner"><!-- /1095516/LPV8_970X90_1 -->
-	<div id='div-gpt-ad-1639700572337-0' style='min-width: 970px; min-height: 90px;'>
-	  <script>
-		googletag.cmd.push(function() { googletag.display('div-gpt-ad-1639700572337-0'); });
-	  </script>
-	</div></div>
-
-	</div>
-
 	
 	<!--adbanner-->
     <main>

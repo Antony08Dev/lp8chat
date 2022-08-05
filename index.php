@@ -12,7 +12,7 @@ include "include/LP_Inicio.inc.php";
     KLK Messenger 
 </h2>
     <link rel="stylesheet" href="css/klkmsge.css">
-    <?php include "plantilla.inc.php";?>
+    <?php include "plantilla2.inc.php";?>
 </div>
 </body>
 <!-- <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script> -->
