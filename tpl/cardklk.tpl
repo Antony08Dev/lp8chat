@@ -17,7 +17,7 @@
             <div class="ultimomsg">
 
                 <?=($arrRegistro['ESCRIBE'] != "") ? $arrRegistro['ESCRIBE'] : $arrRegistro['FECHAF'];?>
-                <a href="javascript:;" class="eliminarchat" data-mid="<?=$arrRegistro['ID'];?>" data-sufijo="<?=$arrRegistro['KLKSUFIJO'];?>" data-asunto="<?=$arrRegistro['ASUNTO'];?>" data-nombre="<?=$arrRegistro['NOMBRECHAT'];?>" class="btn-sm"><i class="fa fa-times" aria-hidden="true"></i></a> 
+                <a href="javascript:;" class="eliminarchat" data-mid="<?=$arrRegistro['ID'];?>" data-sufijo="<?=$arrRegistro['KLKSUFIJO'];?>" data-asunto="<?=$arrRegistro['ASUNTO'];?>" data-nombre="<?=$arrRegistro['NOMBRECHAT'];?>" class="eliminarchat btn-sm"><i class="fa fa-times" aria-hidden="true"></i></a> 
 
             </div>
         </div>
