@@ -53,16 +53,10 @@
 #bloque1 {
     max-height: 50vh;
     padding: 10px;
-    /* height: -moz-calc(60vh - (25px + 10px));
-    height: -webkit-calc(60vh - (25px + 10px));
-    height: calc(60vh - 35px); */
 }
 
 #bloque2 {
     max-height: 35vh;
-    /* height: -moz-calc(45vh - (60px + 30px));
-    height: -webkit-calc(45vh - (60px + 30px));
-    height: calc(45vh - (60px + 30px)); */
     background-color: #fff;
 }
 
@@ -444,6 +438,15 @@ div .avatar {
     }
     li.active .ultimomsg a{
         color:rgba(211, 43, 43, 0.739) !important;
+    }
+    #bloque1 {
+        max-height: 70vh !important;
+        padding: 10px;
+    }
+    
+    #bloque2 {
+        max-height: 35vh;
+        background-color: #fff;
     }
 }
 

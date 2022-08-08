@@ -26,7 +26,7 @@
             <!--site logo-->
             <div class="site-logo">
                 <a href="/">
-                    <img src="http://beta.lapulga.com.do/i/logo.png" alt="La Pulga Virtual Logo" title="La Pulga Virtual">
+                    <img src="/include/logo klkV2.svg" alt="La Pulga Virtual Logo" title="La Pulga Virtual">
                 </a>
             </div>
             <!-- publicar-->
