@@ -8,112 +8,6 @@
         <div id="bloque1" class="bloques">
 
             <ul class="list-unstyled chat-list mt-2 mb-3" id="chats">
-
-                <li class="clearfix bordes active " id="chat_1114">
-                    <div class="avatar iconos">
-                        <i class="fa fa-user fa-lg" aria-hidden="true"></i>
-                    </div>
-
-                    <div class="about" role="row">
-                        <div class="filaNombre" aria-colindex="2">
-                            <div class="nombre">
-
-                                <a href="/klk/1114/YTo2OntzOjI6IklEIjtzOjQ6IjExMTQiO3M6MTA6Ik5PTUJSRUNIQVQiO3M6MTY6IlJJQ0FSRE8gTUFSVElORVoiO3M6MTE6IkFSVElDVUxPX0lEIjtzOjc6IjY3OTQwNzMiO3M6NjoiQVNVTlRPIjtzOjM0OiJMSU5ETyBQRVJSSVRPIENPTiBNQVMgTyBlbiBMYSBWZWdhIjtzOjI6IkRFIjtzOjE6IjMiO3M6NDoiUEFSQSI7czoyOiIzNiI7fQ=="
-                                    class="conversacion" data-mid="1114" data-sufijo="DE">RICARDO MARTINEZ </a>
-
-                            </div>
-
-                            <div class="ultimomsg">
-
-                                Hoy 09:26 AM <a href="javascript:;" class="eliminarchat btn-sm" data-mid="1114"
-                                    data-sufijo="DE" data-asunto="LINDO PERRITO CON MAS O en La Vega"
-                                    data-nombre="RICARDO MARTINEZ" class="btn-sm"><i class="click fa fa-times"
-                                        aria-hidden="true"></i></a>
-
-                            </div>
-                        </div>
-                        <div class="filaAsunto" aria-colindex="2">
-                            <div class="asunto">
-
-                                LINDO PERRITO CON MAS O en La Vega
-                            </div>
-                            <div class="opciones">
-
-                                <span id="msgnuevo_1114" class="msgnuevo badge badge-success"></span>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="clearfix bordes active " id="chat_1114">
-                    <div class="avatar iconos">
-                        <i class="fa fa-user fa-lg" aria-hidden="true"></i>
-                    </div>
-
-                    <div class="about" role="row">
-                        <div class="filaNombre" aria-colindex="2">
-                            <div class="nombre">
-
-                                <a href="/klk/1114/YTo2OntzOjI6IklEIjtzOjQ6IjExMTQiO3M6MTA6Ik5PTUJSRUNIQVQiO3M6MTY6IlJJQ0FSRE8gTUFSVElORVoiO3M6MTE6IkFSVElDVUxPX0lEIjtzOjc6IjY3OTQwNzMiO3M6NjoiQVNVTlRPIjtzOjM0OiJMSU5ETyBQRVJSSVRPIENPTiBNQVMgTyBlbiBMYSBWZWdhIjtzOjI6IkRFIjtzOjE6IjMiO3M6NDoiUEFSQSI7czoyOiIzNiI7fQ=="
-                                    class="conversacion" data-mid="1114" data-sufijo="DE">RICARDO MARTINEZ </a>
-
-                            </div>
-
-                            <div class="ultimomsg">
-
-                                Hoy 09:26 AM <a href="javascript:;" class="eliminarchat btn-sm" data-mid="1114"
-                                    data-sufijo="DE" data-asunto="LINDO PERRITO CON MAS O en La Vega"
-                                    data-nombre="RICARDO MARTINEZ" class="btn-sm"><i class="click fa fa-times"
-                                        aria-hidden="true"></i></a>
-
-                            </div>
-                        </div>
-                        <div class="filaAsunto" aria-colindex="2">
-                            <div class="asunto">
-
-                                LINDO PERRITO CON MAS O en La Vega
-                            </div>
-                            <div class="opciones">
-
-                                <span id="msgnuevo_1114" class="msgnuevo badge badge-success"></span>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="clearfix bordes active " id="chat_1114">
-                    <div class="avatar iconos">
-                        <i class="fa fa-user fa-lg" aria-hidden="true"></i>
-                    </div>
-
-                    <div class="about" role="row">
-                        <div class="filaNombre" aria-colindex="2">
-                            <div class="nombre">
-
-                                <a href="/klk/1114/YTo2OntzOjI6IklEIjtzOjQ6IjExMTQiO3M6MTA6Ik5PTUJSRUNIQVQiO3M6MTY6IlJJQ0FSRE8gTUFSVElORVoiO3M6MTE6IkFSVElDVUxPX0lEIjtzOjc6IjY3OTQwNzMiO3M6NjoiQVNVTlRPIjtzOjM0OiJMSU5ETyBQRVJSSVRPIENPTiBNQVMgTyBlbiBMYSBWZWdhIjtzOjI6IkRFIjtzOjE6IjMiO3M6NDoiUEFSQSI7czoyOiIzNiI7fQ=="
-                                    class="conversacion" data-mid="1114" data-sufijo="DE">RICARDO MARTINEZ </a>
-
-                            </div>
-
-                            <div class="ultimomsg">
-
-                                Hoy 09:26 AM <a href="javascript:;" class="eliminarchat btn-sm" data-mid="1114"
-                                    data-sufijo="DE" data-asunto="LINDO PERRITO CON MAS O en La Vega"
-                                    data-nombre="RICARDO MARTINEZ" class="btn-sm"><i class="click fa fa-times"
-                                        aria-hidden="true"></i></a>
-
-                            </div>
-                        </div>
-                        <div class="filaAsunto" aria-colindex="2">
-                            <div class="asunto">
-
-                                LINDO PERRITO CON MAS O en La Vega
-                            </div>
-                            <div class="opciones">
-
-                                <span id="msgnuevo_1114" class="msgnuevo badge badge-success"></span>
-                            </div>
-                        </div>
-                    </div>
-                </li>
                 <li class="clearfix bordes active " id="chat_1114">
                     <div class="avatar iconos">
                         <i class="fa fa-user fa-lg" aria-hidden="true"></i>
@@ -370,3 +264,4 @@
         </div>
     </div>
 </div>
+<script></script>

@@ -7,19 +7,20 @@
     <title>Prueba emojis</title>
 </head>
 <body>
-    <style>
-        textarea{
+  <style>
+
+  textarea{
   width:300px;
   margin-top:25px;
   height:50px;
-}
+  }
 
-#elemento-destino{
+  #elemento-destino{
   font-size:2em;
   padding-top:5px;
-}
+  }
 
-.emoji{  
+  .emoji{  
     display:inline-block;
     vertical-align:middle;
     width: 60px;
@@ -27,68 +28,68 @@
       background: url(https://s-media-cache-ak0.pinimg.com/236x/e9/b3/13/e9b313c5bad0465c6ee1cb51b06e9e2d.jpg); 
 
   
-}
+  }
 
-.emoji.lengua{  
+  .emoji.lengua{  
   background-position: 0px 0px;
-}
+  }
 
-.emoji.XD{
+  .emoji.XD{
  
   background-position: 0px 180px;
-}
+  }
 
-.emoji.smile{  
+  .emoji.smile{  
   background-position: 60px 0px;
-}
-    </style>
-    <script>
-        window.onload = publicar;
+  }
+  </style>
+  <script>
+    window.onload = publicar;
 
-function publicar(){
+    function publicar(){
   
-  var texto = document.getElementById('texto-origen').value;  
-  var elemento_destino =  document.getElementById('elemento-destino');
+      var texto = document.getElementById('texto-origen').value;  
+      var elemento_destino =  document.getElementById('elemento-destino');
   
-  var emojis = [
-    {codigo:':b',class:'emoji lengua'},
-    {codigo:'xD',class:'emoji XD'},
-    {codigo:':)',class:'emoji smile'}    
-  ];   
+      var emojis = [
+      {codigo:':b',class:'emoji lengua'},
+      {codigo:'xD',class:'emoji XD'},
+      {codigo:':)',class:'emoji smile'}    
+      ];   
   
-  var result = findById( emojis, 45 );  
+      var result = findById( emojis, 45 );  
   
-  for (i = 0; i < emojis.length; i++) { 
+      for (i = 0; i < emojis.length; i++) { 
     
-    var emoji = emojis[i];
-    var image = '<div class="' + emoji.class + '"></div>'
+      var emoji = emojis[i];
+      var image = '<div class="' + emoji.class + '"></div>'
         
-    texto = replaceAll(texto,emoji.codigo,image);      
+      texto = replaceAll(texto,emoji.codigo,image);      
     
-  }  
+      }  
   
-  elemento_destino.innerHTML = texto;
+      elemento_destino.innerHTML = texto;
   
-}
+    }
 
 
-function findById(source, id) {
-    return source.filter(function( obj ) {
+    function findById(source, id) {
+      return source.filter(function( obj ) {
         // coerce both obj.id and id to numbers 
         // for val & type comparison
         return +obj.id === +id;
-    })[ 0 ];
-}
+      })[ 0 ];
+    }
 
 
-function replaceAll(str, find, replace) {  
-  try{
-    return str.replace(new RegExp(find, 'g'), replace);
-  }catch(ex){
-    return str;
-  }
-}
-    </script>
+    function replaceAll(str, find, replace) {  
+      try{
+      return str.replace(new RegExp(find, 'g'), replace);
+      }catch(ex){
+      return str;
+      }
+    }
+  </script>
 <strong>Prueba con xD y :b</strong><br/>
 <textarea id="texto-origen" class="tarea">Hola xD mundo :b</textarea>
 <button onclick="publicar()">Publicar</button>
