@@ -1,11 +1,14 @@
+* {
+    /* box-sizing:content-box !important; */
+}
 #colizq {
     overflow-y: scroll;
-    height: 70vh;
+    /* height: calc(100vh - 113px); */
     margin: 0vh !important;
     overflow-x: hidden;
-    /* height: -moz-calc(80vh - (10px + 14px));
-    height: -webkit-calc(80vh - (10px + 14px));
-    height: calc(80vh - (10px + 14px)); */
+    height: -moz-calc(100vh - 113px);
+    height: -webkit-calc(100vh - 113px);
+    height: calc(100vh - 113px);
 }
 
 .card {
@@ -51,12 +54,12 @@
 }
 
 #bloque1 {
-    max-height: 50vh;
+    height: calc(100vh - 230px);
     padding: 10px;
 }
 
 #bloque2 {
-    max-height: 35vh;
+    height: calc(100vh - 370px);
     background-color: #fff;
 }
 
@@ -439,15 +442,21 @@ div .avatar {
     li.active .ultimomsg a{
         color:rgba(211, 43, 43, 0.739) !important;
     }
-    #bloque1 {
-        max-height: 70vh !important;
-        padding: 10px;
-    }
+    /* #bloque1 {
+        height: 20vh !important;
+        /* padding: 10px; 
+    } */
     
-    #bloque2 {
+    /* #bloque2 {
         max-height: 35vh;
         background-color: #fff;
-    }
+    } */
+}
+@media only screen and (max-height: 1000px) { 
+    #bloque1 {
+        height: calc(100vh - 300px) !important;
+        
+    } 
 }
 
 @media only screen and (max-width: 320px) {

@@ -59,9 +59,10 @@
 
                             <div class="ultimomsg">
 
-                                04-08-2022 <a href="javascript:;" class="eliminarchat btn-sm" data-mid="1055" data-sufijo="DE"
-                                    data-asunto="gomas 195/45/15 nuevas y usadas" data-nombre="RICARDO MARTINEZ"
-                                    class="btn-sm"><i class="click fa fa-times" aria-hidden="true"></i></a>
+                                04-08-2022 <a href="javascript:;" class="eliminarchat btn-sm" data-mid="1055"
+                                    data-sufijo="DE" data-asunto="gomas 195/45/15 nuevas y usadas"
+                                    data-nombre="RICARDO MARTINEZ" class="btn-sm"><i class="click fa fa-times"
+                                        aria-hidden="true"></i></a>
 
                             </div>
                         </div>
@@ -93,9 +94,255 @@
 
                             <div class="ultimomsg">
 
-                                04-08-2022 <a href="javascript:;" class="eliminarchat btn-sm" data-mid="1055" data-sufijo="DE"
-                                    data-asunto="gomas 195/45/15 nuevas y usadas" data-nombre="RICARDO MARTINEZ"
-                                    class="btn-sm"><i class="click fa fa-times" aria-hidden="true"></i></a>
+                                04-08-2022 <a href="javascript:;" class="eliminarchat btn-sm" data-mid="1055"
+                                    data-sufijo="DE" data-asunto="gomas 195/45/15 nuevas y usadas"
+                                    data-nombre="RICARDO MARTINEZ" class="btn-sm"><i class="click fa fa-times"
+                                        aria-hidden="true"></i></a>
+
+                            </div>
+                        </div>
+                        <div class="filaAsunto" aria-colindex="2">
+                            <div class="asunto">
+
+                                gomas 195/45/15 nuevas y usadas
+                            </div>
+                            <div class="opciones">
+
+                                <span id="msgnuevo_1055" class="msgnuevo badge badge-success"></span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="clearfix bordes  " id="chat_1055">
+                    <div class="avatar iconos">
+                        <i class="fa fa-user fa-lg" aria-hidden="true"></i>
+                    </div>
+
+                    <div class="about" role="row">
+                        <div class="filaNombre" aria-colindex="2">
+                            <div class="nombre">
+
+                                <a href="/klk/1055/YTo2OntzOjI6IklEIjtzOjQ6IjEwNTUiO3M6MTA6Ik5PTUJSRUNIQVQiO3M6MTY6IlJJQ0FSRE8gTUFSVElORVoiO3M6MTE6IkFSVElDVUxPX0lEIjtzOjc6IjU4NzAyMzQiO3M6NjoiQVNVTlRPIjtzOjMxOiJnb21hcyAxOTUvNDUvMTUgbnVldmFzIHkgdXNhZGFzIjtzOjI6IkRFIjtzOjE6IjMiO3M6NDoiUEFSQSI7czoyOiIzNiI7fQ=="
+                                    class="conversacion" data-mid="1055" data-sufijo="DE">RICARDO MARTINEZ </a>
+
+                            </div>
+
+                            <div class="ultimomsg">
+
+                                04-08-2022 <a href="javascript:;" class="eliminarchat btn-sm" data-mid="1055"
+                                    data-sufijo="DE" data-asunto="gomas 195/45/15 nuevas y usadas"
+                                    data-nombre="RICARDO MARTINEZ" class="btn-sm"><i class="click fa fa-times"
+                                        aria-hidden="true"></i></a>
+
+                            </div>
+                        </div>
+                        <div class="filaAsunto" aria-colindex="2">
+                            <div class="asunto">
+
+                                gomas 195/45/15 nuevas y usadas
+                            </div>
+                            <div class="opciones">
+
+                                <span id="msgnuevo_1055" class="msgnuevo badge badge-success"></span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="clearfix bordes  " id="chat_1055">
+                    <div class="avatar iconos">
+                        <i class="fa fa-user fa-lg" aria-hidden="true"></i>
+                    </div>
+
+                    <div class="about" role="row">
+                        <div class="filaNombre" aria-colindex="2">
+                            <div class="nombre">
+
+                                <a href="/klk/1055/YTo2OntzOjI6IklEIjtzOjQ6IjEwNTUiO3M6MTA6Ik5PTUJSRUNIQVQiO3M6MTY6IlJJQ0FSRE8gTUFSVElORVoiO3M6MTE6IkFSVElDVUxPX0lEIjtzOjc6IjU4NzAyMzQiO3M6NjoiQVNVTlRPIjtzOjMxOiJnb21hcyAxOTUvNDUvMTUgbnVldmFzIHkgdXNhZGFzIjtzOjI6IkRFIjtzOjE6IjMiO3M6NDoiUEFSQSI7czoyOiIzNiI7fQ=="
+                                    class="conversacion" data-mid="1055" data-sufijo="DE">RICARDO MARTINEZ </a>
+
+                            </div>
+
+                            <div class="ultimomsg">
+
+                                04-08-2022 <a href="javascript:;" class="eliminarchat btn-sm" data-mid="1055"
+                                    data-sufijo="DE" data-asunto="gomas 195/45/15 nuevas y usadas"
+                                    data-nombre="RICARDO MARTINEZ" class="btn-sm"><i class="click fa fa-times"
+                                        aria-hidden="true"></i></a>
+
+                            </div>
+                        </div>
+                        <div class="filaAsunto" aria-colindex="2">
+                            <div class="asunto">
+
+                                gomas 195/45/15 nuevas y usadas
+                            </div>
+                            <div class="opciones">
+
+                                <span id="msgnuevo_1055" class="msgnuevo badge badge-success"></span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="clearfix bordes  " id="chat_1055">
+                    <div class="avatar iconos">
+                        <i class="fa fa-user fa-lg" aria-hidden="true"></i>
+                    </div>
+
+                    <div class="about" role="row">
+                        <div class="filaNombre" aria-colindex="2">
+                            <div class="nombre">
+
+                                <a href="/klk/1055/YTo2OntzOjI6IklEIjtzOjQ6IjEwNTUiO3M6MTA6Ik5PTUJSRUNIQVQiO3M6MTY6IlJJQ0FSRE8gTUFSVElORVoiO3M6MTE6IkFSVElDVUxPX0lEIjtzOjc6IjU4NzAyMzQiO3M6NjoiQVNVTlRPIjtzOjMxOiJnb21hcyAxOTUvNDUvMTUgbnVldmFzIHkgdXNhZGFzIjtzOjI6IkRFIjtzOjE6IjMiO3M6NDoiUEFSQSI7czoyOiIzNiI7fQ=="
+                                    class="conversacion" data-mid="1055" data-sufijo="DE">RICARDO MARTINEZ </a>
+
+                            </div>
+
+                            <div class="ultimomsg">
+
+                                04-08-2022 <a href="javascript:;" class="eliminarchat btn-sm" data-mid="1055"
+                                    data-sufijo="DE" data-asunto="gomas 195/45/15 nuevas y usadas"
+                                    data-nombre="RICARDO MARTINEZ" class="btn-sm"><i class="click fa fa-times"
+                                        aria-hidden="true"></i></a>
+
+                            </div>
+                        </div>
+                        <div class="filaAsunto" aria-colindex="2">
+                            <div class="asunto">
+
+                                gomas 195/45/15 nuevas y usadas
+                            </div>
+                            <div class="opciones">
+
+                                <span id="msgnuevo_1055" class="msgnuevo badge badge-success"></span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="clearfix bordes  " id="chat_1055">
+                    <div class="avatar iconos">
+                        <i class="fa fa-user fa-lg" aria-hidden="true"></i>
+                    </div>
+
+                    <div class="about" role="row">
+                        <div class="filaNombre" aria-colindex="2">
+                            <div class="nombre">
+
+                                <a href="/klk/1055/YTo2OntzOjI6IklEIjtzOjQ6IjEwNTUiO3M6MTA6Ik5PTUJSRUNIQVQiO3M6MTY6IlJJQ0FSRE8gTUFSVElORVoiO3M6MTE6IkFSVElDVUxPX0lEIjtzOjc6IjU4NzAyMzQiO3M6NjoiQVNVTlRPIjtzOjMxOiJnb21hcyAxOTUvNDUvMTUgbnVldmFzIHkgdXNhZGFzIjtzOjI6IkRFIjtzOjE6IjMiO3M6NDoiUEFSQSI7czoyOiIzNiI7fQ=="
+                                    class="conversacion" data-mid="1055" data-sufijo="DE">RICARDO MARTINEZ </a>
+
+                            </div>
+
+                            <div class="ultimomsg">
+
+                                04-08-2022 <a href="javascript:;" class="eliminarchat btn-sm" data-mid="1055"
+                                    data-sufijo="DE" data-asunto="gomas 195/45/15 nuevas y usadas"
+                                    data-nombre="RICARDO MARTINEZ" class="btn-sm"><i class="click fa fa-times"
+                                        aria-hidden="true"></i></a>
+
+                            </div>
+                        </div>
+                        <div class="filaAsunto" aria-colindex="2">
+                            <div class="asunto">
+
+                                gomas 195/45/15 nuevas y usadas
+                            </div>
+                            <div class="opciones">
+
+                                <span id="msgnuevo_1055" class="msgnuevo badge badge-success"></span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="clearfix bordes  " id="chat_1055">
+                    <div class="avatar iconos">
+                        <i class="fa fa-user fa-lg" aria-hidden="true"></i>
+                    </div>
+
+                    <div class="about" role="row">
+                        <div class="filaNombre" aria-colindex="2">
+                            <div class="nombre">
+
+                                <a href="/klk/1055/YTo2OntzOjI6IklEIjtzOjQ6IjEwNTUiO3M6MTA6Ik5PTUJSRUNIQVQiO3M6MTY6IlJJQ0FSRE8gTUFSVElORVoiO3M6MTE6IkFSVElDVUxPX0lEIjtzOjc6IjU4NzAyMzQiO3M6NjoiQVNVTlRPIjtzOjMxOiJnb21hcyAxOTUvNDUvMTUgbnVldmFzIHkgdXNhZGFzIjtzOjI6IkRFIjtzOjE6IjMiO3M6NDoiUEFSQSI7czoyOiIzNiI7fQ=="
+                                    class="conversacion" data-mid="1055" data-sufijo="DE">RICARDO MARTINEZ </a>
+
+                            </div>
+
+                            <div class="ultimomsg">
+
+                                04-08-2022 <a href="javascript:;" class="eliminarchat btn-sm" data-mid="1055"
+                                    data-sufijo="DE" data-asunto="gomas 195/45/15 nuevas y usadas"
+                                    data-nombre="RICARDO MARTINEZ" class="btn-sm"><i class="click fa fa-times"
+                                        aria-hidden="true"></i></a>
+
+                            </div>
+                        </div>
+                        <div class="filaAsunto" aria-colindex="2">
+                            <div class="asunto">
+
+                                gomas 195/45/15 nuevas y usadas
+                            </div>
+                            <div class="opciones">
+
+                                <span id="msgnuevo_1055" class="msgnuevo badge badge-success"></span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="clearfix bordes  " id="chat_1055">
+                    <div class="avatar iconos">
+                        <i class="fa fa-user fa-lg" aria-hidden="true"></i>
+                    </div>
+
+                    <div class="about" role="row">
+                        <div class="filaNombre" aria-colindex="2">
+                            <div class="nombre">
+
+                                <a href="/klk/1055/YTo2OntzOjI6IklEIjtzOjQ6IjEwNTUiO3M6MTA6Ik5PTUJSRUNIQVQiO3M6MTY6IlJJQ0FSRE8gTUFSVElORVoiO3M6MTE6IkFSVElDVUxPX0lEIjtzOjc6IjU4NzAyMzQiO3M6NjoiQVNVTlRPIjtzOjMxOiJnb21hcyAxOTUvNDUvMTUgbnVldmFzIHkgdXNhZGFzIjtzOjI6IkRFIjtzOjE6IjMiO3M6NDoiUEFSQSI7czoyOiIzNiI7fQ=="
+                                    class="conversacion" data-mid="1055" data-sufijo="DE">RICARDO MARTINEZ </a>
+
+                            </div>
+
+                            <div class="ultimomsg">
+
+                                04-08-2022 <a href="javascript:;" class="eliminarchat btn-sm" data-mid="1055"
+                                    data-sufijo="DE" data-asunto="gomas 195/45/15 nuevas y usadas"
+                                    data-nombre="RICARDO MARTINEZ" class="btn-sm"><i class="click fa fa-times"
+                                        aria-hidden="true"></i></a>
+
+                            </div>
+                        </div>
+                        <div class="filaAsunto" aria-colindex="2">
+                            <div class="asunto">
+
+                                gomas 195/45/15 nuevas y usadas
+                            </div>
+                            <div class="opciones">
+
+                                <span id="msgnuevo_1055" class="msgnuevo badge badge-success"></span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="clearfix bordes  " id="chat_1055">
+                    <div class="avatar iconos">
+                        <i class="fa fa-user fa-lg" aria-hidden="true"></i>
+                    </div>
+
+                    <div class="about" role="row">
+                        <div class="filaNombre" aria-colindex="2">
+                            <div class="nombre">
+
+                                <a href="/klk/1055/YTo2OntzOjI6IklEIjtzOjQ6IjEwNTUiO3M6MTA6Ik5PTUJSRUNIQVQiO3M6MTY6IlJJQ0FSRE8gTUFSVElORVoiO3M6MTE6IkFSVElDVUxPX0lEIjtzOjc6IjU4NzAyMzQiO3M6NjoiQVNVTlRPIjtzOjMxOiJnb21hcyAxOTUvNDUvMTUgbnVldmFzIHkgdXNhZGFzIjtzOjI6IkRFIjtzOjE6IjMiO3M6NDoiUEFSQSI7czoyOiIzNiI7fQ=="
+                                    class="conversacion" data-mid="1055" data-sufijo="DE">RICARDO MARTINEZ </a>
+
+                            </div>
+
+                            <div class="ultimomsg">
+
+                                04-08-2022 <a href="javascript:;" class="eliminarchat btn-sm" data-mid="1055"
+                                    data-sufijo="DE" data-asunto="gomas 195/45/15 nuevas y usadas"
+                                    data-nombre="RICARDO MARTINEZ" class="btn-sm"><i class="click fa fa-times"
+                                        aria-hidden="true"></i></a>
 
                             </div>
                         </div>
@@ -160,13 +407,14 @@
         <div class="chat-header clearfix">
             <div class="card-title cabecera">
                 <a href="/" data-toggle="modal" data-target="#view_info">
-                <img src="http://192.168.1.109:8090/cache/180/6795115-1.jpg" alt="">
+                    <img src="http://192.168.1.109:8090/cache/180/6795115-1.jpg" alt="">
                 </a>
                 <div class="card-title">
                     <div class="m-b-0">RICARDO MARTINEZ
 
                         <a type="button" class="menu btn btn-light btn-sm float-right fixed-start" aria-hidden="true"
-                            data-toggle="dropdown" aria-haspopup="false" aria-expanded="false"><i class="fa fa-bars"></i>
+                            data-toggle="dropdown" aria-haspopup="false" aria-expanded="false"><i
+                                class="fa fa-bars"></i>
                         </a><br>
 
                         <div class="dropdown-menu bordes">

@@ -219,7 +219,7 @@ a.nav-link {
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: nowrap;
-    margin-bottom: 1em;
+    /* margin-bottom: 1em; */
 }
 
 .left-column {
