@@ -10,6 +10,7 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.css">
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
     <link rel="stylesheet" type="text/css" href="css/lpv8.css">
     <link rel="stylesheet" type="text/css" href="css/lpfrmv8.css">
     <link rel="stylesheet" type="text/css" href="css/lpdetv8.css">
@@ -396,6 +397,17 @@
                                     id="6970046_8095374074_%0D%0A++++Hola+Nelson+lopez%0D%0A++++%0D%0A++++Todavia+tienes+disponible+Kia+Soul+2016+Gasolina+publicado+en+La+Pulga+Virtual%3F+https%3A%2F%2Fwww.lapulga.com.do%2F%3Fid%3D6970046%2C+%0D%0A++++%0D%0A++++gracias"
                                     class="text-white bg-success momsgarticulo" title=""><i
                                         class="fa fa-whatsapp fa-lg fa-fw"></i> Contacta por WhatsApp</a>
+                            </div>
+
+                            <div class="useful-link" role="group">
+                                <a href="javascript:;"
+                                    id="6970046_8095374074_%0D%0A++++Hola+Nelson+lopez%0D%0A++++%0D%0A++++Todavia+tienes+disponible+Kia+Soul+2016+Gasolina+publicado+en+La+Pulga+Virtual%3F+https%3A%2F%2Fwww.lapulga.com.do%2F%3Fid%3D6970046%2C+%0D%0A++++%0D%0A++++gracias"
+                                    class="text-white bg-info momsgarticulo" title=""><i
+                                        class="fa fa-whatsapp fa-lg fa-fw"></i> Contacta por KLK Messenger</a>
+                            </div>
+                            </div>
+                            <div id="bloqueklk">
+                                <?php include("tpl/frmklkmessenger.tpl"); ?>
                             </div>
 
                             <div class="useful-link" role="group">
