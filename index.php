@@ -2,11 +2,19 @@
 include "include/LP_Inicio.inc.php";
 ?>
 <div class="right-column">
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
 <style>
 .left-column {
     position: none;
 }
+.right-column {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: content-box;
+}
+.card-group > .card{
+    margin-bottom: 0px !important;
+} 
 </style>
 <h2 class="cards-header" >
     KLK Messenger 
@@ -14,6 +22,8 @@ include "include/LP_Inicio.inc.php";
     <link rel="stylesheet" href="css/klkmsge.css">
     <?php include "plantilla2.inc.php";?>
 </div>
+
+
 </body>
 <!-- <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script> -->
 

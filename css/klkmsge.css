@@ -15,7 +15,7 @@
     background: #fff;
     transition: .5s;
     border: 0;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
     border-radius: .55rem;
     position: relative;
     width: 100%;
@@ -367,6 +367,14 @@ div .avatar {
     border-radius: .30rem !important;
 }
 
+.card-footer .frmklkmsgr input {
+    border-radius: 0px .30rem .30rem 0px !important;
+}
+
+.card-footer button {
+    border-radius: 0px .30rem .30rem 0px !important;
+} 
+
 
 /* @media only screen and (max-width: 767px) {
     .chat-app .people-list {
@@ -442,21 +450,21 @@ div .avatar {
     li.active .ultimomsg a{
         color:rgba(211, 43, 43, 0.739) !important;
     }
-    /* #bloque1 {
-        height: 20vh !important;
-        /* padding: 10px; 
-    } */
+    #bloque1 {
+        max-height: calc(100vh - 260px);
+        /* padding: 10px;  */
+    }
     
-    /* #bloque2 {
-        max-height: 35vh;
+    #bloque2 {
+        max-height: calc(100vh - 410px);
         background-color: #fff;
-    } */
+    }
 }
 @media only screen and (max-height: 1000px) { 
-    #bloque1 {
+    /* #bloque1 {
         height: calc(100vh - 300px) !important;
         
-    } 
+    }  */
 }
 
 @media only screen and (max-width: 320px) {

@@ -1,5 +1,5 @@
 <div class="card-group chat-app">
-    <div class="col-izq d-flex card people-list no-lista1">
+    <div class="col-izq d-flex card people-list no-lista">
         <div class="input-group">
 
             <input type="text" class="form-control" placeholder="Buscar conversacion..." id="buscarklk">
@@ -403,11 +403,11 @@
     </script>
 
 
-    <div class="chat col-der d-flex card no-chat">
+    <div class="chat col-der d-flex card no-chat1">
         <div class="chat-header clearfix">
             <div class="card-title cabecera">
                 <a href="/" data-toggle="modal" data-target="#view_info">
-                    <img src="http://192.168.1.109:8090/cache/180/6795115-1.jpg" alt="">
+                    <img src="https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/styles/1200/public/media/image/2022/06/shark-suv-jeep-electrico-ruedas-cuadradas-2743927.jpg?itok=EhrMlar1" alt="">
                 </a>
                 <div class="card-title">
                     <div class="m-b-0">RICARDO MARTINEZ
@@ -535,10 +535,10 @@
         <div class="chat-message card-footer clearfix">
             <form nombre="frmklkmsgr" id="frmklkmsgr">
                 <div class="input-group mb-0">
-                    <input type="text" nombre="klkmsg" id="klkmsg" class="form-control bordes" data-mid="1114"
+                    <input type="text" nombre="klkmsg" id="klkmsg" class="form-control" data-mid="1114"
                         data-sufijo="PARA" placeholder="Escriba su mensaje aqui...">
                     <button nombre="Enviar" type="submit" id="Enviar" data-usu="3" data-mid="1114" data-hora="10:15 AM"
-                        data-sufijo="PARA" class="btn btn-success bordes" disabled><i class="fa fa-send"></i></button>
+                        data-sufijo="PARA" class="btn btn-success" disabled><i class="fa fa-send"></i></button>
                 </div>
             </form>
         </div>
