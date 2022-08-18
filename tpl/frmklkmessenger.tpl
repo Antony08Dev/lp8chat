@@ -5,8 +5,8 @@
         <input type="hidden" name="klkde" id="klkde" value="<?=$_SESSION['lp_uid'];?>">
         <input type="hidden" name="klkpara" id="klkpara" value="<?=$tplDetalle['USUARIO_ID'];?>">
         <input type="hidden" name="Enviar" id="Enviar">
-        <div class="form-group row ">
-            <div class="col-sm-10">
+        <div class="form-group">
+            <div class="">
                 <textarea class="form-control" name="klkmensaje" id="klkmensaje" required placeholder="Favor redactar mensaje via KLK Messenger"></textarea>           
                 <div class="invalid-feedback">
                     Favor colocar su mensaje

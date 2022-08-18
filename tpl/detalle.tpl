@@ -202,7 +202,7 @@
                         </div>
                         <?php if ($_SESSION['lp_uid'] != $tplDetalle['USUARIO_ID']) { ?>
                             <div class="useful-link" role="group" >
-                                <a href="javascript:;" id="btnklkmsgr" data-url="<?=$_SERVER['REQUEST_URI'];?>" data-logueado="<?=(Config::$usuLogueado) ? "S" : "N";?>" class="text-white bg-success" title=""><i class="fa fa-whatsapp fa-lg fa-fw"></i> Contacta v&iacute;a KLK Messenger</a>
+                                <a href="javascript:;" id="btnklkmsgr" data-url="<?=$_SERVER['REQUEST_URI'];?>" data-logueado="<?=(Config::$usuLogueado) ? "S" : "N";?>" class="text-white bg-success" title=""><img src="klkw.svg" alt="" width="30px"> Contacta v&iacute;a KLK Messenger</a>
                             
                             </div>
                             <div id="bloqueklk">

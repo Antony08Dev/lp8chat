@@ -186,7 +186,7 @@
 
                                 <div class="carousel-item active">
 
-                                    <img class="d-block w-100" src="http://beta.lapulga.com.do/f/fotodefecto.jpg"
+                                    <img class="d-block w-100" src="https://photos.encuentra24.com/t_or_fh_l/f_auto/v1/sv/18/09/74/82/18097482_007db3"
                                         alt="Kia Soul 2016 Gasolina Foto fotodefecto.jpg">
                                 </div>
 
@@ -391,7 +391,16 @@
                                         class="fas fa-exclamation-triangle fa-lg fa-fw"></i> Medidas de
                                     Precauci&oacute;n</a>
                             </div>
-
+                            
+                            <div class="useful-link" role="group">
+                                <a href="javascript:;"
+                                    id="6970046_8095374074_%0D%0A++++Hola+Nelson+lopez%0D%0A++++%0D%0A++++Todavia+tienes+disponible+Kia+Soul+2016+Gasolina+publicado+en+La+Pulga+Virtual%3F+https%3A%2F%2Fwww.lapulga.com.do%2F%3Fid%3D6970046%2C+%0D%0A++++%0D%0A++++gracias"
+                                    class="text-white bg-info momsgarticulo" title=""><img src="klkw.svg" alt="" width="30px"> Contacta por KLK Messenger</a>
+                            </div>
+                            </div>
+                            <div id="bloqueklk">
+                                <?php include("tpl/frmklkmessenger.tpl"); ?>
+                            </div>
                             <div class="useful-link" role="group">
                                 <a href="javascript:;"
                                     id="6970046_8095374074_%0D%0A++++Hola+Nelson+lopez%0D%0A++++%0D%0A++++Todavia+tienes+disponible+Kia+Soul+2016+Gasolina+publicado+en+La+Pulga+Virtual%3F+https%3A%2F%2Fwww.lapulga.com.do%2F%3Fid%3D6970046%2C+%0D%0A++++%0D%0A++++gracias"
@@ -399,16 +408,6 @@
                                         class="fa fa-whatsapp fa-lg fa-fw"></i> Contacta por WhatsApp</a>
                             </div>
 
-                            <div class="useful-link" role="group">
-                                <a href="javascript:;"
-                                    id="6970046_8095374074_%0D%0A++++Hola+Nelson+lopez%0D%0A++++%0D%0A++++Todavia+tienes+disponible+Kia+Soul+2016+Gasolina+publicado+en+La+Pulga+Virtual%3F+https%3A%2F%2Fwww.lapulga.com.do%2F%3Fid%3D6970046%2C+%0D%0A++++%0D%0A++++gracias"
-                                    class="text-white bg-info momsgarticulo" title=""><i
-                                        class="fa fa-whatsapp fa-lg fa-fw"></i> Contacta por KLK Messenger</a>
-                            </div>
-                            </div>
-                            <div id="bloqueklk">
-                                <?php include("tpl/frmklkmessenger.tpl"); ?>
-                            </div>
 
                             <div class="useful-link" role="group">
                                 <a href="/dealers/nelson-autos" class="text-white bg-info" title=""><i

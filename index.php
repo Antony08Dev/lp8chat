@@ -22,8 +22,25 @@ include "include/LP_Inicio.inc.php";
     <link rel="stylesheet" href="css/klkmsge.css">
     <?php include "plantilla2.inc.php";?>
 </div>
-
-
+</div>
+</div>
+<!-- <footer class="">
+        <div class="container-custom">
+        <div class="footer-columns">
+            <div class="copyright-text">
+                <div class="copyright">La Pulga Virtual&reg; Derechos Reservados desde 2003</div>
+                <div class="realizado">
+                    Un producto de <a href="http://www.ipsrd.com" target="_blank" id="lnkips" title="Intranet Productos y Servicios">IPS</a> hospedado por <a href="https://www.grupointernet.com" id="lnkgrpint" target="_blank" title="No Importa el lugar, nosotros le contactamos">GrupoInternet.com</a>
+                </div>
+                <div class="realizado">
+                    <a href="/novedades" title="Novedades en La Pulga Virtual">Novedades</a> | <a href="/acerca" >Acerca de Nosotros</a> | <a href="javascript:;" title="Compartir via codigo QR" class="moqrcodigo">Compartir con QR</a> | <a href="/soporte" >Contacto</a>
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+</footer> -->
 </body>
 <!-- <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script> -->
 

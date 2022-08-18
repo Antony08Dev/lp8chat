@@ -332,9 +332,9 @@ div .avatar {
     left: 20px
 }
 
-.chat .chat-message {
+/* .chat .chat-message {
     padding: 20px
-}
+} */
 
 .float-right {
     float: right
@@ -358,8 +358,13 @@ div .avatar {
     border-radius: .30rem !important;
 }
 
+.card-footer {
+    height: auto !important;
+}
+
 .card-footer .frmklkmsgr input {
     border-radius: 0px .30rem .30rem 0px !important;
+    box-sizing: border-box;
 }
 
 .card-footer button {
@@ -446,7 +451,7 @@ div .avatar {
     }
     
     #bloque2 {
-        max-height: calc(100vh - 470px);
+        max-height: calc(100vh - 475px);
         background-color: #fff;
     }
 }
