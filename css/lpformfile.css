@@ -67,7 +67,7 @@ input[type=file] {
   overflow: hidden;
   position: relative;
   
-  &:before, input, label {
+  &::before, input, label {
     cursor: pointer !important;
   }
   /* File upload button */

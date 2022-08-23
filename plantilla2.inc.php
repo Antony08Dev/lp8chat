@@ -5,6 +5,7 @@
             <input type="text" class="form-control" placeholder="Buscar conversacion..." id="buscarklk">
 
         </div>
+        
         <div id="bloque1" class="bloques">
 
             <ul class="list-unstyled chat-list mt-2 mb-3" id="chats">
@@ -531,17 +532,16 @@
                 </li>
             </ul>
         </div>
-
         <div class="chat-message card-footer clearfix">
             <form nombre="frmklkmsgr" id="frmklkmsgr">
                 <div class="input-group mb-0">
                     <input type="text" nombre="klkmsg" id="klkmsg" class="form-control" data-mid="1114"
-                        data-sufijo="PARA" placeholder="Escriba su mensaje aqui...">
+                    data-sufijo="PARA" placeholder="Escriba su mensaje aqui...">
                     <button nombre="Enviar" type="submit" id="Enviar" data-usu="3" data-mid="1114" data-hora="10:15 AM"
-                        data-sufijo="PARA" class="btn btn-success" disabled><i class="fa fa-send"></i></button>
+                    data-sufijo="PARA" class="btn btn-success" disabled><i class="fa fa-send"></i></button>
                 </div>
             </form>
         </div>
+        
     </div>
 </div>
-<script></script>
