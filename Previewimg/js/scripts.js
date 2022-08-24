@@ -2,12 +2,12 @@ $(document).ready(function(){
 
     // Modal
 
-    $(".modal").on("click", function (e) {
-        console.log(e);
-        if (($(e.target).hasClass("modal-main") || $(e.target).hasClass("close-modal")) && $("#loading").css("display") == "none") {
-            closeModal();
-        }
-    });
+    // $(".modal").on("click", function (e) {
+    //     console.log(e);
+    //     if (($(e.target).hasClass("modal-main") || $(e.target).hasClass("close-modal")) && $("#loading").css("display") == "none") {
+    //         closeModal();
+    //     }
+    // });
 
     // -> Modal
 
@@ -41,10 +41,10 @@ $(document).ready(function(){
         }
 
         if (seEncontraronElementoNoValidos) {
-            showMessage("Se encontraron archivos no validos.");
+            alert("Se encontraron archivos no validos.");
         }
         else {
-            showMessage("Todos los archivos se subieron correctamente.");
+            alert("Todos los archivos se subieron correctamente.");
         }
     
     });
