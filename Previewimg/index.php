@@ -11,8 +11,8 @@
 
     <link rel="stylesheet" href="css/icons.css">
     <link rel="stylesheet" href="css/estilos.css">
-    <link rel="stylesheet" href="css/grid.css">
-    <link rel="stylesheet" href="css/modal.css">
+    <!-- <link rel="stylesheet" href="css/grid.css"> -->
+    <!-- <link rel="stylesheet" href="css/modal.css"> -->
     <!-- <link rel="stylesheet" href="css/styles.css"> -->
     <title>Vista previa de imágenes</title>
 </head>
