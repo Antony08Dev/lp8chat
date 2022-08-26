@@ -30,7 +30,7 @@ div.publicaciones-relacionadas-grid .cards {
 }
 .breadcrumb li:after
 {
-	content: 'â€º';
+	content: '>';
 	display: inline;
 	padding-left: .3rem;
 }
@@ -116,6 +116,27 @@ div.publicaciones-relacionadas-grid .cards {
 	background-color: #55ACEE;
 }
 
+#bloqueklk {
+	display:none;
+	width: 100%;
+}
+
+#bloqueklk .form-group textarea {
+	height: auto;
+	min-height: 90px;
+}
+
+#bloqueklk .form-group {
+	margin-bottom: 0 !important;
+}
+#bloqueklk .modal-footer button {
+	margin-bottom: 1rem;
+}
+
+#bloqueklk .modal-footer {
+	border-top: 1px solid #dee2e6;
+	border-bottom: 1px solid #dee2e6;
+}
 .whatsapp{
 	background-color: #0A850A;
 }
@@ -179,6 +200,12 @@ div.publicaciones-relacionadas-grid .cards {
 .cards .card{
 	flex: 0 1 19%;
 }
+
+.carousel-item img {
+	max-height: 783px !important;
+	object-fit: contain !important;
+}
+
 .useful-link{
 	width: 100%;
 

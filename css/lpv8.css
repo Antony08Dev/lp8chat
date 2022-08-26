@@ -63,6 +63,10 @@ body {
     padding: 0rem 2rem;
 }
 
+.novisible {
+    display:none;
+}
+
 /*header*/
 #header {
     border-bottom: #15224F 1px solid;
@@ -70,7 +74,7 @@ body {
     padding: .5em 0;
     position: sticky; 
     top: 0;
-    z-index: 5;
+    z-index: 1000;
 }
 
 .site-logo {
@@ -126,7 +130,9 @@ a.nav-link {
     width: 100%;
     padding: 0;
 }
-
+#klk_noti {
+    display:none;
+}
 #publicarr {
     background-color: #FF6C00;
 
@@ -208,10 +214,9 @@ a.nav-link {
 /* fin cintillos */
 
 /* brillo para imagenes */
-/* .filtro-img {
-    /* filter: brightness(110%) grayscale(60%) saturate(2); 
-} 
-*/
+.filtro-img {
+    /* filter: brightness(110%) grayscale(60%) saturate(2); */
+}
 
 /*columns*/
 .main-columns {
@@ -219,7 +224,7 @@ a.nav-link {
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: nowrap;
-    /* margin-bottom: 1em; */
+    margin-bottom: 1em;
 }
 
 .left-column {
@@ -236,7 +241,7 @@ a.nav-link {
     flex: 0 1 74%;
     padding: .6em;
     /* background-color: #fff; */
-    background-color: #f4f7f6;
+    background-color: #ECECEC;
 
 
 }
@@ -527,6 +532,11 @@ a.nav-link {
     display: block;
     width: 100%;
     height: 100%;
+}
+
+.card-mpa .card-img {
+    max-height: 287px;
+    object-fit: contain;
 }
 
 /* fin mi pulga  */

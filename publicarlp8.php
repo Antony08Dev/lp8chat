@@ -420,7 +420,7 @@
                         </span>
 
                         <span class="control-fileupload tt" title="Selecciona multiples de fotos en caso de ser mas de 1">
-                            <label for="fotos" id="lblfotos"><i class="fa fa-upload" aria-hidden="true"></i> Selecciona de 1 a 5 <?=$arrCantFotosXPlan[$plan];?> fotos.</label>
+                            <label for="fotos" id="lblfotos"><i class="fa fa-upload" aria-hidden="true"></i> Selecciona de 1 a 5 fotos.</label>
                             <input name="fotos[]" type="file" id="fotos"  multiple="multiple" accept=".jpg, .jpeg, .png" data-cantidad="10"  >
                         </span>
                        

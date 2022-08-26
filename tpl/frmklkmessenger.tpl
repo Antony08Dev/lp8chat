@@ -7,7 +7,7 @@
         <input type="hidden" name="Enviar" id="Enviar">
         <div class="form-group">
             <div class="">
-                <textarea class="form-control" name="klkmensaje" id="klkmensaje" required placeholder="Favor redactar mensaje via KLK Messenger"></textarea>           
+                <textarea class="form-control" name="klkmensaje" id="klkmensaje" required placeholder="Favor redactar mensaje por KLK Messenger"></textarea>           
                 <div class="invalid-feedback">
                     Favor colocar su mensaje
                 </div>

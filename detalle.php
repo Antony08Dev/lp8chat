@@ -186,7 +186,7 @@
 
                                 <div class="carousel-item active">
 
-                                    <img class="d-block w-100" src="https://photos.encuentra24.com/t_or_fh_l/f_auto/v1/sv/18/09/74/82/18097482_007db3"
+                                    <img class="d-block w-100" src="http://192.168.1.109:8090/f/7097443-1.jpg"
                                         alt="Kia Soul 2016 Gasolina Foto fotodefecto.jpg">
                                 </div>
 
@@ -395,11 +395,11 @@
                             <div class="useful-link" role="group">
                                 <a href="javascript:;"
                                     id="6970046_8095374074_%0D%0A++++Hola+Nelson+lopez%0D%0A++++%0D%0A++++Todavia+tienes+disponible+Kia+Soul+2016+Gasolina+publicado+en+La+Pulga+Virtual%3F+https%3A%2F%2Fwww.lapulga.com.do%2F%3Fid%3D6970046%2C+%0D%0A++++%0D%0A++++gracias"
-                                    class="text-white bg-info momsgarticulo" title=""><img src="klkw.svg" alt="" width="30px"> Contacta por KLK Messenger</a>
+                                    class="text-white bg-info momsgarticulo" title=""><img src="i/klkw.svg" alt="" width="30px"> Contacta por KLK Messenger</a>
                             </div>
                             </div>
                             <div id="bloqueklk">
-                                <?php include("tpl/frmklkmessenger.tpl"); ?>
+                                <?php require("/trabajos/lp8chat/t"); ?>
                             </div>
                             <div class="useful-link" role="group">
                                 <a href="javascript:;"
