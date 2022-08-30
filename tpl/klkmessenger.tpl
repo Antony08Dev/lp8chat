@@ -26,9 +26,8 @@
             </div>
         </div>
 
-
         <div class="chat col-der d-flex card no-chat1">
-            <img src='/i/Banner-1.4-v2.jpg' class="banner <?=(isset(Config::$arrParametrosmvc['param3'][0]) and (Config::$arrParametrosmvc['param3'][0] == 'klk')) ? "novisible" : "";?>">
+            <img src='/i/klkmsgr.jpg' class="banner <?=(isset(Config::$arrParametrosmvc['param3'][0]) and (Config::$arrParametrosmvc['param3'][0] == 'klk') or (!Config::$esMovil)) ? "" : "novisible";?>">
         <?php if (isset(Config::$arrParametrosmvc['param3'][0]) and (Config::$arrParametrosmvc['param3'][0] == 'klk')) { 
             /* imprime variable usada en ajax para actualziar mensajes */ 
             echo $arrTitulo['VARJSMID'];
