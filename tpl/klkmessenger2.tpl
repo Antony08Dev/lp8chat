@@ -26,16 +26,14 @@
             </div>
         </div>
 
-
-        <div class="chat col-der d-flex card no-chat1">
-            <img src='/i/Banner-1.4-v2.jpg' class="banner <?=(isset(Config::$arrParametrosmvc['param3'][0]) and (Config::$arrParametrosmvc['param3'][0] == 'klk')) ? "novisible" : "";?>">
         <?php if (isset(Config::$arrParametrosmvc['param3'][0]) and (Config::$arrParametrosmvc['param3'][0] == 'klk')) { 
             /* imprime variable usada en ajax para actualziar mensajes */ 
             echo $arrTitulo['VARJSMID'];
             echo $arrTitulo['VARJSSUFIJO'];
             echo $arrTitulo['VARJSUID'];
         ?> 
-       
+
+        <div class="chat col-der d-flex card no-chat1">
             <div class="chat-header clearfix">
                 <div class="card-title cabecera">
                     <a href="/" data-toggle="modal" data-target="#view_info">
@@ -48,7 +46,7 @@
                             </a><br>
 
                             <div class="dropdown-menu bordes">
-                                                                <a class="dropdown-item" href="/klk">Ir a Conversaciones</a>
+                                <a class="dropdown-item" href="/klk">Ir a Conversaciones</a>
                                 <a class="dropdown-item" href="javascript:;" data-mid="<?=$arrTitulo['ID'];?>">Eliminar Chat</a>
                             </div>
 

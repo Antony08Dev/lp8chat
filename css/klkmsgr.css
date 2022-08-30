@@ -2,11 +2,17 @@
     overflow-y: scroll;
     margin: 0vh !important;
     overflow-x: hidden;
-    height: -moz-calc(100vh - 113px);
-    height: -webkit-calc(100vh - 113px);
-    height: calc(100vh - 113px);
+    height: -moz-calc(86vh - 1px);
+    height: -webkit-calc(86vh - 1px);
+    height: calc(80vh - 1px);
 }
-
+.chat .banner {
+    position: relative;
+    object-fit: contain;
+    overflow-x: hidden;
+    width: 100%;
+    height: 70vh;
+}
 .card {
     background: #fff;
     transition: .5s;

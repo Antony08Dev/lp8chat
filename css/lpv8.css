@@ -214,9 +214,9 @@ a.nav-link {
 /* fin cintillos */
 
 /* brillo para imagenes */
-.filtro-img {
+/* .filtro-img { */
     /* filter: brightness(110%) grayscale(60%) saturate(2); */
-}
+/* } */
 
 /*columns*/
 .main-columns {
@@ -831,6 +831,7 @@ footer {
     }   
     .dropdown-menu {
         border:none;
+        transform: translate3d(0px, 38px, 0px) !important;
     }    
     #publicarr {
         text-align: center;
