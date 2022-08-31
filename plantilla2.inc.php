@@ -89,7 +89,7 @@
                 height: 70vh;
             }
         </style>
-        <img src="/i/Banner-1.4-v2.jpg" class="banner">
+        <img src="/include/klkmsgr.jpg" class="banner">
 
         <!-- <div id="bloque2" class="bloques card-body chat-history">
 

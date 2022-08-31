@@ -457,6 +457,7 @@ div .avatar {
     }
     
     #bloque2 {
+        height: calc(100vh - 350px);;
         max-height: calc(100vh - 475px);
         background-color: #fff;
     }

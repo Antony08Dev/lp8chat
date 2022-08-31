@@ -2,7 +2,7 @@
     <link rel="stylesheet" href="/css/klkmsgr.css">
     
     <div class="card-group chat-app">
-        <div id="bloqueklk" class="col-izq d-flex card people-list <?=(isset(Config::$arrParametrosmvc['param3'][0]) and (Config::$arrParametrosmvc['param3'][0] == 'klk')) ? "novisible" : "";?>">
+        <div id="bloqueklk" class="col-izq d-flex card people-list <?=(isset(Config::$arrParametrosmvc['param3'][0]) and (Config::$esMovil) and (Config::$arrParametrosmvc['param3'][0] == 'klk')) ? "novisible" : "";?>">
             <div class="input-group">
 
                 <input type="text" class="form-control" placeholder="Buscar conversacion..." id="buscarklk">
@@ -27,7 +27,7 @@
         </div>
 
         <div class="chat col-der d-flex card no-chat1">
-            <img src='/i/klkmsgr.jpg' class="banner <?=(isset(Config::$arrParametrosmvc['param3'][0]) and (Config::$arrParametrosmvc['param3'][0] == 'klk') or (!Config::$esMovil)) ? "" : "novisible";?>">
+            <img src='/i/klkmsgr.jpg' class="banner <?=(isset(Config::$arrParametrosmvc['param3'][0]) and (Config::$arrParametrosmvc['param3'][0] == 'klk')) ? "novisible" : "";?> <?=(Config::$esMovil) ? "novisible" : "";?>">
         <?php if (isset(Config::$arrParametrosmvc['param3'][0]) and (Config::$arrParametrosmvc['param3'][0] == 'klk')) { 
             /* imprime variable usada en ajax para actualziar mensajes */ 
             echo $arrTitulo['VARJSMID'];

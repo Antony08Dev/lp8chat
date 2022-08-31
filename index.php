@@ -19,8 +19,8 @@ include "include/LP_Inicio.inc.php";
 <h2 class="cards-header" >
     KLK Messenger 
 </h2>
-    <link rel="stylesheet" href="css/klkmsgr.css">
-    <?php include "plantilla2.inc.php";?>
+    <!-- <link rel="stylesheet" href="css/klkmsgr.css"> -->
+    <?php include "busquedas.php";?>
 </div>
 </div>
 </div>
