@@ -376,6 +376,7 @@ function generaPosFotos(aid,textFotos) {
 		$("#pubmobody .fotos").remove();
 		if (textFotos.length <= 0) return false ;
 		var arrFotos = textFotos.split(",");
+		console.log(textFotos);
 			
 		var count=0;
 		var fila= "";
