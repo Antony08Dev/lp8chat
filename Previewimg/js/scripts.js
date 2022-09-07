@@ -26,7 +26,7 @@ $(document).ready(function(){
         console.log(this.files);
         var files = this.files;
         var element;
-        var supportedImages = ["image/jpeg", "image/png", "image/gif"];
+        var supportedImages = ["image/jpeg", "image/png", "image/gif", "image/webp"];
         var seEncontraronElementoNoValidos = false;
 
         for (var i = 0; i < files.length; i++) {
