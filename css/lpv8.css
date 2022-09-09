@@ -538,8 +538,35 @@ a.nav-link {
     max-height: 287px;
     object-fit: contain;
 }
+.agregar .btn{
+    display: none !important;
+}
 
+.add-new-photo {
+    border: 4px dashed rgb(200, 191, 191);
+    height: 78px;
+    width: 78px;
+    padding: 10px;
+    font-size: 50px;
+    color: rgb(218, 211, 211);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s all ease;
+    -webkit-transition: 0.3s all ease;
+    -moz-transition: 0.3s all ease;
+    -ms-transition: 0.3s all ease;
+    -o-transition: 0.3s all ease;
+}
 
+#madmfotos .modal-dialog {
+    text-align: center;
+}
+
+@media (min-width: 576px) {
+    #madmfotos .modal-dialog {
+        max-width: 64% !important;
+    }
+}
 
 /*stylos para el admin mi pulga*/
 .fotos {
@@ -547,16 +574,20 @@ a.nav-link {
 	display: block;
 	width: 100%;
     white-space: nowrap;
-	overflow-x:scroll;
+	overflow: auto;
 }
-.fotos::-webkit-scrollbar{height: 10px;}
+.fotos::-webkit-scrollbar:horizontal {
+    height: 10px;
+}
+
 .fotos::-webkit-scrollbar-thumb{
 background-color: #079ad8;
 border-radius:10px;
+border: 2px solid #0799d8c6;
 opacity: .8;
 }
 
-.fotos .cambiaft {
+.fotos .cambiafoto {
     margin-top: 5px !important;
     display: block;
     white-space: nowrap;

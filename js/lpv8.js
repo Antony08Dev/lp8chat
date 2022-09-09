@@ -9,6 +9,7 @@
 
 var url = new URL(window.location.href);
 var depura = false;
+var error = false;
 
 /* objeto para los nombres en ajax */
 function ajaxFname() {
@@ -239,48 +240,68 @@ function escribeChat(_this,estatus,e) {
 // funciones manejo de fotos miniaturas edicion en mi pulga
 
 //funcion para cambiar la posicion de las fotos desde mis publicaciones
-function cambiaposfoto(radio,eliminafoto) {
-	(!eliminafoto) ? $(".cambiaft").val('Hacer Principal').removeClass("btn-success"): "";
-	(!eliminafoto) ? $(radio).val("Principal").addClass("btn-success") : "";
+function cambiaPosicionfoto() {
+	var eliminafoto = ($(this).attr("class") == "elimfoto");
+	var fotoname = $(this).attr("data-nombre");
+	var aid = $(this).attr("data-aid");
+	var strfotos = $(this).attr("data-fotos");
+	var id = $(this).attr("id");
+	id = "#" + id;
+	(!eliminafoto) ? $(".cambiafoto").val('Hacer Principal').removeClass("btn-success"): "";
+	(!eliminafoto) ? $(".cambiafoto").val("Hacer Principal").addClass("btn-info") : "";	
+	(!eliminafoto) ? $(id).val("Principal").removeClass("btn-info") : "";	
+	(!eliminafoto) ? $(id).val("Principal").addClass("btn-success") : "";	
+	//console.log(id);
 	var fotos = "";
-	var id = $( radio ).attr("name");
-	var text = $("#" + elIdfn.valor).attr("data-fotos");
-	// console.log(text.Array);
+	//var id =$( radio ).attr("name");
+	var text = strfotos;
+	//console.log(text);
 	//var text = $("#arrFotos_" + id).val();
-	var arrFotos = text.split(",");
-	var fotoname = $( radio ).attr("rel");
+	var arrFotos = strfotos.split(",");
+	//var fotoname = $( radio ).attr("rel");
+	// saca la posicion del que sera principal
 	var pos = arrFotos.indexOf(fotoname);
-	console.log(fotoname);
-	console.log(pos);
-	var firstPic = arrFotos[pos];
-	console.log(firstPic);
+	//console.log(fotoname);
+	//console.log(pos);
+	// saca la primera foto
+	var primeraFoto = arrFotos[pos];
+	//console.log(primeraFoto);
+	// reorganiza arreglo strfotos
+	console.log(arrFotos);
 	arrFotos.splice( pos,1 );
+	console.log(arrFotos);
 	if (eliminafoto) {
-		fotos = "ART_FOTOS_"+arrFotos.join(',')+ "_"+ id;
-		if (ajaxccampo( fotos )) {
-			$( radio ).closest("div.miniaturas").hide( "slow" );
-			$("#arrFotos_" + id).val(arrFotos);
-			return false;
-		}
-	} 
-	arrFotos.unshift( firstPic );
-	fotos = "ART_FOTOS_"+arrFotos.join(',')+ "_"+ id;
-	console.log(fotos);
-	var pic = $( radio ).closest("div.miniaturas").clone().hide();
-	var contain_fotos = $( radio ).closest("div.fotos");
-
-	if(!ajaxccampo( fotos  )){
-		contain_fotos.find( 'div.miniaturas' ).first().find("span").show("slow");
-		$(".fotos input[type=radio]").prop("checked", false);
-		return false;	
+		alertify.confirm('Eliminacion de foto','Esta seguro de eliminar?',function() {
+			fotos = "ART_FOTOS_"+arrFotos.join(',')+ "_"+ aid;
+			console.log(fotos);
+			$( id ).closest("div.miniaturas").hide( "slow" );
+			console.log('borro');
+			//if (ajaxccampo( fotos )) {
+				//	 $("#arrFotos_" + id).val(arrFotos);
+				//	 return false;
+				//}
+			}, function() {
+				alertify.error('Accion cancelada');
+			});		
 	} else {
-		$( radio ).closest("div.miniaturas").hide( "slow" );
-		//$( radio ).closest("div.miniaturas").remove();
-		contain_fotos.find(".miniaturas").first().before( pic );
-		contain_fotos.find(".miniaturas").first().show("slow");
-		
-	} 
+		// reorganiza arreglo
+		(!eliminafoto) ? arrFotos.unshift( primeraFoto ) : "";
+		fotos = "ART_FOTOS_"+arrFotos.join(',')+ "_"+ aid;
+		console.log(fotos);
+		// oculta la foto seleccionada
+		var pic = $( id ).closest("div.miniaturas").clone().hide();
+		var contain_fotos = $( id ).closest("div.fotos");
 	
+		if(ajaxccampo(fotos)) {
+			$( id ).closest("div.miniaturas").hide( "slow" );
+			contain_fotos.find(".miniaturas").first().before( pic );
+			contain_fotos.find(".miniaturas").first().show("slow");
+		} else {
+			// algun error
+			contain_fotos.find( 'div.miniaturas' ).first().find("span").show("slow");
+			return false;	
+		} 	
+	}
 }
 /* funcion procesa ciertos cambios */
 function ajaxccampo(valor) {
@@ -289,20 +310,33 @@ function ajaxccampo(valor) {
         type: "POST",
         data:({valor:valor}),
         success: function(data) {
-			if (data == '') {
+			if (data == 1) {
 				alertify.success('Cambio Realizado');
             } else {
 				alertify.error(data);
+				error = true;
             }
         }
-    });
-    return true;
+	});
+	console.log(error);
+	if (error) return false;
+    else return true;
 	
 }
 // fin funciones manejo fotos
 
 // inicio documento
 $(document).ready(function() {
+
+
+
+	
+
+
+
+
+
+
 	/* publicaciones en listados */
 	/* debe hacer login para favoritos */
 	$("a.nofav").click(function(e) {
@@ -399,6 +433,8 @@ $(document).ready(function() {
 			}
 		}
 	});
+	// mi pulga manejo de fotos
+	$(document).on('click', '.cambiafoto, .elimfoto', cambiaPosicionfoto);
 	/* OPCIONES DE KLK ***************************************/
 	// actualiza que se leyo los nuevos
 	$(document).on('click', 'li.bold a.conversacion', actualizaChatvisto);	
@@ -749,6 +785,11 @@ $(document).ready(function() {
 			$("#lblCategorias").text($("#lblCat-" + elIdfn.id).text());
 		}		
 	});	
+	
+	$(document).on("click", "#agrega", function(){
+		$("#agregafoto").click();
+	});
+
 	/* resaltar, administrar fotos y vip publicacion en mi pulga */
 	$("a.admfotos").click(function(e) {
 		e.preventDefault();
@@ -758,26 +799,34 @@ $(document).ready(function() {
 		var aid = elIdfn.id;
 		if (fotos.length <= 0) return false ;
 		var arrFotos = fotos.split(",");
-		document.getElementById('fotos').innerHTML = '';
+		document.getElementById('admfotos').innerHTML = '';
 		$.each(arrFotos, function(k,v) {
 			var texto = (k==0) ? "Principal" : "Hacer Principal"; 
 			var color = (k==0) ? "btn-success" : "btn-info"; 			
-			var elimfoto = "#elimfoto" + aid + "_" + (k+1);
+			var elimfoto = "elimfoto" + aid + "_" + (k+1);
 			var fotoid = "foto" + aid + "_" + (k+1);
 			var urlfoto = "/f/" + v;
-			document.getElementById('fotos').innerHTML += 
+			document.getElementById('admfotos').innerHTML += 
 
 				'<div class="miniaturas">' +
-					'<a href="javascript:;" title="Elimina esta foto" class="elimfoto" rel="' + v +'" name="' + aid + '" onclick="cambiaposfoto(' + elimfoto + ',true);" id="' + elimfoto +'"><i class="fa fa-trash-o"></i></a>' + 
+					'<a href="javascript:;" title="Elimina esta foto" class="elimfoto" data-fotos="'+fotos+'"  data-nombre="'+ v +'" data-aid="'+aid+'" rel="' + v +'" name="' + aid + '"  id="' + elimfoto +'"><i class="fa fa-trash-o"></i>'+
+					'</a>' + 
 
 						'<img src=' + urlfoto + ' />' +
 
-					'<input type="button" data-nombre="'+ v +'" data-aid="'+aid+'" rel="' + v + '" value="' + texto +'" class="' + color + ' cambiaft btn btn-sm m-auto " name="' + aid + '" onclick="cambiaposfoto(' +aid + ');" id="' + fotoid + '" />'
+					'<input type="button" data-fotos="'+fotos+'"  data-nombre="'+ v +'" data-aid="'+aid+'" rel="' + v + '" value="' + texto +'" class="' + color + ' cambiafoto btn btn-sm m-auto " name="' + aid + '"  id="' + fotoid + '" />' +
 				'</div>';
 
 		});
+		document.getElementById('admfotos').innerHTML +=  
+		'<div class="agregar miniaturas">' + 
+		'<span id="agrega"><i class="add-new-photo fa fa-plus"></i></span>' +
+		'<input type="file" id="agregafoto" value="agregar" class="btn"/>' +
+	'</div>';
 		$("#madmfotos").modal("show");
 	});
+	//Hacer click en el span acciona el input
+
 	/* resaltar y vip publicacion en mi pulga */
 	$("a.resaltarpub").click(function(e) {
 		e.preventDefault();

@@ -252,9 +252,92 @@ spOptions = {
 	  ponerElCursorAlFinal("gomaaro");
 	}
 };
+
+// file upload IPS 
+// validar subida de fotos al preview    
+function validarFotos() {
+    var fotos = document.getElementById("fotos");
+    var imgRuta = fotos.value;
+    var extPermitidas = /(.PNG|.png|.jpg|.JPG|.JPEG|.jpeg)$/i;
+    var message = "";
+    if ('files' in fotos) {
+        console.log(fotos.files);
+        if (fotos.files.length > fotos.dataset.cantidad) {
+                alert('Debes seleccionar ' + fotos.dataset.cantidad + ' imagenes o menos');
+        } else {
+            if (!extPermitidas.exec(imgRuta)) {
+                alert("Solo imagenes JPG, PNG o WEB");
+            } else {
+                if (fotos.files.length ) {
+                    previewFotos(fotos);
+                }   
+            }
+        }
+    }
+}
+
+// funcion que muestra el preview
+function previewFotos(fotos) {
+    document.getElementById('preview').innerHTML='';
+    var cantidadFotos = document.getElementById("fotos");
+    cantidadFotos = cantidadFotos.dataset.cantidad;
+    var total = 0;
+    for (let i=0; i < fotos.files.length;i++) {
+        let visor = new FileReader();
+        var file = fotos.files[i];
+        total += fotos.files[i].size;
+        visor.onload = function(e) {
+            var tamano = fotos.files[i].size / 1024;
+            tamano = tamano.toFixed(1);
+            document.getElementById('preview').innerHTML += miniaturaFotofiler(e.target.result,tamano,i);
+
+
+        };   
+        visor.readAsDataURL(fotos.files[i]);
+    } 
+    total = total / 1024;
+    total = total.toFixed(1);
+    document.getElementById('lblfotos').innerHTML='<i class="fa fa-upload" aria-hidden="true"></i> Tienes ' + fotos.files.length + ' de ' + cantidadFotos + ' foto(s) = ' + total + 'kB' ;
+}
+
+// fruncion que crea miniatura filer de cada foto
+function miniaturaFotofiler(url, tamano, idborrar) {
+    var miniatura = 
+        '<li class="jFiler-item">' +
+            '<div class="jFiler-item-container">' + 
+                '<div class="jFiler-item-thumb">' + 
+                    '<img src="' + url +'" >' + 
+                '</div>' + 
+                '<div class="jFiler-item-assets jFiler-row">' + 
+                    '<ul class="list-inline pull-left">' + 
+                        '<li>' + tamano + 'kB</li>' + 
+                    '</ul>' +                                 
+                    '<ul class="list-inline pull-right">' + 
+                        '<li><a href="javascript:;" class="text-muted" onclick="borrarPreview('+idborrar+')"><i class="fas fa-trash"></i></a></li>' + 
+                    '</ul>' + 
+                '</div>' + 
+            '</div>' + 
+        '</li>';
+    return miniatura;
+}
+
+
+/* elmina la una foto del preview */
+
+function borrarPreview(foto) {
+    var fotos = document.getElementById("fotos").files; 
+    var fileBuffer = new DataTransfer();
+    for (let i = 0; i < fotos.length; i++) {
+        if (foto !== i) fileBuffer.items.add(fotos[i]);
+    }
+    document.getElementById("fotos").files = fileBuffer.files;
+    $("#preview_" + foto).remove(); 
+    previewFotos(document.getElementById("fotos"));
+}
+// fin ips upload
+
+
 /* fin funciones */
-
-
 
 $(document).ready(function() {
 
@@ -277,14 +360,18 @@ $(document).ready(function() {
             onSuccessfacebook(response);          
         }, {scope: 'public_profile,email'});
     });
-        
-    $('.phone_us').mask('(000) 000-0000');
-    $('.maskdesc').mask('00');
-    $('.date').mask('00/00/0000');
-    $('.money').mask('0000000000', {reverse: true});
-    $('.goma').mask(gomaMask, spOptions);
-    $('.aro').mask("R00/0H");
+    // verificar esto sisolo es usado en registro 
+    if ($("#frmregistro").length) {
+        $('.phone_us').mask('(000) 000-0000');
+        $('.maskdesc').mask('00');
+        $('.date').mask('00/00/0000');
+        $('.money').mask('0000000000', {reverse: true});
+        $('.goma').mask(gomaMask, spOptions);
+        $('.aro').mask("R00/0H");
+    }
     // formulario publicar
+	// manejo de fotos
+	$(document).on('change', '#fotos', validarFotos);	
     $("#categoria").change(function() {
         categoria = this.value.split("-");
         if (categoria[0] == 8) $("#tipo").show();
@@ -714,207 +801,6 @@ $(document).ready(function() {
         
         return false;
     });
-
-
-
-
-    /* inicio filer */
-    // var body = $(document.body),
-    //     filer_default_opts = {
-    //         changeInput2: '<div class="jFiler-input-dragDrop"><div class="jFiler-input-inner"><div class="jFiler-input-icon"><i class="icon-jfi-cloud-up-o"></i></div><div class="jFiler-input-text"><h3>Arrastra fotos aqui</h3> <span style="display:inline-block; margin: 15px 0">or</span></div><a class="jFiler-input-choose-btn btn-custom blue-light">Browse Files</a></div></div>',
-    //         templates: {
-    //             box: '<ul class="jFiler-items-list jFiler-items-grid"></ul>',
-    //             item: '<li class="jFiler-item">\
-    //                         <div class="jFiler-item-container">\
-    //                             <div class="jFiler-item-inner">\
-    //                                 <div class="jFiler-item-thumb">\
-    //                                     <div class="jFiler-item-status"></div>\
-    //                                     <div class="jFiler-item-thumb-overlay">\
-    // 										<div class="jFiler-item-info">\
-    // 											<div style="display:table-cell;vertical-align: middle;">\
-    // 												<span class="jFiler-item-title"></span>\
-    // 												<span class="jFiler-item-others">{{fi-size2}}</span>\
-    // 											</div>\
-    // 										</div>\
-    // 									</div>\
-    //                                     {{fi-image}}\
-    //                                 </div>\
-    //                                 <div class="jFiler-item-assets jFiler-row">\
-    //                                     <ul class="list-inline pull-left">\
-    //                                         <li>{{fi-progressBar}}</li>\
-    //                                     </ul>\
-    //                                     <ul class="list-inline pull-right">\
-    //                                         <li><a class="icon-jfi-trash jFiler-item-trash-action"></a></li>\
-    //                                     </ul>\
-    //                                 </div>\
-    //                             </div>\
-    //                         </div>\
-    //                     </li>',
-    //             itemAppend: '<li class="jFiler-item">\
-    //                             <div class="jFiler-item-container">\
-    //                                 <div class="jFiler-item-inner">\
-    //                                     <div class="jFiler-item-thumb">\
-    //                                         <div class="jFiler-item-status"></div>\
-    //                                         <div class="jFiler-item-thumb-overlay">\
-    //     										<div class="jFiler-item-info">\
-    //     											<div style="display:table-cell;vertical-align: middle;">\
-    //     												<span class="jFiler-item-title">&nbsp;</span>\
-    //     												<span class="jFiler-item-others">                {{fi-size2}}</span>\
-    //     											</div>\
-    //     										</div>\
-    //     									</div>\
-    //                                         {{fi-image}}\
-    //                                     </div>\
-    //                                     <div class="jFiler-item-assets jFiler-row">\
-    //                                         <ul class="list-inline pull-left">\
-    //                                             <li><span class="jFiler-item-others">{{fi-icon}}</span></li>\
-    //                                         </ul>\
-    //                                         <ul class="list-inline pull-right">\
-    //                                             <li><a class="icon-jfi-trash jFiler-item-trash-action"></a></li>\
-    //                                         </ul>\
-    //                                     </div>\
-    //                                 </div>\
-    //                             </div>\
-    //                         </li>',
-    //             progressBar: '<div class="bar"></div>',
-    //             itemAppendToEnd: false,
-    //             removeConfirmation: false,
-    //             _selectors: {
-    //                 list: '.jFiler-items-list',
-    //                 item: '.jFiler-item',
-    //                 progressBar: '.bar',
-    //                 remove: '.jFiler-item-trash-action'
-    //             },
-    //             canvasImage: true
-    //         },
-    //         dragDrop: {},
-    //         uploadFile: {
-    //             url: ajaxfn.sarchivo,
-    //             data: {},
-    //             type: 'POST',
-    //             enctype: 'multipart/form-data',
-    //             beforeSend: function() {},
-    //             success: function(data, el, listEl, boxEl, newInputEl, inputEl, id) {
-    //                 var new_file_name = JSON.parse(data),
-    //                     filerKit = inputEl.prop("jFiler");
-    //                 filerKit.files_list[id].name = new_file_name;
-    //                 var parent = el.find(".jFiler-jProgressBar").parent();
-    //                 el.find(".jFiler-jProgressBar").fadeOut("slow", function() {
-    //                     $("<div class=\"jFiler-item-others text-success\"><i class=\"icon-jfi-check-circle\"></i> Ok</div>").hide().appendTo(parent).fadeIn("slow");
-    //                 });
-    //                 confoto = true;
-    //                 //if ($("#vip").length) {
-    //                 //    $("#vip").change();
-    //                 //}
-    //             },
-    //             error: function(el) {
-    //                 var parent = el.find(".jFiler-jProgressBar").parent();
-    //                 el.find(".jFiler-jProgressBar").fadeOut("slow", function() {
-    //                     $("<div class=\"jFiler-item-others text-error\"><i class=\"icon-jfi-minus-circle\"></i> Error</div>").hide().appendTo(parent).fadeIn("slow");
-    //                 });
-    //             },
-    //             statusCode: null,
-    //             onProgress: null,
-    //             onComplete: null
-    //         },
-    //         onRemove: function(itemEl, file, id, listEl, boxEl, newInputEl, inputEl) {
-    //             var filerKit = inputEl.prop("jFiler"),
-    //                 file_name = filerKit.files_list[id].name;
-    //             if (typeof(file_name) == "undefined") file_name = file.name;
-    //             $.post('/ajax.borraarchivo.php', { file: file_name });
-	// 			if((filerKit.files_list.length-1) == 0){
-	// 				confoto = false;
-	// 			}
-	// 			//if ($("#vip").length) {
-	// 			//	$("#vip").change();
-	// 			//}
-    //         }
-    //     };
-    // if (typeof(filerfiles) == 'undefined') filerfiles = null;
-    // $('#fotos').filer({
-    //     limit: 10,
-    //     maxSize:16,
-    //     showThumbs: true,
-    //     extensions: ["jpg", "jpeg", "png", "gif"],
-    //     templates: filer_default_opts.templates,
-    //     dragDrop: filer_default_opts.dragDrop,
-    //     uploadFile: filer_default_opts.uploadFile,
-    //     onRemove: filer_default_opts.onRemove,
-    //     files: filerfiles
-       
-    // });
-
-    // file upload IPS 
-// validar subida de fotos al preview    
-function validarFotos() {
-    var fotos = document.getElementById("fotos");
-    var imgRuta = fotos.value;
-    var extPermitidas = /(.PNG|.png|.jpg|.JPG|.JPEG|.jpeg)$/i;
-    var message = "";
-    console.log();
-    if ('files' in fotos) {
-        console.log(fotos.files);
-        if (fotos.files.length > fotos.dataset.cantidad) {
-                alert('Debes seleccionar ' + fotos.dataset.cantidad + ' imagenes o menos');
-        } else {
-            if (!extPermitidas.exec(imgRuta)) {
-                alert("Solo imagenes JPG o PNG");
-            } else {
-                if (fotos.files.length ) {
-                    previewFotos(fotos);
-                }   
-            }
-        }
-    }
-}
-// funcion que muestra el preview
-function previewFotos(fotos) {
-    document.getElementById('preview').innerHTML='';
-    var total = 0;
-    for (let i=0; i < fotos.files.length;i++) {
-        let visor = new FileReader();
-        var file = fotos.files[i];
-        total += fotos.files[i].size;
-        visor.onload = function(e) {
-            var tamano = fotos.files[i].size / 1024;
-            tamano = tamano.toFixed(1);
-            document.getElementById('preview').innerHTML +=
-
-                        '<li class="jFiler-item">' +
-                            '<div class="jFiler-item-container">' + 
-                                '<div class="jFiler-item-thumb">' + 
-                                    '<img src="' + e.target.result +'" >' + 
-                                '</div>' + 
-                                '<div class="jFiler-item-assets jFiler-row">' + 
-                                    '<ul class="list-inline pull-left">' + 
-                                        '<li>' + tamano + 'kB</li>' + 
-                                    '</ul>' +                                 
-                                    '<ul class="list-inline pull-right">' + 
-                                        '<li><a href="javascript:;" class="text-muted" onclick="borrarPreview('+i+')"><i class="fa fa-trash" aria-hidden="true"></i></a></li>' + 
-                                    '</ul>' + 
-                                '</div>' + 
-                            '</div>' + 
-                        '</li>';
-
-        };   
-        visor.readAsDataURL(fotos.files[i]);
-    } 
-    total = total / 1024;
-    total = total.toFixed(1);
-    document.getElementById('lblfotos').innerHTML='<i class="fa fa-upload" aria-hidden="true"></i> Tienes ' + fotos.files.length + ' foto(s) = ' + total + 'kB' ;
-}
-/* elmina la una foto del preview */
-function borrarPreview(foto) {
-    var fotos = document.getElementById("fotos").files; 
-    var fileBuffer = new DataTransfer();
-    for (let i = 0; i < fotos.length; i++) {
-        if (foto !== i) fileBuffer.items.add(fotos[i]);
-    }
-    document.getElementById("fotos").files = fileBuffer.files;
-    $("#preview_" + foto).remove(); 
-    previewFotos(document.getElementById("fotos"));
-}
-//Fin de IPS filer
 
     // valida campos en formulario
     (function() {
