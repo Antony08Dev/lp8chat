@@ -564,7 +564,7 @@ a.nav-link {
 
 @media (min-width: 576px) {
     #madmfotos .modal-dialog {
-        max-width: 64% !important;
+        max-width: 45% !important;
     }
 }
 
@@ -594,7 +594,7 @@ opacity: .8;
 }
 .miniaturas {
 	position: relative;
-	width:111px;
+	width: 100px;
 	height:115px;
 	max-height: 115px;
 	display:inline-block;
@@ -614,13 +614,19 @@ opacity: .8;
 .elimfoto {
 	position: absolute !important;
 	align-self: flex-end;
-	justify-content: flex-end !important;
-	width: 15px !important;
-	height: 15px !important;	
-	color:crimson;
+	justify-content: center !important;
+	width: 20px !important;
+	height: 20px !important;	
+	color: #efefef;
 	top:10px;
 	z-index: 999;
 	right: 0px;
+    border-radius: 50px;
+    background: crimson;
+}
+
+.miniaturas .btn-sm {
+    font-size: .7rem !important;
 }
 
 .miniaturas a {
@@ -632,10 +638,10 @@ opacity: .8;
 	height: 100px;
 }
 .miniaturas img {
-	width: auto;
-	height: 78px;
-	max-width: 100%;
-	max-height: 100px;
+	width: 85px;
+	height: 83px;
+	max-width: 85px;
+	max-height: 83px;
 	object-fit: cover;	
 }
 .miniaturas img.addmoreft {

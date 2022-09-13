@@ -239,59 +239,60 @@ function escribeChat(_this,estatus,e) {
 
 // funciones manejo de fotos miniaturas edicion en mi pulga
 
-//funcion para cambiar la posicion de las fotos desde mis publicaciones
+//funcion para cambiar la posicion de las fotos desde mis publicaciones, tambien usada para eliminar y reordenar, actualiza str fotos via ajax
 function cambiaPosicionfoto() {
+	// determina si elimina foto o no
 	var eliminafoto = ($(this).attr("class") == "elimfoto");
-	var fotoname = $(this).attr("data-nombre");
-	var aid = $(this).attr("data-aid");
-	var strfotos = $(this).attr("data-fotos");
+	// id del boton o de eliminafoto de la miniatura
 	var id = $(this).attr("id");
 	id = "#" + id;
+	// asigna texto a los botones
 	(!eliminafoto) ? $(".cambiafoto").val('Hacer Principal').removeClass("btn-success"): "";
 	(!eliminafoto) ? $(".cambiafoto").val("Hacer Principal").addClass("btn-info") : "";	
 	(!eliminafoto) ? $(id).val("Principal").removeClass("btn-info") : "";	
 	(!eliminafoto) ? $(id).val("Principal").addClass("btn-success") : "";	
-	//console.log(id);
-	var fotos = "";
-	//var id =$( radio ).attr("name");
-	var text = strfotos;
-	//console.log(text);
-	//var text = $("#arrFotos_" + id).val();
+	// nombre de la foto 
+	var fotoname = $(this).attr("data-nombre");
+	// articulo id 
+	var aid = $(this).attr("data-aid");
+	// string de las fotos
+	//var strfotos = $(this).attr("data-fotos");
+	var strfotos = $("#admfotostrfotos").val();
+	//arreglo para manejo de posicion de la foto
 	var arrFotos = strfotos.split(",");
-	//var fotoname = $( radio ).attr("rel");
 	// saca la posicion del que sera principal
 	var pos = arrFotos.indexOf(fotoname);
-	//console.log(fotoname);
-	//console.log(pos);
 	// saca la primera foto
 	var primeraFoto = arrFotos[pos];
-	//console.log(primeraFoto);
-	// reorganiza arreglo strfotos
-	console.log(arrFotos);
+	var cantFotos = 0;
+	// reorganiza arreglo arrFotos
 	arrFotos.splice( pos,1 );
-	console.log(arrFotos);
+	// si es eliminar foto
 	if (eliminafoto) {
 		alertify.confirm('Eliminacion de foto','Esta seguro de eliminar?',function() {
 			fotos = "ART_FOTOS_"+arrFotos.join(',')+ "_"+ aid;
-			console.log(fotos);
 			$( id ).closest("div.miniaturas").hide( "slow" );
-			console.log('borro');
-			//if (ajaxccampo( fotos )) {
-				//	 $("#arrFotos_" + id).val(arrFotos);
-				//	 return false;
-				//}
-			}, function() {
-				alertify.error('Accion cancelada');
-			});		
+			cantFotos = arrFotos.length;
+			if (ajaxccampo( fotos )) {
+				$("#admfotostrfotos").val(arrFotos.join(','));
+				$("#admfotocantfotos").val(cantFotos);
+				$("#admfotocantfotos").val(cantFotos);
+				// actualiza labels y valores del formulario admfotos
+				document.getElementById('lblfotossubidas').innerHTML = cantFotos;
+				if ($("#admfotorestafotos").val() == 0) $("#extrafotos, #enviaradmfotos").hide();
+				else $("#extrafotos, #enviaradmfotos").show();			
+			}
+		}, function() {
+			alertify.error('Accion cancelada');
+		});		
 	} else {
 		// reorganiza arreglo
 		(!eliminafoto) ? arrFotos.unshift( primeraFoto ) : "";
 		fotos = "ART_FOTOS_"+arrFotos.join(',')+ "_"+ aid;
-		console.log(fotos);
 		// oculta la foto seleccionada
 		var pic = $( id ).closest("div.miniaturas").clone().hide();
 		var contain_fotos = $( id ).closest("div.fotos");
-	
+		// actualiza el campo
 		if(ajaxccampo(fotos)) {
 			$( id ).closest("div.miniaturas").hide( "slow" );
 			contain_fotos.find(".miniaturas").first().before( pic );
@@ -302,6 +303,7 @@ function cambiaPosicionfoto() {
 			return false;	
 		} 	
 	}
+	
 }
 /* funcion procesa ciertos cambios */
 function ajaxccampo(valor) {
@@ -327,15 +329,6 @@ function ajaxccampo(valor) {
 
 // inicio documento
 $(document).ready(function() {
-
-
-
-	
-
-
-
-
-
 
 	/* publicaciones en listados */
 	/* debe hacer login para favoritos */
@@ -433,7 +426,7 @@ $(document).ready(function() {
 			}
 		}
 	});
-	// mi pulga manejo de fotos
+	// mi pulga manejo de fotos, click en boton y eliminar fotos en admfotos
 	$(document).on('click', '.cambiafoto, .elimfoto', cambiaPosicionfoto);
 	/* OPCIONES DE KLK ***************************************/
 	// actualiza que se leyo los nuevos
@@ -474,7 +467,6 @@ $(document).ready(function() {
             url: "/klkmessenger", 
             data: $("#frmklkmessenger").serialize(),
             success: function(data) {
-				console.log(data);
                 alertify.alert("La Pulga Virtual","Mensaje enviado, ver conversaciones en <a href='/klk'>KLK Messenger</a>");
                 document.getElementById("frmklkmessenger").reset();
                 $("#bloqueklk").hide("slow");
@@ -784,49 +776,69 @@ $(document).ready(function() {
 			$("#manclarpub").modal("show");
 			$("#lblCategorias").text($("#lblCat-" + elIdfn.id).text());
 		}		
-	});	
-	
-	$(document).on("click", "#agrega", function(){
-		$("#agregafoto").click();
 	});
-
+    //Hacer click en el span acciona el input
+    $(document).on("click", "#agrega", function(){
+		$("#agregafoto").click();
+	});	
+	// admfotos cerrar
+	$("#madmfotos .close").click(function(e) {
+		location.reload();
+	});
 	/* resaltar, administrar fotos y vip publicacion en mi pulga */
 	$("a.admfotos").click(function(e) {
 		e.preventDefault();
 		$("#tituloadmfotos").text("Administrar fotos de: " + elIdfn.articulo);
+		// valores usados en el formulario moadmfotos para posteo y actualizacion
+		$("#admfotoarticulo_id").val(elIdfn.id);
+		// campos del formulario modal admfotos total, cantidad, resta, strfotos 
+		$("#admfotototalfotos").val($(this).attr("data-totalfotos"));
+		$("#admfotocantfotos").val($(this).attr("data-cantfotos"));
+		$("#admfotorestafotos").val($(this).attr("data-restafotos"));
+		$("#admfotostrfotos").val($(this).attr("data-fotos"));
+		// cantidads de fotos total en publicar y en mi pulga resta
+		$("#totalfotos").text($(this).attr("data-restafotos"));
+		// string con las fotos subidas y arreglo de fotos para crear miniaturas
 		var fotos = $(this).attr("data-fotos");
-		var foto = "";
+		var arrFotos = fotos.split(",");
+		// cantidad total permitida por plan
+		var totalfotos = $(this).attr("data-totalfotos");
+		// cantidad subidas
+		var cantfotos = $(this).attr("data-cantfotos");
+		// fotos que restan por subir usada para apagar contenedores
+		var restafotos = $(this).attr("data-restafotos");
+		// actualiza atributo data-cantidad en campo fotos determinar maximas agregar
+		$("#fotos").attr("data-cantidad",$("#totalfotos").text());
+		// apaga o prende contenedor extra fotos y el boton
+		if (restafotos == 0) $("#extrafotos, #enviaradmfotos").hide();
+		else $("#extrafotos, #enviaradmfotos").show();
 		var aid = elIdfn.id;
 		if (fotos.length <= 0) return false ;
-		var arrFotos = fotos.split(",");
+		// actualiza labals en modal con las cantidades
+		document.getElementById('lblfotossubidas').innerHTML = cantfotos;
+		document.getElementById('lbltotalfotos').innerHTML = totalfotos;
 		document.getElementById('admfotos').innerHTML = '';
 		$.each(arrFotos, function(k,v) {
 			var texto = (k==0) ? "Principal" : "Hacer Principal"; 
 			var color = (k==0) ? "btn-success" : "btn-info"; 			
 			var elimfoto = "elimfoto" + aid + "_" + (k+1);
 			var fotoid = "foto" + aid + "_" + (k+1);
-			var urlfoto = "/f/" + v;
+			var urlfoto = "http://192.168.1.109:8090/f/" + v;
 			document.getElementById('admfotos').innerHTML += 
 
 				'<div class="miniaturas">' +
-					'<a href="javascript:;" title="Elimina esta foto" class="elimfoto" data-fotos="'+fotos+'"  data-nombre="'+ v +'" data-aid="'+aid+'" rel="' + v +'" name="' + aid + '"  id="' + elimfoto +'"><i class="fa fa-trash-o"></i>'+
+					'<a href="javascript:;" title="Elimina esta foto" class="elimfoto" data-nombre="'+ v +'" data-aid="'+aid+'" rel="' + v +'" name="' + aid + '"  id="' + elimfoto +'"><i class="fas fa-trash fa-fw"></i>'+
 					'</a>' + 
 
 						'<img src=' + urlfoto + ' />' +
 
-					'<input type="button" data-fotos="'+fotos+'"  data-nombre="'+ v +'" data-aid="'+aid+'" rel="' + v + '" value="' + texto +'" class="' + color + ' cambiafoto btn btn-sm m-auto " name="' + aid + '"  id="' + fotoid + '" />' +
+					'<input type="button"  data-nombre="'+ v +'" data-aid="'+aid+'" rel="' + v + '" value="' + texto +'" class="' + color + ' cambiafoto btn btn-sm m-auto " name="' + aid + '"  id="' + fotoid + '" />' +
 				'</div>';
 
 		});
-		document.getElementById('admfotos').innerHTML +=  
-		'<div class="agregar miniaturas">' + 
-		'<span id="agrega"><i class="add-new-photo fa fa-plus"></i></span>' +
-		'<input type="file" id="agregafoto" value="agregar" class="btn"/>' +
-	'</div>';
+
 		$("#madmfotos").modal("show");
 	});
-	//Hacer click en el span acciona el input
-
 	/* resaltar y vip publicacion en mi pulga */
 	$("a.resaltarpub").click(function(e) {
 		e.preventDefault();

@@ -19,7 +19,7 @@
 <meta name="keywords" content="bienes raices, hogar, tiendas virtuales, vehiculos, celulares, ropa, musica, computadoras, electronicos, inmobiliarias, dealers de vehiculos" />
 <meta name="language" content="Spanish"/>
 <meta property="og:title" content="Mis Publicaciones " />
-<meta property="og:url" content="https://yomovil10:8090/mipulga" />
+<meta property="og:url" content="https://192.168.1.109:8090/mipulga" />
 <meta property="og:description" content="El lugar de compras y ventas mas popular y completo de Republica Dominicana" />
 <meta property="og:type" content="website" />
 <meta property="og:image" content="https://www.lapulga.com.do/i/caricatura.png" />
@@ -123,9 +123,12 @@ var usulogueado='1';
                     <li class="nav-item" id="klk_noti"><a class="nav-link text-danger" href="/klk" data-toggle="tooltip" data-placement="top" title="Notificacion KLK Messenger" >KLK</a></li>
 
                     
+                        <li class="nav-item"><a class="nav-link text-danger" href="/favoritas" data-toggle="tooltip" data-placement="top" title="Publicaciones Favoritas" ><i class="fas fa-heart fa-lg fa-fw"></i></a></li>
+
+                    
                     <li class="nav-item dropdown">
 
-                        <a class="nav-link dropdown-toggle ml-6" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Hola Joel Pereyra<i class="far fa-user-circle" style="margin-left: 7px;"></i></a>
+                        <a class="nav-link dropdown-toggle ml-6" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Hola Ricardo Martinez<i class="far fa-user-circle" style="margin-left: 7px;"></i></a>
 
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
 
@@ -233,10 +236,28 @@ var usulogueado='1';
                         <ul class="flex categories-list list-unstyled">
 
                             
-    <li class="side-bar-item"><a href="/mipulga/jeepetas-y-camionetas" ><i class="fas fa-car fa-fw fa-lg"></i>Jeepetas y Camionetas (1)</a></li>
+    <li class="side-bar-item"><a href="/mipulga/aves" ><i class="fas fa-cat fa-fw fa-lg"></i>Aves  (2)</a></li>
 
 
-    <li class="side-bar-item"><a href="/mipulga/programas-softwares" ><i class="fas fa-laptop fa-fw fa-lg"></i>Programas - Softwares (1)</a></li>
+    <li class="side-bar-item"><a href="/mipulga/caninos" ><i class="fas fa-cat fa-fw fa-lg"></i>Caninos (1)</a></li>
+
+
+    <li class="side-bar-item"><a href="/mipulga/equinos" ><i class="fas fa-cat fa-fw fa-lg"></i>Equinos (1)</a></li>
+
+
+    <li class="side-bar-item"><a href="/mipulga/felinos" ><i class="fas fa-cat fa-fw fa-lg"></i>Felinos (10)</a></li>
+
+
+    <li class="side-bar-item"><a href="/mipulga/ninos-y-bebes" ><i class="fas fa-shopping-bag fa-fw fa-lg"></i>Niños y Bebes (1)</a></li>
+
+
+    <li class="side-bar-item"><a href="/mipulga/seguridad" ><i class="fas fa-paperclip fa-fw fa-lg"></i>Seguridad (1)</a></li>
+
+
+    <li class="side-bar-item"><a href="/mipulga/seguridad-personal" ><i class="fas fa-user-shield fa-fw fa-lg"></i>Seguridad Personal (2)</a></li>
+
+
+    <li class="side-bar-item"><a href="/mipulga/vacunos" ><i class="fas fa-cat fa-fw fa-lg"></i>Vacunos (1)</a></li>
 
 
                         </ul>
@@ -266,41 +287,42 @@ var usulogueado='1';
 
 </style>
 <link rel="stylesheet" href="/css/filer.css" >
+<link rel="stylesheet" type="text/css" href="/css/lpfrmv8.css" >
 <h2 class="cards-header" >
     Mis Publicaciones  
-         (2)     | <a href="javascript:;" class="descGlobal">Aplica Descuento Global</a> | 
+         (20)     | <a href="javascript:;" class="descGlobal">Aplica Descuento Global</a> | 
        <a href="javascript:;" class="qdescGlobal">Retirar Descuentos</a>
     </h2>
 
 <div>
 
     
-    <div class="card card-mpa mb-3  " style="max-width: 100%;" id="pub7094834">
+    <div class="card card-mpa mb-3  " style="max-width: 100%;" id="pub7097885">
         <div class="row no-gutters">
             <div class="col-md-3 ">
                 <div class=""></div>
-                <img src="/cache/180/7094834-2.jpg" alt="walpaper hd" class="card-img">
+                <img src="/cache/180/7097885-C3.jpg" alt="lindo gatico" class="card-img">
 
             </div>
             <div class="col-md-5">
                 <div class="card-body" >
-                    <h5 class="card-title mb-2">walpaper hd <span id="titpub-7094834" class="text-success"></span></h5>
-                    <p class="card-text"><b>RD$500 <s class="text-muted text-small"></s> <span class='text-danger'></span> </b></p>
+                    <h5 class="card-title mb-2">lindo gatico <span id="titpub-7097885" class="text-success"></span></h5>
+                    <p class="card-text"><b>RD$102 <s class="text-muted text-small"></s> <span class='text-danger'></span> </b></p>
                     <p class="card-text">
                         <small class="text-muted">
 
                             <ul>                                         
                                                 
-                                <li><b>ID </b> 7094834, <b class="text-success">Publicaci&oacute;n Renovada <i class="fas fa-info-circle infprenovada" style="cursor: pointer"></i> |  <a href="/publicacion_7094834.html" target="_blanc">Vista Previa</a>  </b> </li>
-                                <li><b>Visitas actuales</b> (0), <b>acumuladas</b> (3) 
+                                <li><b>ID </b> 7097885, <b class="text-success"> <a href="/publicacion_7097885.html" target="_blanc">Vista Previa</a>  </b> </li>
+                                <li><b>Visitas actuales</b> (16), <b>acumuladas</b> (0) 
                                  <i class="fas fa-info-circle infvisitas" style="cursor: pointer"></i></li>
-                                <li><b>Publicado  	</b>  05-09-2022 02:45 PM, <b>Visitado </b> 05-09-22 02:47 PM</li>
+                                <li><b>Publicado  	</b>  07-09-2022 03:46 PM, <b>Visitado </b> 13-09-22 10:45 AM</li>
                                                                                                                                 
-                                    <li><b>Fotos publicadas </b>(5) | <b><a href="javascript:;" class="admfotos" data-fotos="7094834-2.jpg,7094834-5.jpg,7094834-4.jpg,7094834-3.jpg,7094834-1.jpg" id="7094834_3_walpaper hd_08-09-2022_LNA_AF">Administrar Fotos</a></b></li>
+                                    <li><b>Fotos publicadas </b>(3) | <b><a href="javascript:;" class="admfotos" data-totalfotos="5" data-cantfotos="3" data-restafotos="2" data-fotos="7097885-C3.jpg,7097885-C2.jpg,7097885-C1.jpg" id="7097885_36_lindo gatico_10-09-2022_LNA_AF">Administrar Fotos</a></b></li>
                                                                 
-                                                                        <li><b><a href="/publicacion/7094834">Agrega video</a></b> </li>							                                    
-                                                                        <li><b><a href="javascript:;" class="mpaedicionrapida">Edici&oacute;n R&aacute;pida</a></b> | <b><a href="/publicacion/7094834">Edici&oacute;n Completa</a></b></li>
-                                    <li id="lblCat-7094834"><b>Categoría</b> Computadoras/Programas - Softwares 
+                                                                        <li><b><a href="/publicacion/7097885">Agrega video</a></b> </li>							                                    
+                                                                        <li><b><a href="javascript:;" class="mpaedicionrapida">Edici&oacute;n R&aacute;pida</a></b> | <b><a href="/publicacion/7097885">Edici&oacute;n Completa</a></b></li>
+                                    <li id="lblCat-7097885"><b>Categoría</b> Animales/Felinos 
                                                                             </li>							
                                  
 
@@ -323,22 +345,22 @@ var usulogueado='1';
 
                                      
                                         
-                                        <a class="dropdown-item eliminarpub" href="javascript:;" data-msgeliminar="N" id="7094834_3_walpaper hd_08-09-2022_LNA_RU"><i class="fas fa-trash-alt fa-fw"></i> Eliminar Publicaci&oacute;n</a>
+                                        <a class="dropdown-item eliminarpub" href="javascript:;" data-msgeliminar="N" id="7097885_36_lindo gatico_10-09-2022_LNA_RU"><i class="fas fa-trash-alt fa-fw"></i> Eliminar Publicaci&oacute;n</a>
 
                                          
     
-                                            <a class="dropdown-item noprevent" href="/publicacion/7094834"><i class="fas fa-pencil-alt fa-fw"></i> Modificar</a>
+                                            <a class="dropdown-item noprevent" href="/publicacion/7097885"><i class="fas fa-pencil-alt fa-fw"></i> Modificar</a>
 
                                                 
 
-                                            <a class="dropdown-item resaltarpub" href="javascript:;" id="7094834_3_walpaper hd_08-09-2022_LNA_VP" data-categoria="1" data-fotos="SI"><i class="fas fa-home fa-fw "></i> Poner en VIP</a>
+                                            <a class="dropdown-item resaltarpub" href="javascript:;" id="7097885_36_lindo gatico_10-09-2022_LNA_VP" data-categoria="11" data-fotos="SI"><i class="fas fa-home fa-fw "></i> Poner en VIP</a>
                                             
-                                            <a class="dropdown-item adesc" href="javascript:;" id="7094834_3_walpaper hd_08-09-2022_LNA_500.00"><i class="fas fa-tags fa-fw"></i> Aplica Descuento</a>
+                                            <a class="dropdown-item adesc" href="javascript:;" id="7097885_36_lindo gatico_10-09-2022_LNA_102.00"><i class="fas fa-tags fa-fw"></i> Aplica Descuento</a>
 
                                             <a class="dropdown-item pausarp" href="javascript:;" data-toggle="tooltip" data-placement="top" 
-                                        title="" id="7094834_3_walpaper hd_08-09-2022_LNA_PP"><i class="fas fa-pause fa-fw"></i> Pausar</a>
+                                        title="" id="7097885_36_lindo gatico_10-09-2022_LNA_PP"><i class="fas fa-pause fa-fw"></i> Pausar</a>
 
-                                            <a class="dropdown-item anclarpub" href="javascript:;" id="7094834_3_walpaper hd_08-09-2022_LNA_AC"><i class="fas fa-anchor fa-fw "></i> Anclar en Computadoras</a> 
+                                            <a class="dropdown-item anclarpub" href="javascript:;" id="7097885_36_lindo gatico_10-09-2022_LNA_AC"><i class="fas fa-anchor fa-fw "></i> Anclar en Animales</a> 
 
 
                                          
@@ -352,13 +374,13 @@ var usulogueado='1';
                             
                             <div class="btn-group ">
 
-                                <a class="btn btn-sm btn-info mpars" href="javascript:;" role="button" id="7094834_3_walpaper hd_08-09-2022_LNA_RN"  ><i class="fas fa-recycle fa-fw"></i> Renovar</a>  
+                                <a class="btn btn-sm btn-info mpars" href="javascript:;" role="button" id="7097885_36_lindo gatico_10-09-2022_LNA_RN"  ><i class="fas fa-recycle fa-fw"></i> Renovar</a>  
                                 
                             </div>
 
                             <div class="btn-group ">
 
-                                <a class="btn btn-sm btn-warning resaltarpub" href="javascript:;" role="button" data-fotos="SI" id="7094834_3_walpaper hd_08-09-2022_LNA_RE" data-categoria="1" data-vip="NO"><i class="fas fa-paint-brush fa-fw"></i> Resaltar</a>  
+                                <a class="btn btn-sm btn-warning resaltarpub" href="javascript:;" role="button" data-fotos="SI" id="7097885_36_lindo gatico_10-09-2022_LNA_RE" data-categoria="11" data-vip="NO"><i class="fas fa-paint-brush fa-fw"></i> Resaltar</a>  
 
                             </div>
 
@@ -390,33 +412,243 @@ var usulogueado='1';
     </div>
 
 
-    <div class="card card-mpa mb-3  " style="max-width: 100%;" id="pub6988130">
+    <div class="card card-mpa mb-3  border border-warning rounded-lg" style="max-width: 100%;" id="pub7097881">
         <div class="row no-gutters">
             <div class="col-md-3 ">
-                <div class=""></div>
-                <img src="/cache/180/6988130-1.jpg" alt="Nissan Murano 2011 LA MAS NUEVA" class="card-img">
+                <div class="card-tagv tag-V"></div>
+                <img src="/cache/180/7097881-U1.jpg" alt="Arma de asalto ICR-1" class="card-img">
 
             </div>
             <div class="col-md-5">
                 <div class="card-body" >
-                    <h5 class="card-title mb-2">Nissan Murano 2011 LA MAS<br>NUEVA <span id="titpub-6988130" class="text-success"></span></h5>
-                    <p class="card-text"><b>RD$455,000 <s class="text-muted text-small"></s> <span class='text-danger'></span> </b></p>
+                    <h5 class="card-title mb-2">Arma de asalto ICR-1 <span id="titpub-7097881" class="text-success"></span></h5>
+                    <p class="card-text"><b>US$10,000 <s class="text-muted text-small"></s> <span class='text-danger'></span> </b></p>
                     <p class="card-text">
                         <small class="text-muted">
 
                             <ul>                                         
                                                 
-                                <li><b>ID </b> 6988130, <b class="text-success"> <a href="/publicacion_6988130.html" target="_blanc">Vista Previa</a>  </b> </li>
-                                <li><b>Visitas actuales</b> (756), <b>acumuladas</b> (0) 
+                                <li><b>ID </b> 7097881, <b class="text-success"> <a href="/publicacion_7097881.html" target="_blanc">Vista Previa</a>  </b> </li>
+                                <li><b>Visitas actuales</b> (0), <b>acumuladas</b> (5) 
                                  <i class="fas fa-info-circle infvisitas" style="cursor: pointer"></i></li>
-                                <li><b>Publicado  	</b>  19-08-2021 10:48 AM, <b>Visitado </b> 12-08-22 01:47 PM</li>
+                                <li><b>Publicado  	</b>  06-09-2022 10:21 AM, <b>Visitado </b> 12-09-22 09:42 AM</li>
+                                 
+                                    <li> <span class="bg-warning"><b>Resaltado hasta</b> 11-09-22 10:21 AM</span></li>
                                                                                                                                 
-                                    <li><b>Fotos publicadas </b>(5) | <b><a href="javascript:;" class="admfotos" data-fotos="6988130-1.jpg,6988130-2.jpg,6988130-3.jpg,6988130-4.jpg,6988130-5.jpg" id="6988130_3_Nissan Murano 2011 LA MAS NUEVA_22-08-2021_LNA_AF">Administrar Fotos</a></b></li>
+                                    <li><b>Fotos publicadas </b>(3) | <b><a href="javascript:;" class="admfotos" data-totalfotos="5" data-cantfotos="3" data-restafotos="2" data-fotos="7097881-U1.jpg,7097881-1.jpg,7097881-U3.jpg" id="7097881_36_Arma de asalto ICR-1_09-09-2022_10_AF">Administrar Fotos</a></b></li>
                                                                 
-                                                                        <li><b><a href="/publicacion/6988130">Agrega video</a></b> </li>							                                    
-                                                                        <li><b><a href="javascript:;" class="mpaedicionrapida">Edici&oacute;n R&aacute;pida</a></b> | <b><a href="/publicacion/6988130">Edici&oacute;n Completa</a></b></li>
-                                    <li id="lblCat-6988130"><b>Categoría</b> Vehículos/Jeepetas y Camionetas 
-                                                                                <b> | <a href="/complementos/6988130">Agrega Filtros</a></b>
+                                                                        <li><b><a href="/publicacion/7097881">Agrega video</a></b> </li>							                                    
+                                                                        <li><b><a href="javascript:;" class="mpaedicionrapida">Edici&oacute;n R&aacute;pida</a></b> | <b><a href="/publicacion/7097881">Edici&oacute;n Completa</a></b></li>
+                                    <li id="lblCat-7097881"><b>Categoría</b> Seguridad Personal/Seguridad Personal 
+                                                                            </li>							
+                                 
+                                    <li><b>Anclada,</b> 0 clicks de <span id="limite-7097881">10</span>, <a class="anclarpub" href="javascript:;" id="7097881_36_Arma de asalto ICR-1_09-09-2022_10_AC"><b>Agrega m&aacute;s</b></a> </li>							
+                                 
+
+                            </ul>
+                        
+                        </small>
+
+                    </p>
+
+                    <p>
+
+                        <div class="mpaopc">
+                        
+ 
+
+                            <div class="btn-group dropdown ">
+                                <button type="button" class="btn btn-sm btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                     <i class="fas fa-cog fa-fw"></i> Opciones                                 </button>
+                                <div class="dropdown-menu dropdown-menu-right">
+
+                                     
+                                        
+                                        <a class="dropdown-item eliminarpub" href="javascript:;" data-msgeliminar="S" id="7097881_36_Arma de asalto ICR-1_09-09-2022_10_RU"><i class="fas fa-trash-alt fa-fw"></i> Eliminar Publicaci&oacute;n</a>
+
+                                         
+
+
+
+                                    
+                                </div>
+
+                            </div>
+                                                        
+
+                        </div>                            
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+
+                <div class="card-body">
+
+                    <h5 class="card-title mb-2">Mensajes recibidos v&iacute;a <i class="fa fa-whatsapp fa-lg fa-fw"></i> (0)</h5>
+
+                    <p class="card-text ">
+                        <small class="text-muted">
+                            <ul class="overflow-auto" style="height:150px;">
+                                                        <p class="card-text"><span class="text-muted">No hay registros</span></p>
+                                                        </ul>
+                        </small>
+                    </p>
+                    
+                </div>
+                
+            </div>            
+
+        </div>
+    </div>
+
+
+    <div class="card card-mpa mb-3  border border-warning rounded-lg" style="max-width: 100%;" id="pub7097883">
+        <div class="row no-gutters">
+            <div class="col-md-3 ">
+                <div class=""></div>
+                <img src="/cache/180/7097883-3.jpg" alt="arma de fuego glock cal2" class="card-img">
+
+            </div>
+            <div class="col-md-5">
+                <div class="card-body" >
+                    <h5 class="card-title mb-2">arma de fuego glock cal2 <span id="titpub-7097883" class="text-success"></span></h5>
+                    <p class="card-text"><b>RD$7,000 <s class="text-muted text-small"></s> <span class='text-danger'></span> </b></p>
+                    <p class="card-text">
+                        <small class="text-muted">
+
+                            <ul>                                         
+                                                
+                                <li><b>ID </b> 7097883, <b class="text-success"> <a href="/publicacion_7097883.html" target="_blanc">Vista Previa</a>  </b> </li>
+                                <li><b>Visitas actuales</b> (4), <b>acumuladas</b> (0) 
+                                 <i class="fas fa-info-circle infvisitas" style="cursor: pointer"></i></li>
+                                <li><b>Publicado  	</b>  06-09-2022 10:21 AM, <b>Visitado </b> 13-09-22 10:22 AM</li>
+                                 
+                                    <li> <span class="bg-warning"><b>Resaltado hasta</b> 11-09-22 10:21 AM</span></li>
+                                                                                                                                
+                                    <li><b>Fotos publicadas </b>(5) | <b><a href="javascript:;" class="admfotos" data-totalfotos="5" data-cantfotos="5" data-restafotos="0" data-fotos="7097883-3.jpg,7097883-2.jpg,7097883-5.jpg,7097883-4.jpg,7097883-1.jpg" id="7097883_36_arma de fuego glock cal2_09-09-2022_40_AF">Administrar Fotos</a></b></li>
+                                                                
+                                                                        <li><b><a href="/publicacion/7097883">Agrega video</a></b> </li>							                                    
+                                                                        <li><b><a href="javascript:;" class="mpaedicionrapida">Edici&oacute;n R&aacute;pida</a></b> | <b><a href="/publicacion/7097883">Edici&oacute;n Completa</a></b></li>
+                                    <li id="lblCat-7097883"><b>Categoría</b> Seguridad Personal/Seguridad Personal 
+                                                                            </li>							
+                                 
+                                    <li><b>Anclada,</b> 0 clicks de <span id="limite-7097883">40</span>, <a class="anclarpub" href="javascript:;" id="7097883_36_arma de fuego glock cal2_09-09-2022_40_AC"><b>Agrega m&aacute;s</b></a> </li>							
+                                 
+
+                            </ul>
+                        
+                        </small>
+
+                    </p>
+
+                    <p>
+
+                        <div class="mpaopc">
+                        
+ 
+
+                            <div class="btn-group dropdown ">
+                                <button type="button" class="btn btn-sm btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                     <i class="fas fa-cog fa-fw"></i> Opciones                                 </button>
+                                <div class="dropdown-menu dropdown-menu-right">
+
+                                     
+                                        
+                                        <a class="dropdown-item eliminarpub" href="javascript:;" data-msgeliminar="S" id="7097883_36_arma de fuego glock cal2_09-09-2022_40_RU"><i class="fas fa-trash-alt fa-fw"></i> Eliminar Publicaci&oacute;n</a>
+
+                                         
+    
+                                            <a class="dropdown-item noprevent" href="/publicacion/7097883"><i class="fas fa-pencil-alt fa-fw"></i> Modificar</a>
+
+                                                
+
+                                            <a class="dropdown-item resaltarpub" href="javascript:;" id="7097883_36_arma de fuego glock cal2_09-09-2022_40_VP" data-categoria="5" data-fotos="SI"><i class="fas fa-home fa-fw "></i> Poner en VIP</a>
+                                            
+                                            <a class="dropdown-item adesc" href="javascript:;" id="7097883_36_arma de fuego glock cal2_09-09-2022_40_7000.00"><i class="fas fa-tags fa-fw"></i> Aplica Descuento</a>
+
+                                            <a class="dropdown-item pausarp" href="javascript:;" data-toggle="tooltip" data-placement="top" 
+                                        title="" id="7097883_36_arma de fuego glock cal2_09-09-2022_40_PP"><i class="fas fa-pause fa-fw"></i> Pausar</a>
+
+                                            <a class="dropdown-item anclarpub" href="javascript:;" id="7097883_36_arma de fuego glock cal2_09-09-2022_40_AC"><i class="fas fa-anchor fa-fw "></i> Anclar en Seguridad Personal</a> 
+
+
+                                         
+
+
+
+                                    
+                                </div>
+
+                            </div>
+                            
+                            <div class="btn-group ">
+
+                                <a class="btn btn-sm btn-info mpars" href="javascript:;" role="button" id="7097883_36_arma de fuego glock cal2_09-09-2022_40_RN"  ><i class="fas fa-recycle fa-fw"></i> Renovar</a>  
+                                
+                            </div>
+
+                            <div class="btn-group ">
+
+                                <a class="btn btn-sm btn-warning resaltarpub" href="javascript:;" role="button" data-fotos="SI" id="7097883_36_arma de fuego glock cal2_09-09-2022_40_RE" data-categoria="5" data-vip="NO"><i class="fas fa-paint-brush fa-fw"></i> Resaltar</a>  
+
+                            </div>
+
+                                                        
+
+                        </div>                            
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+
+                <div class="card-body">
+
+                    <h5 class="card-title mb-2">Mensajes recibidos v&iacute;a <i class="fa fa-whatsapp fa-lg fa-fw"></i> (0)</h5>
+
+                    <p class="card-text ">
+                        <small class="text-muted">
+                            <ul class="overflow-auto" style="height:150px;">
+                                                        <p class="card-text"><span class="text-muted">No hay registros</span></p>
+                                                        </ul>
+                        </small>
+                    </p>
+                    
+                </div>
+                
+            </div>            
+
+        </div>
+    </div>
+
+
+    <div class="card card-mpa mb-3  border border-warning rounded-lg" style="max-width: 100%;" id="pub7097882">
+        <div class="row no-gutters">
+            <div class="col-md-3 ">
+                <div class=""></div>
+                <img src="/cache/180/7097882-1.jpg" alt="arma de fuego glock" class="card-img">
+
+            </div>
+            <div class="col-md-5">
+                <div class="card-body" >
+                    <h5 class="card-title mb-2">arma de fuego glock <span id="titpub-7097882" class="text-success"></span></h5>
+                    <p class="card-text"><b>US$5,000 <s class="text-muted text-small"></s> <span class='text-danger'></span> </b></p>
+                    <p class="card-text">
+                        <small class="text-muted">
+
+                            <ul>                                         
+                                                
+                                <li><b>ID </b> 7097882, <b class="text-success"> <a href="/publicacion_7097882.html" target="_blanc">Vista Previa</a>  </b> </li>
+                                <li><b>Visitas actuales</b> (3), <b>acumuladas</b> (0) 
+                                 <i class="fas fa-info-circle infvisitas" style="cursor: pointer"></i></li>
+                                <li><b>Publicado  	</b>  06-09-2022 10:20 AM, <b>Visitado </b> 13-09-22 10:25 AM</li>
+                                 
+                                    <li> <span class="bg-warning"><b>Resaltado hasta</b> 11-09-22 10:20 AM</span></li>
+                                                                                                                                
+                                    <li><b>Fotos publicadas </b>(5) | <b><a href="javascript:;" class="admfotos" data-totalfotos="5" data-cantfotos="5" data-restafotos="0" data-fotos="7097882-1.jpg,7097882-f1.jpg,7097882-z3.jpg,7097882-z2.jpg,7097882-z1.jpg" id="7097882_36_arma de fuego glock_09-09-2022_LNA_AF">Administrar Fotos</a></b></li>
+                                                                
+                                                                        <li><b><a href="/publicacion/7097882">Agrega video</a></b> </li>							                                    
+                                                                        <li><b><a href="javascript:;" class="mpaedicionrapida">Edici&oacute;n R&aacute;pida</a></b> | <b><a href="/publicacion/7097882">Edici&oacute;n Completa</a></b></li>
+                                    <li id="lblCat-7097882"><b>Categoría</b> Otros/Seguridad 
                                                                             </li>							
                                  
 
@@ -439,25 +671,22 @@ var usulogueado='1';
 
                                      
                                         
-                                        <a class="dropdown-item eliminarpub" href="javascript:;" data-msgeliminar="N" id="6988130_3_Nissan Murano 2011 LA MAS NUEVA_22-08-2021_LNA_RU"><i class="fas fa-trash-alt fa-fw"></i> Eliminar Publicaci&oacute;n</a>
+                                        <a class="dropdown-item eliminarpub" href="javascript:;" data-msgeliminar="S" id="7097882_36_arma de fuego glock_09-09-2022_LNA_RU"><i class="fas fa-trash-alt fa-fw"></i> Eliminar Publicaci&oacute;n</a>
 
                                          
     
-                                            <a class="dropdown-item noprevent" href="/publicacion/6988130"><i class="fas fa-pencil-alt fa-fw"></i> Modificar</a>
-
-                                            
-                                                <a class="dropdown-item noprevent" href="/complementos/6988130"><i class="fas fa-filter fa-fw"></i> Agrega Filtros</a>
+                                            <a class="dropdown-item noprevent" href="/publicacion/7097882"><i class="fas fa-pencil-alt fa-fw"></i> Modificar</a>
 
                                                 
 
-                                            <a class="dropdown-item resaltarpub" href="javascript:;" id="6988130_3_Nissan Murano 2011 LA MAS NUEVA_22-08-2021_LNA_VP" data-categoria="10" data-fotos="SI"><i class="fas fa-home fa-fw "></i> Poner en VIP</a>
+                                            <a class="dropdown-item resaltarpub" href="javascript:;" id="7097882_36_arma de fuego glock_09-09-2022_LNA_VP" data-categoria="7" data-fotos="SI"><i class="fas fa-home fa-fw "></i> Poner en VIP</a>
                                             
-                                            <a class="dropdown-item adesc" href="javascript:;" id="6988130_3_Nissan Murano 2011 LA MAS NUEVA_22-08-2021_LNA_455000.00"><i class="fas fa-tags fa-fw"></i> Aplica Descuento</a>
+                                            <a class="dropdown-item adesc" href="javascript:;" id="7097882_36_arma de fuego glock_09-09-2022_LNA_5000.00"><i class="fas fa-tags fa-fw"></i> Aplica Descuento</a>
 
                                             <a class="dropdown-item pausarp" href="javascript:;" data-toggle="tooltip" data-placement="top" 
-                                        title="" id="6988130_3_Nissan Murano 2011 LA MAS NUEVA_22-08-2021_LNA_PP"><i class="fas fa-pause fa-fw"></i> Pausar</a>
+                                        title="" id="7097882_36_arma de fuego glock_09-09-2022_LNA_PP"><i class="fas fa-pause fa-fw"></i> Pausar</a>
 
-                                            <a class="dropdown-item anclarpub" href="javascript:;" id="6988130_3_Nissan Murano 2011 LA MAS NUEVA_22-08-2021_LNA_AC"><i class="fas fa-anchor fa-fw "></i> Anclar en Vehículos</a> 
+                                            <a class="dropdown-item anclarpub" href="javascript:;" id="7097882_36_arma de fuego glock_09-09-2022_LNA_AC"><i class="fas fa-anchor fa-fw "></i> Anclar en Otros</a> 
 
 
                                          
@@ -471,13 +700,1861 @@ var usulogueado='1';
                             
                             <div class="btn-group ">
 
-                                <a class="btn btn-sm btn-info mpars" href="javascript:;" role="button" id="6988130_3_Nissan Murano 2011 LA MAS NUEVA_22-08-2021_LNA_RN"  ><i class="fas fa-recycle fa-fw"></i> Renovar</a>  
+                                <a class="btn btn-sm btn-info mpars" href="javascript:;" role="button" id="7097882_36_arma de fuego glock_09-09-2022_LNA_RN"  ><i class="fas fa-recycle fa-fw"></i> Renovar</a>  
                                 
                             </div>
 
                             <div class="btn-group ">
 
-                                <a class="btn btn-sm btn-warning resaltarpub" href="javascript:;" role="button" data-fotos="SI" id="6988130_3_Nissan Murano 2011 LA MAS NUEVA_22-08-2021_LNA_RE" data-categoria="10" data-vip="NO"><i class="fas fa-paint-brush fa-fw"></i> Resaltar</a>  
+                                <a class="btn btn-sm btn-warning resaltarpub" href="javascript:;" role="button" data-fotos="SI" id="7097882_36_arma de fuego glock_09-09-2022_LNA_RE" data-categoria="7" data-vip="NO"><i class="fas fa-paint-brush fa-fw"></i> Resaltar</a>  
+
+                            </div>
+
+                                                        
+
+                        </div>                            
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+
+                <div class="card-body">
+
+                    <h5 class="card-title mb-2">Mensajes recibidos v&iacute;a <i class="fa fa-whatsapp fa-lg fa-fw"></i> (0)</h5>
+
+                    <p class="card-text ">
+                        <small class="text-muted">
+                            <ul class="overflow-auto" style="height:150px;">
+                                                        <p class="card-text"><span class="text-muted">No hay registros</span></p>
+                                                        </ul>
+                        </small>
+                    </p>
+                    
+                </div>
+                
+            </div>            
+
+        </div>
+    </div>
+
+
+    <div class="card card-mpa mb-3  border border-warning rounded-lg" style="max-width: 100%;" id="pub7097443">
+        <div class="row no-gutters">
+            <div class="col-md-3 ">
+                <div class=""></div>
+                <img src="/cache/180/7097443-4.jpg" alt="culumpios" class="card-img">
+
+            </div>
+            <div class="col-md-5">
+                <div class="card-body" >
+                    <h5 class="card-title mb-2">culumpios <span id="titpub-7097443" class="text-success"></span></h5>
+                    <p class="card-text"><b>RD$332 <s class="text-muted text-small"></s> <span class='text-danger'></span> </b></p>
+                    <p class="card-text">
+                        <small class="text-muted">
+
+                            <ul>                                         
+                                                
+                                <li><b>ID </b> 7097443, <b class="text-success"> <a href="/publicacion_7097443.html" target="_blanc">Vista Previa</a>  </b> </li>
+                                <li><b>Visitas actuales</b> (12), <b>acumuladas</b> (0) 
+                                 <i class="fas fa-info-circle infvisitas" style="cursor: pointer"></i></li>
+                                <li><b>Publicado  	</b>  06-09-2022 10:20 AM, <b>Visitado </b> 08-09-22 11:18 AM</li>
+                                 
+                                    <li> <span class="bg-warning"><b>Resaltado hasta</b> 11-09-22 10:20 AM</span></li>
+                                                                                                                                
+                                    <li><b>Fotos publicadas </b>(4) | <b><a href="javascript:;" class="admfotos" data-totalfotos="5" data-cantfotos="4" data-restafotos="1" data-fotos="7097443-4.jpg,7097443-3.jpg,7097443-2.jpg,7097443-1.jpg" id="7097443_36_culumpios_09-09-2022_LNA_AF">Administrar Fotos</a></b></li>
+                                                                
+                                                                        <li><b><a href="/publicacion/7097443">Agrega video</a></b> </li>							                                    
+                                                                        <li><b><a href="javascript:;" class="mpaedicionrapida">Edici&oacute;n R&aacute;pida</a></b> | <b><a href="/publicacion/7097443">Edici&oacute;n Completa</a></b></li>
+                                    <li id="lblCat-7097443"><b>Categoría</b> Artículos Personales/Niños y Bebes 
+                                                                            </li>							
+                                 
+
+                            </ul>
+                        
+                        </small>
+
+                    </p>
+
+                    <p>
+
+                        <div class="mpaopc">
+                        
+ 
+
+                            <div class="btn-group dropdown ">
+                                <button type="button" class="btn btn-sm btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                     <i class="fas fa-cog fa-fw"></i> Opciones                                 </button>
+                                <div class="dropdown-menu dropdown-menu-right">
+
+                                     
+                                        
+                                        <a class="dropdown-item eliminarpub" href="javascript:;" data-msgeliminar="S" id="7097443_36_culumpios_09-09-2022_LNA_RU"><i class="fas fa-trash-alt fa-fw"></i> Eliminar Publicaci&oacute;n</a>
+
+                                         
+    
+                                            <a class="dropdown-item noprevent" href="/publicacion/7097443"><i class="fas fa-pencil-alt fa-fw"></i> Modificar</a>
+
+                                                
+
+                                            <a class="dropdown-item resaltarpub" href="javascript:;" id="7097443_36_culumpios_09-09-2022_LNA_VP" data-categoria="6" data-fotos="SI"><i class="fas fa-home fa-fw "></i> Poner en VIP</a>
+                                            
+                                            <a class="dropdown-item adesc" href="javascript:;" id="7097443_36_culumpios_09-09-2022_LNA_332.00"><i class="fas fa-tags fa-fw"></i> Aplica Descuento</a>
+
+                                            <a class="dropdown-item pausarp" href="javascript:;" data-toggle="tooltip" data-placement="top" 
+                                        title="" id="7097443_36_culumpios_09-09-2022_LNA_PP"><i class="fas fa-pause fa-fw"></i> Pausar</a>
+
+                                            <a class="dropdown-item anclarpub" href="javascript:;" id="7097443_36_culumpios_09-09-2022_LNA_AC"><i class="fas fa-anchor fa-fw "></i> Anclar en Artículos Personales</a> 
+
+
+                                         
+
+
+
+                                    
+                                </div>
+
+                            </div>
+                            
+                            <div class="btn-group ">
+
+                                <a class="btn btn-sm btn-info mpars" href="javascript:;" role="button" id="7097443_36_culumpios_09-09-2022_LNA_RN"  ><i class="fas fa-recycle fa-fw"></i> Renovar</a>  
+                                
+                            </div>
+
+                            <div class="btn-group ">
+
+                                <a class="btn btn-sm btn-warning resaltarpub" href="javascript:;" role="button" data-fotos="SI" id="7097443_36_culumpios_09-09-2022_LNA_RE" data-categoria="6" data-vip="NO"><i class="fas fa-paint-brush fa-fw"></i> Resaltar</a>  
+
+                            </div>
+
+                                                        
+
+                        </div>                            
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+
+                <div class="card-body">
+
+                    <h5 class="card-title mb-2">Mensajes recibidos v&iacute;a <i class="fa fa-whatsapp fa-lg fa-fw"></i> (0)</h5>
+
+                    <p class="card-text ">
+                        <small class="text-muted">
+                            <ul class="overflow-auto" style="height:150px;">
+                                                        <p class="card-text"><span class="text-muted">No hay registros</span></p>
+                                                        </ul>
+                        </small>
+                    </p>
+                    
+                </div>
+                
+            </div>            
+
+        </div>
+    </div>
+
+
+    <div class="card card-mpa mb-3  " style="max-width: 100%;" id="pub7097442">
+        <div class="row no-gutters">
+            <div class="col-md-3 ">
+                <div class=""></div>
+                <img src="/cache/180/7097442-3.jpg" alt="otro pajarito en La Vega" class="card-img">
+
+            </div>
+            <div class="col-md-5">
+                <div class="card-body" >
+                    <h5 class="card-title mb-2">otro pajarito en La Vega <span id="titpub-7097442" class="text-success"></span></h5>
+                    <p class="card-text"><b>RD$33 <s class="text-muted text-small"></s> <span class='text-danger'></span> </b></p>
+                    <p class="card-text">
+                        <small class="text-muted">
+
+                            <ul>                                         
+                                                
+                                <li><b>ID </b> 7097442, <b class="text-success">Publicaci&oacute;n Renovada <i class="fas fa-info-circle infprenovada" style="cursor: pointer"></i> |  <a href="/publicacion_7097442.html" target="_blanc">Vista Previa</a>  </b> </li>
+                                <li><b>Visitas actuales</b> (2), <b>acumuladas</b> (4) 
+                                 <i class="fas fa-info-circle infvisitas" style="cursor: pointer"></i></li>
+                                <li><b>Publicado  	</b>  06-09-2022 10:19 AM, <b>Visitado </b> 08-09-22 12:52 PM</li>
+                                                                                                                                
+                                    <li><b>Fotos publicadas </b>(3) | <b><a href="javascript:;" class="admfotos" data-totalfotos="5" data-cantfotos="3" data-restafotos="2" data-fotos="7097442-3.jpg,7097442-2.jpg,7097442-1.jpg" id="7097442_36_otro pajarito en La Vega_09-09-2022_10_AF">Administrar Fotos</a></b></li>
+                                                                
+                                                                        <li><b><a href="/publicacion/7097442">Agrega video</a></b> </li>							                                    
+                                                                        <li><b><a href="javascript:;" class="mpaedicionrapida">Edici&oacute;n R&aacute;pida</a></b> | <b><a href="/publicacion/7097442">Edici&oacute;n Completa</a></b></li>
+                                    <li id="lblCat-7097442"><b>Categoría</b> Animales/Aves  
+                                                                            </li>							
+                                 
+                                    <li><b>Anclada,</b> 0 clicks de <span id="limite-7097442">10</span>, <a class="anclarpub" href="javascript:;" id="7097442_36_otro pajarito en La Vega_09-09-2022_10_AC"><b>Agrega m&aacute;s</b></a> </li>							
+                                 
+
+                            </ul>
+                        
+                        </small>
+
+                    </p>
+
+                    <p>
+
+                        <div class="mpaopc">
+                        
+ 
+
+                            <div class="btn-group dropdown ">
+                                <button type="button" class="btn btn-sm btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                     <i class="fas fa-cog fa-fw"></i> Opciones                                 </button>
+                                <div class="dropdown-menu dropdown-menu-right">
+
+                                     
+                                        
+                                        <a class="dropdown-item eliminarpub" href="javascript:;" data-msgeliminar="S" id="7097442_36_otro pajarito en La Vega_09-09-2022_10_RU"><i class="fas fa-trash-alt fa-fw"></i> Eliminar Publicaci&oacute;n</a>
+
+                                         
+    
+                                            <a class="dropdown-item noprevent" href="/publicacion/7097442"><i class="fas fa-pencil-alt fa-fw"></i> Modificar</a>
+
+                                                
+
+                                            <a class="dropdown-item resaltarpub" href="javascript:;" id="7097442_36_otro pajarito en La Vega_09-09-2022_10_VP" data-categoria="11" data-fotos="SI"><i class="fas fa-home fa-fw "></i> Poner en VIP</a>
+                                            
+                                            <a class="dropdown-item adesc" href="javascript:;" id="7097442_36_otro pajarito en La Vega_09-09-2022_10_33.00"><i class="fas fa-tags fa-fw"></i> Aplica Descuento</a>
+
+                                            <a class="dropdown-item pausarp" href="javascript:;" data-toggle="tooltip" data-placement="top" 
+                                        title="" id="7097442_36_otro pajarito en La Vega_09-09-2022_10_PP"><i class="fas fa-pause fa-fw"></i> Pausar</a>
+
+                                            <a class="dropdown-item anclarpub" href="javascript:;" id="7097442_36_otro pajarito en La Vega_09-09-2022_10_AC"><i class="fas fa-anchor fa-fw "></i> Anclar en Animales</a> 
+
+
+                                         
+
+
+
+                                    
+                                </div>
+
+                            </div>
+                            
+                            <div class="btn-group ">
+
+                                <a class="btn btn-sm btn-info mpars" href="javascript:;" role="button" id="7097442_36_otro pajarito en La Vega_09-09-2022_10_RN"  ><i class="fas fa-recycle fa-fw"></i> Renovar</a>  
+                                
+                            </div>
+
+                            <div class="btn-group ">
+
+                                <a class="btn btn-sm btn-warning resaltarpub" href="javascript:;" role="button" data-fotos="SI" id="7097442_36_otro pajarito en La Vega_09-09-2022_10_RE" data-categoria="11" data-vip="NO"><i class="fas fa-paint-brush fa-fw"></i> Resaltar</a>  
+
+                            </div>
+
+                                                        
+
+                        </div>                            
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+
+                <div class="card-body">
+
+                    <h5 class="card-title mb-2">Mensajes recibidos v&iacute;a <i class="fa fa-whatsapp fa-lg fa-fw"></i> (0)</h5>
+
+                    <p class="card-text ">
+                        <small class="text-muted">
+                            <ul class="overflow-auto" style="height:150px;">
+                                                        <p class="card-text"><span class="text-muted">No hay registros</span></p>
+                                                        </ul>
+                        </small>
+                    </p>
+                    
+                </div>
+                
+            </div>            
+
+        </div>
+    </div>
+
+
+    <div class="card card-mpa mb-3  " style="max-width: 100%;" id="pub7094833">
+        <div class="row no-gutters">
+            <div class="col-md-3 ">
+                <div class=""></div>
+                <img src="/cache/180/7094833-6.jpg" alt="perrito con foto nueva" class="card-img">
+
+            </div>
+            <div class="col-md-5">
+                <div class="card-body" >
+                    <h5 class="card-title mb-2">perrito con foto nueva <span id="titpub-7094833" class="text-success"></span></h5>
+                    <p class="card-text"><b>RD$217 <s class="text-muted text-small"></s> <span class='text-danger'></span> </b></p>
+                    <p class="card-text">
+                        <small class="text-muted">
+
+                            <ul>                                         
+                                                
+                                <li><b>ID </b> 7094833, <b class="text-success"> <a href="/publicacion_7094833.html" target="_blanc">Vista Previa</a>  </b> </li>
+                                <li><b>Visitas actuales</b> (1), <b>acumuladas</b> (0) 
+                                 <i class="fas fa-info-circle infvisitas" style="cursor: pointer"></i></li>
+                                <li><b>Publicado  	</b>  24-08-2022 10:05 AM, <b>Visitado </b> 13-09-22 10:29 AM</li>
+                                                                                                                                
+                                    <li><b>Fotos publicadas </b>(5) | <b><a href="javascript:;" class="admfotos" data-totalfotos="5" data-cantfotos="5" data-restafotos="0" data-fotos="7094833-6.jpg,7094833-5.jpg,7094833-4.jpg,7094833-2.jpg,7094833-1.jpg" id="7094833_36_perrito con foto nueva_27-08-2022_10_AF">Administrar Fotos</a></b></li>
+                                                                
+                                                                        <li><b><a href="/publicacion/7094833">Agrega video</a></b> </li>							                                    
+                                                                        <li><b><a href="javascript:;" class="mpaedicionrapida">Edici&oacute;n R&aacute;pida</a></b> | <b><a href="/publicacion/7094833">Edici&oacute;n Completa</a></b></li>
+                                    <li id="lblCat-7094833"><b>Categoría</b> Animales/Caninos 
+                                                                            </li>							
+                                 
+                                    <li><b>Anclada,</b> 0 clicks de <span id="limite-7094833">10</span>, <a class="anclarpub" href="javascript:;" id="7094833_36_perrito con foto nueva_27-08-2022_10_AC"><b>Agrega m&aacute;s</b></a> </li>							
+                                 
+
+                            </ul>
+                        
+                        </small>
+
+                    </p>
+
+                    <p>
+
+                        <div class="mpaopc">
+                        
+ 
+
+                            <div class="btn-group dropdown ">
+                                <button type="button" class="btn btn-sm btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                     <i class="fas fa-cog fa-fw"></i> Opciones                                 </button>
+                                <div class="dropdown-menu dropdown-menu-right">
+
+                                     
+                                        
+                                        <a class="dropdown-item eliminarpub" href="javascript:;" data-msgeliminar="S" id="7094833_36_perrito con foto nueva_27-08-2022_10_RU"><i class="fas fa-trash-alt fa-fw"></i> Eliminar Publicaci&oacute;n</a>
+
+                                         
+    
+                                            <a class="dropdown-item noprevent" href="/publicacion/7094833"><i class="fas fa-pencil-alt fa-fw"></i> Modificar</a>
+
+                                                
+
+                                            <a class="dropdown-item resaltarpub" href="javascript:;" id="7094833_36_perrito con foto nueva_27-08-2022_10_VP" data-categoria="11" data-fotos="SI"><i class="fas fa-home fa-fw "></i> Poner en VIP</a>
+                                            
+                                            <a class="dropdown-item adesc" href="javascript:;" id="7094833_36_perrito con foto nueva_27-08-2022_10_217.00"><i class="fas fa-tags fa-fw"></i> Aplica Descuento</a>
+
+                                            <a class="dropdown-item pausarp" href="javascript:;" data-toggle="tooltip" data-placement="top" 
+                                        title="" id="7094833_36_perrito con foto nueva_27-08-2022_10_PP"><i class="fas fa-pause fa-fw"></i> Pausar</a>
+
+                                            <a class="dropdown-item anclarpub" href="javascript:;" id="7094833_36_perrito con foto nueva_27-08-2022_10_AC"><i class="fas fa-anchor fa-fw "></i> Anclar en Animales</a> 
+
+
+                                         
+
+
+
+                                    
+                                </div>
+
+                            </div>
+                            
+                            <div class="btn-group ">
+
+                                <a class="btn btn-sm btn-info mpars" href="javascript:;" role="button" id="7094833_36_perrito con foto nueva_27-08-2022_10_RN"  ><i class="fas fa-recycle fa-fw"></i> Renovar</a>  
+                                
+                            </div>
+
+                            <div class="btn-group ">
+
+                                <a class="btn btn-sm btn-warning resaltarpub" href="javascript:;" role="button" data-fotos="SI" id="7094833_36_perrito con foto nueva_27-08-2022_10_RE" data-categoria="11" data-vip="NO"><i class="fas fa-paint-brush fa-fw"></i> Resaltar</a>  
+
+                            </div>
+
+                                                        
+
+                        </div>                            
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+
+                <div class="card-body">
+
+                    <h5 class="card-title mb-2">Mensajes recibidos v&iacute;a <i class="fa fa-whatsapp fa-lg fa-fw"></i> (0)</h5>
+
+                    <p class="card-text ">
+                        <small class="text-muted">
+                            <ul class="overflow-auto" style="height:150px;">
+                                                        <p class="card-text"><span class="text-muted">No hay registros</span></p>
+                                                        </ul>
+                        </small>
+                    </p>
+                    
+                </div>
+                
+            </div>            
+
+        </div>
+    </div>
+
+
+    <div class="card card-mpa mb-3  " style="max-width: 100%;" id="pub7094830">
+        <div class="row no-gutters">
+            <div class="col-md-3 ">
+                <div class=""></div>
+                <img src="/cache/180/7094830-2.jpg" alt="parajito foto" class="card-img">
+
+            </div>
+            <div class="col-md-5">
+                <div class="card-body" >
+                    <h5 class="card-title mb-2">parajito foto <span id="titpub-7094830" class="text-success"></span></h5>
+                    <p class="card-text"><b>RD$33 <s class="text-muted text-small"></s> <span class='text-danger'></span> </b></p>
+                    <p class="card-text">
+                        <small class="text-muted">
+
+                            <ul>                                         
+                                                
+                                <li><b>ID </b> 7094830, <b class="text-success"> <a href="/publicacion_7094830.html" target="_blanc">Vista Previa</a>  </b> </li>
+                                <li><b>Visitas actuales</b> (6), <b>acumuladas</b> (0) 
+                                 <i class="fas fa-info-circle infvisitas" style="cursor: pointer"></i></li>
+                                <li><b>Publicado  	</b>  20-08-2022 08:14 AM, <b>Visitado </b> 22-08-22 03:04 PM</li>
+                                                                                                                                
+                                    <li><b>Fotos publicadas </b>(2) | <b><a href="javascript:;" class="admfotos" data-totalfotos="5" data-cantfotos="2" data-restafotos="3" data-fotos="7094830-2.jpg,7094830-1.jpg" id="7094830_36_parajito foto_23-08-2022_10_AF">Administrar Fotos</a></b></li>
+                                                                
+                                                                        <li><b><a href="/publicacion/7094830">Agrega video</a></b> </li>							                                    
+                                                                        <li><b><a href="javascript:;" class="mpaedicionrapida">Edici&oacute;n R&aacute;pida</a></b> | <b><a href="/publicacion/7094830">Edici&oacute;n Completa</a></b></li>
+                                    <li id="lblCat-7094830"><b>Categoría</b> Animales/Aves  
+                                                                            </li>							
+                                 
+                                    <li><b>Anclada,</b> 0 clicks de <span id="limite-7094830">10</span>, <a class="anclarpub" href="javascript:;" id="7094830_36_parajito foto_23-08-2022_10_AC"><b>Agrega m&aacute;s</b></a> </li>							
+                                 
+
+                            </ul>
+                        
+                        </small>
+
+                    </p>
+
+                    <p>
+
+                        <div class="mpaopc">
+                        
+ 
+
+                            <div class="btn-group dropdown ">
+                                <button type="button" class="btn btn-sm btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                     <i class="fas fa-cog fa-fw"></i> Opciones                                 </button>
+                                <div class="dropdown-menu dropdown-menu-right">
+
+                                     
+                                        
+                                        <a class="dropdown-item eliminarpub" href="javascript:;" data-msgeliminar="S" id="7094830_36_parajito foto_23-08-2022_10_RU"><i class="fas fa-trash-alt fa-fw"></i> Eliminar Publicaci&oacute;n</a>
+
+                                         
+    
+                                            <a class="dropdown-item noprevent" href="/publicacion/7094830"><i class="fas fa-pencil-alt fa-fw"></i> Modificar</a>
+
+                                                
+
+                                            <a class="dropdown-item resaltarpub" href="javascript:;" id="7094830_36_parajito foto_23-08-2022_10_VP" data-categoria="11" data-fotos="SI"><i class="fas fa-home fa-fw "></i> Poner en VIP</a>
+                                            
+                                            <a class="dropdown-item adesc" href="javascript:;" id="7094830_36_parajito foto_23-08-2022_10_33.00"><i class="fas fa-tags fa-fw"></i> Aplica Descuento</a>
+
+                                            <a class="dropdown-item pausarp" href="javascript:;" data-toggle="tooltip" data-placement="top" 
+                                        title="" id="7094830_36_parajito foto_23-08-2022_10_PP"><i class="fas fa-pause fa-fw"></i> Pausar</a>
+
+                                            <a class="dropdown-item anclarpub" href="javascript:;" id="7094830_36_parajito foto_23-08-2022_10_AC"><i class="fas fa-anchor fa-fw "></i> Anclar en Animales</a> 
+
+
+                                         
+
+
+
+                                    
+                                </div>
+
+                            </div>
+                            
+                            <div class="btn-group ">
+
+                                <a class="btn btn-sm btn-info mpars" href="javascript:;" role="button" id="7094830_36_parajito foto_23-08-2022_10_RN"  ><i class="fas fa-recycle fa-fw"></i> Renovar</a>  
+                                
+                            </div>
+
+                            <div class="btn-group ">
+
+                                <a class="btn btn-sm btn-warning resaltarpub" href="javascript:;" role="button" data-fotos="SI" id="7094830_36_parajito foto_23-08-2022_10_RE" data-categoria="11" data-vip="NO"><i class="fas fa-paint-brush fa-fw"></i> Resaltar</a>  
+
+                            </div>
+
+                                                        
+
+                        </div>                            
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+
+                <div class="card-body">
+
+                    <h5 class="card-title mb-2">Mensajes recibidos v&iacute;a <i class="fa fa-whatsapp fa-lg fa-fw"></i> (0)</h5>
+
+                    <p class="card-text ">
+                        <small class="text-muted">
+                            <ul class="overflow-auto" style="height:150px;">
+                                                        <p class="card-text"><span class="text-muted">No hay registros</span></p>
+                                                        </ul>
+                        </small>
+                    </p>
+                    
+                </div>
+                
+            </div>            
+
+        </div>
+    </div>
+
+
+    <div class="card card-mpa mb-3  " style="max-width: 100%;" id="pub7094829">
+        <div class="row no-gutters">
+            <div class="col-md-3 ">
+                <div class=""></div>
+                <img src="/cache/180/7094829-2.jpg" alt="f fd fdsfsd fsdfdfdsf" class="card-img">
+
+            </div>
+            <div class="col-md-5">
+                <div class="card-body" >
+                    <h5 class="card-title mb-2">f fd fdsfsd fsdfdfdsf <span id="titpub-7094829" class="text-success"></span></h5>
+                    <p class="card-text"><b>RD$34 <s class="text-muted text-small"></s> <span class='text-danger'></span> </b></p>
+                    <p class="card-text">
+                        <small class="text-muted">
+
+                            <ul>                                         
+                                                
+                                <li><b>ID </b> 7094829, <b class="text-success"> <a href="/publicacion_7094829.html" target="_blanc">Vista Previa</a>  </b> </li>
+                                <li><b>Visitas actuales</b> (12), <b>acumuladas</b> (0) 
+                                 <i class="fas fa-info-circle infvisitas" style="cursor: pointer"></i></li>
+                                <li><b>Publicado  	</b>  20-08-2022 01:32 AM, <b>Visitado </b> 25-08-22 12:40 PM</li>
+                                                                                                                                
+                                    <li><b>Fotos publicadas </b>(2) | <b><a href="javascript:;" class="admfotos" data-totalfotos="5" data-cantfotos="2" data-restafotos="3" data-fotos="7094829-2.jpg,7094829-1.jpg" id="7094829_36_f fd fdsfsd fsdfdfdsf_23-08-2022_LNA_AF">Administrar Fotos</a></b></li>
+                                                                
+                                                                        <li><b><a href="/publicacion/7094829">Agrega video</a></b> </li>							                                    
+                                                                        <li><b><a href="javascript:;" class="mpaedicionrapida">Edici&oacute;n R&aacute;pida</a></b> | <b><a href="/publicacion/7094829">Edici&oacute;n Completa</a></b></li>
+                                    <li id="lblCat-7094829"><b>Categoría</b> Animales/Vacunos 
+                                                                            </li>							
+                                 
+
+                            </ul>
+                        
+                        </small>
+
+                    </p>
+
+                    <p>
+
+                        <div class="mpaopc">
+                        
+ 
+
+                            <div class="btn-group dropdown ">
+                                <button type="button" class="btn btn-sm btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                     <i class="fas fa-cog fa-fw"></i> Opciones                                 </button>
+                                <div class="dropdown-menu dropdown-menu-right">
+
+                                     
+                                        
+                                        <a class="dropdown-item eliminarpub" href="javascript:;" data-msgeliminar="N" id="7094829_36_f fd fdsfsd fsdfdfdsf_23-08-2022_LNA_RU"><i class="fas fa-trash-alt fa-fw"></i> Eliminar Publicaci&oacute;n</a>
+
+                                         
+    
+                                            <a class="dropdown-item noprevent" href="/publicacion/7094829"><i class="fas fa-pencil-alt fa-fw"></i> Modificar</a>
+
+                                                
+
+                                            <a class="dropdown-item resaltarpub" href="javascript:;" id="7094829_36_f fd fdsfsd fsdfdfdsf_23-08-2022_LNA_VP" data-categoria="11" data-fotos="SI"><i class="fas fa-home fa-fw "></i> Poner en VIP</a>
+                                            
+                                            <a class="dropdown-item adesc" href="javascript:;" id="7094829_36_f fd fdsfsd fsdfdfdsf_23-08-2022_LNA_34.00"><i class="fas fa-tags fa-fw"></i> Aplica Descuento</a>
+
+                                            <a class="dropdown-item pausarp" href="javascript:;" data-toggle="tooltip" data-placement="top" 
+                                        title="" id="7094829_36_f fd fdsfsd fsdfdfdsf_23-08-2022_LNA_PP"><i class="fas fa-pause fa-fw"></i> Pausar</a>
+
+                                            <a class="dropdown-item anclarpub" href="javascript:;" id="7094829_36_f fd fdsfsd fsdfdfdsf_23-08-2022_LNA_AC"><i class="fas fa-anchor fa-fw "></i> Anclar en Animales</a> 
+
+
+                                         
+
+
+
+                                    
+                                </div>
+
+                            </div>
+                            
+                            <div class="btn-group ">
+
+                                <a class="btn btn-sm btn-info mpars" href="javascript:;" role="button" id="7094829_36_f fd fdsfsd fsdfdfdsf_23-08-2022_LNA_RN"  ><i class="fas fa-recycle fa-fw"></i> Renovar</a>  
+                                
+                            </div>
+
+                            <div class="btn-group ">
+
+                                <a class="btn btn-sm btn-warning resaltarpub" href="javascript:;" role="button" data-fotos="SI" id="7094829_36_f fd fdsfsd fsdfdfdsf_23-08-2022_LNA_RE" data-categoria="11" data-vip="NO"><i class="fas fa-paint-brush fa-fw"></i> Resaltar</a>  
+
+                            </div>
+
+                                                        
+
+                        </div>                            
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+
+                <div class="card-body">
+
+                    <h5 class="card-title mb-2">Mensajes recibidos v&iacute;a <i class="fa fa-whatsapp fa-lg fa-fw"></i> (0)</h5>
+
+                    <p class="card-text ">
+                        <small class="text-muted">
+                            <ul class="overflow-auto" style="height:150px;">
+                                                        <p class="card-text"><span class="text-muted">No hay registros</span></p>
+                                                        </ul>
+                        </small>
+                    </p>
+                    
+                </div>
+                
+            </div>            
+
+        </div>
+    </div>
+
+
+    <div class="card card-mpa mb-3  " style="max-width: 100%;" id="pub7094828">
+        <div class="row no-gutters">
+            <div class="col-md-3 ">
+                <div class=""></div>
+                <img src="/cache/180/7094828-2.jpg" alt="Pistola de ricardo" class="card-img">
+
+            </div>
+            <div class="col-md-5">
+                <div class="card-body" >
+                    <h5 class="card-title mb-2">Pistola de ricardo <span id="titpub-7094828" class="text-success"></span></h5>
+                    <p class="card-text"><b>RD$3,424 <s class="text-muted text-small"></s> <span class='text-danger'></span> </b></p>
+                    <p class="card-text">
+                        <small class="text-muted">
+
+                            <ul>                                         
+                                                
+                                <li><b>ID </b> 7094828, <b class="text-success"> <a href="/publicacion_7094828.html" target="_blanc">Vista Previa</a>  </b> </li>
+                                <li><b>Visitas actuales</b> (1), <b>acumuladas</b> (0) 
+                                 <i class="fas fa-info-circle infvisitas" style="cursor: pointer"></i></li>
+                                <li><b>Publicado  	</b>  20-08-2022 01:29 AM, <b>Visitado </b> 05-09-22 11:33 PM</li>
+                                                                                                                                
+                                    <li><b>Fotos publicadas </b>(2) | <b><a href="javascript:;" class="admfotos" data-totalfotos="5" data-cantfotos="2" data-restafotos="3" data-fotos="7094828-2.jpg,7094828-1.jpg" id="7094828_36_Pistola de ricardo_23-08-2022_LNA_AF">Administrar Fotos</a></b></li>
+                                                                
+                                                                        <li><b><a href="/publicacion/7094828">Agrega video</a></b> </li>							                                    
+                                                                        <li><b><a href="javascript:;" class="mpaedicionrapida">Edici&oacute;n R&aacute;pida</a></b> | <b><a href="/publicacion/7094828">Edici&oacute;n Completa</a></b></li>
+                                    <li id="lblCat-7094828"><b>Categoría</b> Seguridad Personal/Seguridad Personal 
+                                                                            </li>							
+                                 
+
+                            </ul>
+                        
+                        </small>
+
+                    </p>
+
+                    <p>
+
+                        <div class="mpaopc">
+                        
+ 
+
+                            <div class="btn-group dropdown ">
+                                <button type="button" class="btn btn-sm btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                     <i class="fas fa-cog fa-fw"></i> Opciones                                 </button>
+                                <div class="dropdown-menu dropdown-menu-right">
+
+                                     
+                                        
+                                        <a class="dropdown-item eliminarpub" href="javascript:;" data-msgeliminar="N" id="7094828_36_Pistola de ricardo_23-08-2022_LNA_RU"><i class="fas fa-trash-alt fa-fw"></i> Eliminar Publicaci&oacute;n</a>
+
+                                         
+    
+                                            <a class="dropdown-item noprevent" href="/publicacion/7094828"><i class="fas fa-pencil-alt fa-fw"></i> Modificar</a>
+
+                                                
+
+                                            <a class="dropdown-item resaltarpub" href="javascript:;" id="7094828_36_Pistola de ricardo_23-08-2022_LNA_VP" data-categoria="5" data-fotos="SI"><i class="fas fa-home fa-fw "></i> Poner en VIP</a>
+                                            
+                                            <a class="dropdown-item adesc" href="javascript:;" id="7094828_36_Pistola de ricardo_23-08-2022_LNA_3424.00"><i class="fas fa-tags fa-fw"></i> Aplica Descuento</a>
+
+                                            <a class="dropdown-item pausarp" href="javascript:;" data-toggle="tooltip" data-placement="top" 
+                                        title="" id="7094828_36_Pistola de ricardo_23-08-2022_LNA_PP"><i class="fas fa-pause fa-fw"></i> Pausar</a>
+
+                                            <a class="dropdown-item anclarpub" href="javascript:;" id="7094828_36_Pistola de ricardo_23-08-2022_LNA_AC"><i class="fas fa-anchor fa-fw "></i> Anclar en Seguridad Personal</a> 
+
+
+                                         
+
+
+
+                                    
+                                </div>
+
+                            </div>
+                            
+                            <div class="btn-group ">
+
+                                <a class="btn btn-sm btn-info mpars" href="javascript:;" role="button" id="7094828_36_Pistola de ricardo_23-08-2022_LNA_RN"  ><i class="fas fa-recycle fa-fw"></i> Renovar</a>  
+                                
+                            </div>
+
+                            <div class="btn-group ">
+
+                                <a class="btn btn-sm btn-warning resaltarpub" href="javascript:;" role="button" data-fotos="SI" id="7094828_36_Pistola de ricardo_23-08-2022_LNA_RE" data-categoria="5" data-vip="NO"><i class="fas fa-paint-brush fa-fw"></i> Resaltar</a>  
+
+                            </div>
+
+                                                        
+
+                        </div>                            
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+
+                <div class="card-body">
+
+                    <h5 class="card-title mb-2">Mensajes recibidos v&iacute;a <i class="fa fa-whatsapp fa-lg fa-fw"></i> (0)</h5>
+
+                    <p class="card-text ">
+                        <small class="text-muted">
+                            <ul class="overflow-auto" style="height:150px;">
+                                                        <p class="card-text"><span class="text-muted">No hay registros</span></p>
+                                                        </ul>
+                        </small>
+                    </p>
+                    
+                </div>
+                
+            </div>            
+
+        </div>
+    </div>
+
+
+    <div class="card card-mpa mb-3  " style="max-width: 100%;" id="pub7094827">
+        <div class="row no-gutters">
+            <div class="col-md-3 ">
+                <div class=""></div>
+                <img src="/cache/180/7094827-2.jpg" alt="vcxvcxvxcvcvcxv" class="card-img">
+
+            </div>
+            <div class="col-md-5">
+                <div class="card-body" >
+                    <h5 class="card-title mb-2">vcxvcxvxcvcvcxv <span id="titpub-7094827" class="text-success"></span></h5>
+                    <p class="card-text"><b>RD$3,424 <s class="text-muted text-small"></s> <span class='text-danger'></span> </b></p>
+                    <p class="card-text">
+                        <small class="text-muted">
+
+                            <ul>                                         
+                                                
+                                <li><b>ID </b> 7094827, <b class="text-success"> <a href="/publicacion_7094827.html" target="_blanc">Vista Previa</a>  </b> </li>
+                                <li><b>Visitas actuales</b> (1), <b>acumuladas</b> (0) 
+                                 <i class="fas fa-info-circle infvisitas" style="cursor: pointer"></i></li>
+                                <li><b>Publicado  	</b>  20-08-2022 01:29 AM, <b>Visitado </b> 20-08-22 01:29 AM</li>
+                                                                                                                                
+                                    <li><b>Fotos publicadas </b>(2) | <b><a href="javascript:;" class="admfotos" data-totalfotos="5" data-cantfotos="2" data-restafotos="3" data-fotos="7094827-2.jpg,7094827-1.jpg" id="7094827_36_vcxvcxvxcvcvcxv_23-08-2022_LNA_AF">Administrar Fotos</a></b></li>
+                                                                
+                                                                        <li><b><a href="/publicacion/7094827">Agrega video</a></b> </li>							                                    
+                                                                        <li><b><a href="javascript:;" class="mpaedicionrapida">Edici&oacute;n R&aacute;pida</a></b> | <b><a href="/publicacion/7094827">Edici&oacute;n Completa</a></b></li>
+                                    <li id="lblCat-7094827"><b>Categoría</b> Animales/Felinos 
+                                                                            </li>							
+                                 
+
+                            </ul>
+                        
+                        </small>
+
+                    </p>
+
+                    <p>
+
+                        <div class="mpaopc">
+                        
+ 
+
+                            <div class="btn-group dropdown ">
+                                <button type="button" class="btn btn-sm btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                     <i class="fas fa-cog fa-fw"></i> Opciones                                 </button>
+                                <div class="dropdown-menu dropdown-menu-right">
+
+                                     
+                                        
+                                        <a class="dropdown-item eliminarpub" href="javascript:;" data-msgeliminar="N" id="7094827_36_vcxvcxvxcvcvcxv_23-08-2022_LNA_RU"><i class="fas fa-trash-alt fa-fw"></i> Eliminar Publicaci&oacute;n</a>
+
+                                         
+    
+                                            <a class="dropdown-item noprevent" href="/publicacion/7094827"><i class="fas fa-pencil-alt fa-fw"></i> Modificar</a>
+
+                                                
+
+                                            <a class="dropdown-item resaltarpub" href="javascript:;" id="7094827_36_vcxvcxvxcvcvcxv_23-08-2022_LNA_VP" data-categoria="11" data-fotos="SI"><i class="fas fa-home fa-fw "></i> Poner en VIP</a>
+                                            
+                                            <a class="dropdown-item adesc" href="javascript:;" id="7094827_36_vcxvcxvxcvcvcxv_23-08-2022_LNA_3424.00"><i class="fas fa-tags fa-fw"></i> Aplica Descuento</a>
+
+                                            <a class="dropdown-item pausarp" href="javascript:;" data-toggle="tooltip" data-placement="top" 
+                                        title="" id="7094827_36_vcxvcxvxcvcvcxv_23-08-2022_LNA_PP"><i class="fas fa-pause fa-fw"></i> Pausar</a>
+
+                                            <a class="dropdown-item anclarpub" href="javascript:;" id="7094827_36_vcxvcxvxcvcvcxv_23-08-2022_LNA_AC"><i class="fas fa-anchor fa-fw "></i> Anclar en Animales</a> 
+
+
+                                         
+
+
+
+                                    
+                                </div>
+
+                            </div>
+                            
+                            <div class="btn-group ">
+
+                                <a class="btn btn-sm btn-info mpars" href="javascript:;" role="button" id="7094827_36_vcxvcxvxcvcvcxv_23-08-2022_LNA_RN"  ><i class="fas fa-recycle fa-fw"></i> Renovar</a>  
+                                
+                            </div>
+
+                            <div class="btn-group ">
+
+                                <a class="btn btn-sm btn-warning resaltarpub" href="javascript:;" role="button" data-fotos="SI" id="7094827_36_vcxvcxvxcvcvcxv_23-08-2022_LNA_RE" data-categoria="11" data-vip="NO"><i class="fas fa-paint-brush fa-fw"></i> Resaltar</a>  
+
+                            </div>
+
+                                                        
+
+                        </div>                            
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+
+                <div class="card-body">
+
+                    <h5 class="card-title mb-2">Mensajes recibidos v&iacute;a <i class="fa fa-whatsapp fa-lg fa-fw"></i> (0)</h5>
+
+                    <p class="card-text ">
+                        <small class="text-muted">
+                            <ul class="overflow-auto" style="height:150px;">
+                                                        <p class="card-text"><span class="text-muted">No hay registros</span></p>
+                                                        </ul>
+                        </small>
+                    </p>
+                    
+                </div>
+                
+            </div>            
+
+        </div>
+    </div>
+
+
+    <div class="card card-mpa mb-3  " style="max-width: 100%;" id="pub7094826">
+        <div class="row no-gutters">
+            <div class="col-md-3 ">
+                <div class=""></div>
+                <img src="/cache/180/fotodefectotc.png" alt="vcxvcxvxcvcvcxv" class="card-img">
+
+            </div>
+            <div class="col-md-5">
+                <div class="card-body" >
+                    <h5 class="card-title mb-2">vcxvcxvxcvcvcxv <span id="titpub-7094826" class="text-success"></span></h5>
+                    <p class="card-text"><b>RD$3,424 <s class="text-muted text-small"></s> <span class='text-danger'></span> </b></p>
+                    <p class="card-text">
+                        <small class="text-muted">
+
+                            <ul>                                         
+                                                
+                                <li><b>ID </b> 7094826, <b class="text-success"> <a href="/publicacion_7094826.html" target="_blanc">Vista Previa</a>  </b> </li>
+                                <li><b>Visitas actuales</b> (5), <b>acumuladas</b> (0) 
+                                 <i class="fas fa-info-circle infvisitas" style="cursor: pointer"></i></li>
+                                <li><b>Publicado  	</b>  20-08-2022 01:23 AM, <b>Visitado </b> 06-09-22 03:26 PM</li>
+                                                                                                 
+                                    <li><b><a href="/publicacion/7094826">Agrega Fotos</a></b> </li>							
+                                                                
+                                                                        <li><b><a href="/publicacion/7094826">Agrega video</a></b> </li>							                                    
+                                                                        <li><b><a href="javascript:;" class="mpaedicionrapida">Edici&oacute;n R&aacute;pida</a></b> | <b><a href="/publicacion/7094826">Edici&oacute;n Completa</a></b></li>
+                                    <li id="lblCat-7094826"><b>Categoría</b> Animales/Felinos 
+                                                                            </li>							
+                                 
+
+                            </ul>
+                        
+                        </small>
+
+                    </p>
+
+                    <p>
+
+                        <div class="mpaopc">
+                        
+ 
+
+                            <div class="btn-group dropdown ">
+                                <button type="button" class="btn btn-sm btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                     <i class="fas fa-cog fa-fw"></i> Opciones                                 </button>
+                                <div class="dropdown-menu dropdown-menu-right">
+
+                                     
+                                        
+                                        <a class="dropdown-item eliminarpub" href="javascript:;" data-msgeliminar="N" id="7094826_36_vcxvcxvxcvcvcxv_23-08-2022_LNA_RU"><i class="fas fa-trash-alt fa-fw"></i> Eliminar Publicaci&oacute;n</a>
+
+                                         
+    
+                                            <a class="dropdown-item noprevent" href="/publicacion/7094826"><i class="fas fa-pencil-alt fa-fw"></i> Modificar</a>
+
+                                                
+
+                                            <a class="dropdown-item resaltarpub" href="javascript:;" id="7094826_36_vcxvcxvxcvcvcxv_23-08-2022_LNA_VP" data-categoria="11" data-fotos="NO"><i class="fas fa-home fa-fw "></i> Poner en VIP</a>
+                                            
+                                            <a class="dropdown-item adesc" href="javascript:;" id="7094826_36_vcxvcxvxcvcvcxv_23-08-2022_LNA_3424.00"><i class="fas fa-tags fa-fw"></i> Aplica Descuento</a>
+
+                                            <a class="dropdown-item pausarp" href="javascript:;" data-toggle="tooltip" data-placement="top" 
+                                        title="" id="7094826_36_vcxvcxvxcvcvcxv_23-08-2022_LNA_PP"><i class="fas fa-pause fa-fw"></i> Pausar</a>
+
+                                            <a class="dropdown-item noaccion" href="javascript:;" id="7094826_36_vcxvcxvxcvcvcxv_23-08-2022_LNA_AC"><i class="fas fa-anchor fa-fw "></i> Requiere fotos para Anclar</a> 
+
+
+                                         
+
+
+
+                                    
+                                </div>
+
+                            </div>
+                            
+                            <div class="btn-group ">
+
+                                <a class="btn btn-sm btn-info mpars" href="javascript:;" role="button" id="7094826_36_vcxvcxvxcvcvcxv_23-08-2022_LNA_RN"  ><i class="fas fa-recycle fa-fw"></i> Renovar</a>  
+                                
+                            </div>
+
+                            <div class="btn-group ">
+
+                                <a class="btn btn-sm btn-warning resaltarpub" href="javascript:;" role="button" data-fotos="NO" id="7094826_36_vcxvcxvxcvcvcxv_23-08-2022_LNA_RE" data-categoria="11" data-vip="NO"><i class="fas fa-paint-brush fa-fw"></i> Resaltar</a>  
+
+                            </div>
+
+                                                        
+
+                        </div>                            
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+
+                <div class="card-body">
+
+                    <h5 class="card-title mb-2">Mensajes recibidos v&iacute;a <i class="fa fa-whatsapp fa-lg fa-fw"></i> (0)</h5>
+
+                    <p class="card-text ">
+                        <small class="text-muted">
+                            <ul class="overflow-auto" style="height:150px;">
+                                                        <p class="card-text"><span class="text-muted">No hay registros</span></p>
+                                                        </ul>
+                        </small>
+                    </p>
+                    
+                </div>
+                
+            </div>            
+
+        </div>
+    </div>
+
+
+    <div class="card card-mpa mb-3  " style="max-width: 100%;" id="pub7094825">
+        <div class="row no-gutters">
+            <div class="col-md-3 ">
+                <div class=""></div>
+                <img src="/cache/180/fotodefectotc.png" alt="vcxvcxvxcvcvcxv" class="card-img">
+
+            </div>
+            <div class="col-md-5">
+                <div class="card-body" >
+                    <h5 class="card-title mb-2">vcxvcxvxcvcvcxv <span id="titpub-7094825" class="text-success"></span></h5>
+                    <p class="card-text"><b>RD$3,424 <s class="text-muted text-small"></s> <span class='text-danger'></span> </b></p>
+                    <p class="card-text">
+                        <small class="text-muted">
+
+                            <ul>                                         
+                                                
+                                <li><b>ID </b> 7094825, <b class="text-success"> <a href="/publicacion_7094825.html" target="_blanc">Vista Previa</a>  </b> </li>
+                                <li><b>Visitas actuales</b> (0), <b>acumuladas</b> (0) 
+                                 <i class="fas fa-info-circle infvisitas" style="cursor: pointer"></i></li>
+                                <li><b>Publicado  	</b>  20-08-2022 01:10 AM, <b>Visitado </b> 20-08-22 01:10 AM</li>
+                                                                                                 
+                                    <li><b><a href="/publicacion/7094825">Agrega Fotos</a></b> </li>							
+                                                                
+                                                                        <li><b><a href="/publicacion/7094825">Agrega video</a></b> </li>							                                    
+                                                                        <li><b><a href="javascript:;" class="mpaedicionrapida">Edici&oacute;n R&aacute;pida</a></b> | <b><a href="/publicacion/7094825">Edici&oacute;n Completa</a></b></li>
+                                    <li id="lblCat-7094825"><b>Categoría</b> Animales/Felinos 
+                                                                            </li>							
+                                 
+
+                            </ul>
+                        
+                        </small>
+
+                    </p>
+
+                    <p>
+
+                        <div class="mpaopc">
+                        
+ 
+
+                            <div class="btn-group dropdown ">
+                                <button type="button" class="btn btn-sm btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                     <i class="fas fa-cog fa-fw"></i> Opciones                                 </button>
+                                <div class="dropdown-menu dropdown-menu-right">
+
+                                     
+                                        
+                                        <a class="dropdown-item eliminarpub" href="javascript:;" data-msgeliminar="N" id="7094825_36_vcxvcxvxcvcvcxv_23-08-2022_LNA_RU"><i class="fas fa-trash-alt fa-fw"></i> Eliminar Publicaci&oacute;n</a>
+
+                                         
+    
+                                            <a class="dropdown-item noprevent" href="/publicacion/7094825"><i class="fas fa-pencil-alt fa-fw"></i> Modificar</a>
+
+                                                
+
+                                            <a class="dropdown-item resaltarpub" href="javascript:;" id="7094825_36_vcxvcxvxcvcvcxv_23-08-2022_LNA_VP" data-categoria="11" data-fotos="NO"><i class="fas fa-home fa-fw "></i> Poner en VIP</a>
+                                            
+                                            <a class="dropdown-item adesc" href="javascript:;" id="7094825_36_vcxvcxvxcvcvcxv_23-08-2022_LNA_3424.00"><i class="fas fa-tags fa-fw"></i> Aplica Descuento</a>
+
+                                            <a class="dropdown-item pausarp" href="javascript:;" data-toggle="tooltip" data-placement="top" 
+                                        title="" id="7094825_36_vcxvcxvxcvcvcxv_23-08-2022_LNA_PP"><i class="fas fa-pause fa-fw"></i> Pausar</a>
+
+                                            <a class="dropdown-item noaccion" href="javascript:;" id="7094825_36_vcxvcxvxcvcvcxv_23-08-2022_LNA_AC"><i class="fas fa-anchor fa-fw "></i> Requiere fotos para Anclar</a> 
+
+
+                                         
+
+
+
+                                    
+                                </div>
+
+                            </div>
+                            
+                            <div class="btn-group ">
+
+                                <a class="btn btn-sm btn-info mpars" href="javascript:;" role="button" id="7094825_36_vcxvcxvxcvcvcxv_23-08-2022_LNA_RN"  ><i class="fas fa-recycle fa-fw"></i> Renovar</a>  
+                                
+                            </div>
+
+                            <div class="btn-group ">
+
+                                <a class="btn btn-sm btn-warning resaltarpub" href="javascript:;" role="button" data-fotos="NO" id="7094825_36_vcxvcxvxcvcvcxv_23-08-2022_LNA_RE" data-categoria="11" data-vip="NO"><i class="fas fa-paint-brush fa-fw"></i> Resaltar</a>  
+
+                            </div>
+
+                                                        
+
+                        </div>                            
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+
+                <div class="card-body">
+
+                    <h5 class="card-title mb-2">Mensajes recibidos v&iacute;a <i class="fa fa-whatsapp fa-lg fa-fw"></i> (0)</h5>
+
+                    <p class="card-text ">
+                        <small class="text-muted">
+                            <ul class="overflow-auto" style="height:150px;">
+                                                        <p class="card-text"><span class="text-muted">No hay registros</span></p>
+                                                        </ul>
+                        </small>
+                    </p>
+                    
+                </div>
+                
+            </div>            
+
+        </div>
+    </div>
+
+
+    <div class="card card-mpa mb-3  " style="max-width: 100%;" id="pub7094824">
+        <div class="row no-gutters">
+            <div class="col-md-3 ">
+                <div class=""></div>
+                <img src="/cache/180/fotodefectotc.png" alt="vcxvcxvxcvcvcxv" class="card-img">
+
+            </div>
+            <div class="col-md-5">
+                <div class="card-body" >
+                    <h5 class="card-title mb-2">vcxvcxvxcvcvcxv <span id="titpub-7094824" class="text-success"></span></h5>
+                    <p class="card-text"><b>RD$3,424 <s class="text-muted text-small"></s> <span class='text-danger'></span> </b></p>
+                    <p class="card-text">
+                        <small class="text-muted">
+
+                            <ul>                                         
+                                                
+                                <li><b>ID </b> 7094824, <b class="text-success"> <a href="/publicacion_7094824.html" target="_blanc">Vista Previa</a>  </b> </li>
+                                <li><b>Visitas actuales</b> (0), <b>acumuladas</b> (0) 
+                                 <i class="fas fa-info-circle infvisitas" style="cursor: pointer"></i></li>
+                                <li><b>Publicado  	</b>  20-08-2022 01:09 AM, <b>Visitado </b> 20-08-22 01:09 AM</li>
+                                                                                                 
+                                    <li><b><a href="/publicacion/7094824">Agrega Fotos</a></b> </li>							
+                                                                
+                                                                        <li><b><a href="/publicacion/7094824">Agrega video</a></b> </li>							                                    
+                                                                        <li><b><a href="javascript:;" class="mpaedicionrapida">Edici&oacute;n R&aacute;pida</a></b> | <b><a href="/publicacion/7094824">Edici&oacute;n Completa</a></b></li>
+                                    <li id="lblCat-7094824"><b>Categoría</b> Animales/Felinos 
+                                                                            </li>							
+                                 
+
+                            </ul>
+                        
+                        </small>
+
+                    </p>
+
+                    <p>
+
+                        <div class="mpaopc">
+                        
+ 
+
+                            <div class="btn-group dropdown ">
+                                <button type="button" class="btn btn-sm btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                     <i class="fas fa-cog fa-fw"></i> Opciones                                 </button>
+                                <div class="dropdown-menu dropdown-menu-right">
+
+                                     
+                                        
+                                        <a class="dropdown-item eliminarpub" href="javascript:;" data-msgeliminar="N" id="7094824_36_vcxvcxvxcvcvcxv_23-08-2022_LNA_RU"><i class="fas fa-trash-alt fa-fw"></i> Eliminar Publicaci&oacute;n</a>
+
+                                         
+    
+                                            <a class="dropdown-item noprevent" href="/publicacion/7094824"><i class="fas fa-pencil-alt fa-fw"></i> Modificar</a>
+
+                                                
+
+                                            <a class="dropdown-item resaltarpub" href="javascript:;" id="7094824_36_vcxvcxvxcvcvcxv_23-08-2022_LNA_VP" data-categoria="11" data-fotos="NO"><i class="fas fa-home fa-fw "></i> Poner en VIP</a>
+                                            
+                                            <a class="dropdown-item adesc" href="javascript:;" id="7094824_36_vcxvcxvxcvcvcxv_23-08-2022_LNA_3424.00"><i class="fas fa-tags fa-fw"></i> Aplica Descuento</a>
+
+                                            <a class="dropdown-item pausarp" href="javascript:;" data-toggle="tooltip" data-placement="top" 
+                                        title="" id="7094824_36_vcxvcxvxcvcvcxv_23-08-2022_LNA_PP"><i class="fas fa-pause fa-fw"></i> Pausar</a>
+
+                                            <a class="dropdown-item noaccion" href="javascript:;" id="7094824_36_vcxvcxvxcvcvcxv_23-08-2022_LNA_AC"><i class="fas fa-anchor fa-fw "></i> Requiere fotos para Anclar</a> 
+
+
+                                         
+
+
+
+                                    
+                                </div>
+
+                            </div>
+                            
+                            <div class="btn-group ">
+
+                                <a class="btn btn-sm btn-info mpars" href="javascript:;" role="button" id="7094824_36_vcxvcxvxcvcvcxv_23-08-2022_LNA_RN"  ><i class="fas fa-recycle fa-fw"></i> Renovar</a>  
+                                
+                            </div>
+
+                            <div class="btn-group ">
+
+                                <a class="btn btn-sm btn-warning resaltarpub" href="javascript:;" role="button" data-fotos="NO" id="7094824_36_vcxvcxvxcvcvcxv_23-08-2022_LNA_RE" data-categoria="11" data-vip="NO"><i class="fas fa-paint-brush fa-fw"></i> Resaltar</a>  
+
+                            </div>
+
+                                                        
+
+                        </div>                            
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+
+                <div class="card-body">
+
+                    <h5 class="card-title mb-2">Mensajes recibidos v&iacute;a <i class="fa fa-whatsapp fa-lg fa-fw"></i> (0)</h5>
+
+                    <p class="card-text ">
+                        <small class="text-muted">
+                            <ul class="overflow-auto" style="height:150px;">
+                                                        <p class="card-text"><span class="text-muted">No hay registros</span></p>
+                                                        </ul>
+                        </small>
+                    </p>
+                    
+                </div>
+                
+            </div>            
+
+        </div>
+    </div>
+
+
+    <div class="card card-mpa mb-3  " style="max-width: 100%;" id="pub7094823">
+        <div class="row no-gutters">
+            <div class="col-md-3 ">
+                <div class=""></div>
+                <img src="/cache/180/fotodefectotc.png" alt="vcxvcxvxcvcvcxv" class="card-img">
+
+            </div>
+            <div class="col-md-5">
+                <div class="card-body" >
+                    <h5 class="card-title mb-2">vcxvcxvxcvcvcxv <span id="titpub-7094823" class="text-success"></span></h5>
+                    <p class="card-text"><b>RD$3,424 <s class="text-muted text-small"></s> <span class='text-danger'></span> </b></p>
+                    <p class="card-text">
+                        <small class="text-muted">
+
+                            <ul>                                         
+                                                
+                                <li><b>ID </b> 7094823, <b class="text-success"> <a href="/publicacion_7094823.html" target="_blanc">Vista Previa</a>  </b> </li>
+                                <li><b>Visitas actuales</b> (0), <b>acumuladas</b> (0) 
+                                 <i class="fas fa-info-circle infvisitas" style="cursor: pointer"></i></li>
+                                <li><b>Publicado  	</b>  20-08-2022 01:09 AM, <b>Visitado </b> 20-08-22 01:09 AM</li>
+                                                                                                 
+                                    <li><b><a href="/publicacion/7094823">Agrega Fotos</a></b> </li>							
+                                                                
+                                                                        <li><b><a href="/publicacion/7094823">Agrega video</a></b> </li>							                                    
+                                                                        <li><b><a href="javascript:;" class="mpaedicionrapida">Edici&oacute;n R&aacute;pida</a></b> | <b><a href="/publicacion/7094823">Edici&oacute;n Completa</a></b></li>
+                                    <li id="lblCat-7094823"><b>Categoría</b> Animales/Felinos 
+                                                                            </li>							
+                                 
+
+                            </ul>
+                        
+                        </small>
+
+                    </p>
+
+                    <p>
+
+                        <div class="mpaopc">
+                        
+ 
+
+                            <div class="btn-group dropdown ">
+                                <button type="button" class="btn btn-sm btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                     <i class="fas fa-cog fa-fw"></i> Opciones                                 </button>
+                                <div class="dropdown-menu dropdown-menu-right">
+
+                                     
+                                        
+                                        <a class="dropdown-item eliminarpub" href="javascript:;" data-msgeliminar="N" id="7094823_36_vcxvcxvxcvcvcxv_23-08-2022_LNA_RU"><i class="fas fa-trash-alt fa-fw"></i> Eliminar Publicaci&oacute;n</a>
+
+                                         
+    
+                                            <a class="dropdown-item noprevent" href="/publicacion/7094823"><i class="fas fa-pencil-alt fa-fw"></i> Modificar</a>
+
+                                                
+
+                                            <a class="dropdown-item resaltarpub" href="javascript:;" id="7094823_36_vcxvcxvxcvcvcxv_23-08-2022_LNA_VP" data-categoria="11" data-fotos="NO"><i class="fas fa-home fa-fw "></i> Poner en VIP</a>
+                                            
+                                            <a class="dropdown-item adesc" href="javascript:;" id="7094823_36_vcxvcxvxcvcvcxv_23-08-2022_LNA_3424.00"><i class="fas fa-tags fa-fw"></i> Aplica Descuento</a>
+
+                                            <a class="dropdown-item pausarp" href="javascript:;" data-toggle="tooltip" data-placement="top" 
+                                        title="" id="7094823_36_vcxvcxvxcvcvcxv_23-08-2022_LNA_PP"><i class="fas fa-pause fa-fw"></i> Pausar</a>
+
+                                            <a class="dropdown-item noaccion" href="javascript:;" id="7094823_36_vcxvcxvxcvcvcxv_23-08-2022_LNA_AC"><i class="fas fa-anchor fa-fw "></i> Requiere fotos para Anclar</a> 
+
+
+                                         
+
+
+
+                                    
+                                </div>
+
+                            </div>
+                            
+                            <div class="btn-group ">
+
+                                <a class="btn btn-sm btn-info mpars" href="javascript:;" role="button" id="7094823_36_vcxvcxvxcvcvcxv_23-08-2022_LNA_RN"  ><i class="fas fa-recycle fa-fw"></i> Renovar</a>  
+                                
+                            </div>
+
+                            <div class="btn-group ">
+
+                                <a class="btn btn-sm btn-warning resaltarpub" href="javascript:;" role="button" data-fotos="NO" id="7094823_36_vcxvcxvxcvcvcxv_23-08-2022_LNA_RE" data-categoria="11" data-vip="NO"><i class="fas fa-paint-brush fa-fw"></i> Resaltar</a>  
+
+                            </div>
+
+                                                        
+
+                        </div>                            
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+
+                <div class="card-body">
+
+                    <h5 class="card-title mb-2">Mensajes recibidos v&iacute;a <i class="fa fa-whatsapp fa-lg fa-fw"></i> (0)</h5>
+
+                    <p class="card-text ">
+                        <small class="text-muted">
+                            <ul class="overflow-auto" style="height:150px;">
+                                                        <p class="card-text"><span class="text-muted">No hay registros</span></p>
+                                                        </ul>
+                        </small>
+                    </p>
+                    
+                </div>
+                
+            </div>            
+
+        </div>
+    </div>
+
+
+    <div class="card card-mpa mb-3  " style="max-width: 100%;" id="pub7094822">
+        <div class="row no-gutters">
+            <div class="col-md-3 ">
+                <div class=""></div>
+                <img src="/cache/180/fotodefectotc.png" alt="vcxvcxvxcvcvcxv" class="card-img">
+
+            </div>
+            <div class="col-md-5">
+                <div class="card-body" >
+                    <h5 class="card-title mb-2">vcxvcxvxcvcvcxv <span id="titpub-7094822" class="text-success"></span></h5>
+                    <p class="card-text"><b>RD$3,424 <s class="text-muted text-small"></s> <span class='text-danger'></span> </b></p>
+                    <p class="card-text">
+                        <small class="text-muted">
+
+                            <ul>                                         
+                                                
+                                <li><b>ID </b> 7094822, <b class="text-success"> <a href="/publicacion_7094822.html" target="_blanc">Vista Previa</a>  </b> </li>
+                                <li><b>Visitas actuales</b> (0), <b>acumuladas</b> (0) 
+                                 <i class="fas fa-info-circle infvisitas" style="cursor: pointer"></i></li>
+                                <li><b>Publicado  	</b>  20-08-2022 01:09 AM, <b>Visitado </b> 20-08-22 01:09 AM</li>
+                                                                                                 
+                                    <li><b><a href="/publicacion/7094822">Agrega Fotos</a></b> </li>							
+                                                                
+                                                                        <li><b><a href="/publicacion/7094822">Agrega video</a></b> </li>							                                    
+                                                                        <li><b><a href="javascript:;" class="mpaedicionrapida">Edici&oacute;n R&aacute;pida</a></b> | <b><a href="/publicacion/7094822">Edici&oacute;n Completa</a></b></li>
+                                    <li id="lblCat-7094822"><b>Categoría</b> Animales/Felinos 
+                                                                            </li>							
+                                 
+
+                            </ul>
+                        
+                        </small>
+
+                    </p>
+
+                    <p>
+
+                        <div class="mpaopc">
+                        
+ 
+
+                            <div class="btn-group dropdown ">
+                                <button type="button" class="btn btn-sm btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                     <i class="fas fa-cog fa-fw"></i> Opciones                                 </button>
+                                <div class="dropdown-menu dropdown-menu-right">
+
+                                     
+                                        
+                                        <a class="dropdown-item eliminarpub" href="javascript:;" data-msgeliminar="N" id="7094822_36_vcxvcxvxcvcvcxv_23-08-2022_LNA_RU"><i class="fas fa-trash-alt fa-fw"></i> Eliminar Publicaci&oacute;n</a>
+
+                                         
+    
+                                            <a class="dropdown-item noprevent" href="/publicacion/7094822"><i class="fas fa-pencil-alt fa-fw"></i> Modificar</a>
+
+                                                
+
+                                            <a class="dropdown-item resaltarpub" href="javascript:;" id="7094822_36_vcxvcxvxcvcvcxv_23-08-2022_LNA_VP" data-categoria="11" data-fotos="NO"><i class="fas fa-home fa-fw "></i> Poner en VIP</a>
+                                            
+                                            <a class="dropdown-item adesc" href="javascript:;" id="7094822_36_vcxvcxvxcvcvcxv_23-08-2022_LNA_3424.00"><i class="fas fa-tags fa-fw"></i> Aplica Descuento</a>
+
+                                            <a class="dropdown-item pausarp" href="javascript:;" data-toggle="tooltip" data-placement="top" 
+                                        title="" id="7094822_36_vcxvcxvxcvcvcxv_23-08-2022_LNA_PP"><i class="fas fa-pause fa-fw"></i> Pausar</a>
+
+                                            <a class="dropdown-item noaccion" href="javascript:;" id="7094822_36_vcxvcxvxcvcvcxv_23-08-2022_LNA_AC"><i class="fas fa-anchor fa-fw "></i> Requiere fotos para Anclar</a> 
+
+
+                                         
+
+
+
+                                    
+                                </div>
+
+                            </div>
+                            
+                            <div class="btn-group ">
+
+                                <a class="btn btn-sm btn-info mpars" href="javascript:;" role="button" id="7094822_36_vcxvcxvxcvcvcxv_23-08-2022_LNA_RN"  ><i class="fas fa-recycle fa-fw"></i> Renovar</a>  
+                                
+                            </div>
+
+                            <div class="btn-group ">
+
+                                <a class="btn btn-sm btn-warning resaltarpub" href="javascript:;" role="button" data-fotos="NO" id="7094822_36_vcxvcxvxcvcvcxv_23-08-2022_LNA_RE" data-categoria="11" data-vip="NO"><i class="fas fa-paint-brush fa-fw"></i> Resaltar</a>  
+
+                            </div>
+
+                                                        
+
+                        </div>                            
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+
+                <div class="card-body">
+
+                    <h5 class="card-title mb-2">Mensajes recibidos v&iacute;a <i class="fa fa-whatsapp fa-lg fa-fw"></i> (0)</h5>
+
+                    <p class="card-text ">
+                        <small class="text-muted">
+                            <ul class="overflow-auto" style="height:150px;">
+                                                        <p class="card-text"><span class="text-muted">No hay registros</span></p>
+                                                        </ul>
+                        </small>
+                    </p>
+                    
+                </div>
+                
+            </div>            
+
+        </div>
+    </div>
+
+
+    <div class="card card-mpa mb-3  " style="max-width: 100%;" id="pub7094821">
+        <div class="row no-gutters">
+            <div class="col-md-3 ">
+                <div class=""></div>
+                <img src="/cache/180/fotodefectotc.png" alt="vcxvcxvxcvcvcxv" class="card-img">
+
+            </div>
+            <div class="col-md-5">
+                <div class="card-body" >
+                    <h5 class="card-title mb-2">vcxvcxvxcvcvcxv <span id="titpub-7094821" class="text-success"></span></h5>
+                    <p class="card-text"><b>RD$3,424 <s class="text-muted text-small"></s> <span class='text-danger'></span> </b></p>
+                    <p class="card-text">
+                        <small class="text-muted">
+
+                            <ul>                                         
+                                                
+                                <li><b>ID </b> 7094821, <b class="text-success"> <a href="/publicacion_7094821.html" target="_blanc">Vista Previa</a>  </b> </li>
+                                <li><b>Visitas actuales</b> (0), <b>acumuladas</b> (0) 
+                                 <i class="fas fa-info-circle infvisitas" style="cursor: pointer"></i></li>
+                                <li><b>Publicado  	</b>  20-08-2022 01:09 AM, <b>Visitado </b> 20-08-22 01:09 AM</li>
+                                                                                                 
+                                    <li><b><a href="/publicacion/7094821">Agrega Fotos</a></b> </li>							
+                                                                
+                                                                        <li><b><a href="/publicacion/7094821">Agrega video</a></b> </li>							                                    
+                                                                        <li><b><a href="javascript:;" class="mpaedicionrapida">Edici&oacute;n R&aacute;pida</a></b> | <b><a href="/publicacion/7094821">Edici&oacute;n Completa</a></b></li>
+                                    <li id="lblCat-7094821"><b>Categoría</b> Animales/Felinos 
+                                                                            </li>							
+                                 
+
+                            </ul>
+                        
+                        </small>
+
+                    </p>
+
+                    <p>
+
+                        <div class="mpaopc">
+                        
+ 
+
+                            <div class="btn-group dropdown ">
+                                <button type="button" class="btn btn-sm btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                     <i class="fas fa-cog fa-fw"></i> Opciones                                 </button>
+                                <div class="dropdown-menu dropdown-menu-right">
+
+                                     
+                                        
+                                        <a class="dropdown-item eliminarpub" href="javascript:;" data-msgeliminar="N" id="7094821_36_vcxvcxvxcvcvcxv_23-08-2022_LNA_RU"><i class="fas fa-trash-alt fa-fw"></i> Eliminar Publicaci&oacute;n</a>
+
+                                         
+    
+                                            <a class="dropdown-item noprevent" href="/publicacion/7094821"><i class="fas fa-pencil-alt fa-fw"></i> Modificar</a>
+
+                                                
+
+                                            <a class="dropdown-item resaltarpub" href="javascript:;" id="7094821_36_vcxvcxvxcvcvcxv_23-08-2022_LNA_VP" data-categoria="11" data-fotos="NO"><i class="fas fa-home fa-fw "></i> Poner en VIP</a>
+                                            
+                                            <a class="dropdown-item adesc" href="javascript:;" id="7094821_36_vcxvcxvxcvcvcxv_23-08-2022_LNA_3424.00"><i class="fas fa-tags fa-fw"></i> Aplica Descuento</a>
+
+                                            <a class="dropdown-item pausarp" href="javascript:;" data-toggle="tooltip" data-placement="top" 
+                                        title="" id="7094821_36_vcxvcxvxcvcvcxv_23-08-2022_LNA_PP"><i class="fas fa-pause fa-fw"></i> Pausar</a>
+
+                                            <a class="dropdown-item noaccion" href="javascript:;" id="7094821_36_vcxvcxvxcvcvcxv_23-08-2022_LNA_AC"><i class="fas fa-anchor fa-fw "></i> Requiere fotos para Anclar</a> 
+
+
+                                         
+
+
+
+                                    
+                                </div>
+
+                            </div>
+                            
+                            <div class="btn-group ">
+
+                                <a class="btn btn-sm btn-info mpars" href="javascript:;" role="button" id="7094821_36_vcxvcxvxcvcvcxv_23-08-2022_LNA_RN"  ><i class="fas fa-recycle fa-fw"></i> Renovar</a>  
+                                
+                            </div>
+
+                            <div class="btn-group ">
+
+                                <a class="btn btn-sm btn-warning resaltarpub" href="javascript:;" role="button" data-fotos="NO" id="7094821_36_vcxvcxvxcvcvcxv_23-08-2022_LNA_RE" data-categoria="11" data-vip="NO"><i class="fas fa-paint-brush fa-fw"></i> Resaltar</a>  
+
+                            </div>
+
+                                                        
+
+                        </div>                            
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+
+                <div class="card-body">
+
+                    <h5 class="card-title mb-2">Mensajes recibidos v&iacute;a <i class="fa fa-whatsapp fa-lg fa-fw"></i> (0)</h5>
+
+                    <p class="card-text ">
+                        <small class="text-muted">
+                            <ul class="overflow-auto" style="height:150px;">
+                                                        <p class="card-text"><span class="text-muted">No hay registros</span></p>
+                                                        </ul>
+                        </small>
+                    </p>
+                    
+                </div>
+                
+            </div>            
+
+        </div>
+    </div>
+
+
+    <div class="card card-mpa mb-3  " style="max-width: 100%;" id="pub7094820">
+        <div class="row no-gutters">
+            <div class="col-md-3 ">
+                <div class=""></div>
+                <img src="/cache/180/fotodefectotc.png" alt="vcxvcxvxcvcvcxv" class="card-img">
+
+            </div>
+            <div class="col-md-5">
+                <div class="card-body" >
+                    <h5 class="card-title mb-2">vcxvcxvxcvcvcxv <span id="titpub-7094820" class="text-success"></span></h5>
+                    <p class="card-text"><b>RD$3,424 <s class="text-muted text-small"></s> <span class='text-danger'></span> </b></p>
+                    <p class="card-text">
+                        <small class="text-muted">
+
+                            <ul>                                         
+                                                
+                                <li><b>ID </b> 7094820, <b class="text-success"> <a href="/publicacion_7094820.html" target="_blanc">Vista Previa</a>  </b> </li>
+                                <li><b>Visitas actuales</b> (0), <b>acumuladas</b> (0) 
+                                 <i class="fas fa-info-circle infvisitas" style="cursor: pointer"></i></li>
+                                <li><b>Publicado  	</b>  20-08-2022 01:06 AM, <b>Visitado </b> 20-08-22 01:06 AM</li>
+                                                                                                 
+                                    <li><b><a href="/publicacion/7094820">Agrega Fotos</a></b> </li>							
+                                                                
+                                                                        <li><b><a href="/publicacion/7094820">Agrega video</a></b> </li>							                                    
+                                                                        <li><b><a href="javascript:;" class="mpaedicionrapida">Edici&oacute;n R&aacute;pida</a></b> | <b><a href="/publicacion/7094820">Edici&oacute;n Completa</a></b></li>
+                                    <li id="lblCat-7094820"><b>Categoría</b> Animales/Felinos 
+                                                                            </li>							
+                                 
+
+                            </ul>
+                        
+                        </small>
+
+                    </p>
+
+                    <p>
+
+                        <div class="mpaopc">
+                        
+ 
+
+                            <div class="btn-group dropdown ">
+                                <button type="button" class="btn btn-sm btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                     <i class="fas fa-cog fa-fw"></i> Opciones                                 </button>
+                                <div class="dropdown-menu dropdown-menu-right">
+
+                                     
+                                        
+                                        <a class="dropdown-item eliminarpub" href="javascript:;" data-msgeliminar="N" id="7094820_36_vcxvcxvxcvcvcxv_23-08-2022_LNA_RU"><i class="fas fa-trash-alt fa-fw"></i> Eliminar Publicaci&oacute;n</a>
+
+                                         
+    
+                                            <a class="dropdown-item noprevent" href="/publicacion/7094820"><i class="fas fa-pencil-alt fa-fw"></i> Modificar</a>
+
+                                                
+
+                                            <a class="dropdown-item resaltarpub" href="javascript:;" id="7094820_36_vcxvcxvxcvcvcxv_23-08-2022_LNA_VP" data-categoria="11" data-fotos="NO"><i class="fas fa-home fa-fw "></i> Poner en VIP</a>
+                                            
+                                            <a class="dropdown-item adesc" href="javascript:;" id="7094820_36_vcxvcxvxcvcvcxv_23-08-2022_LNA_3424.00"><i class="fas fa-tags fa-fw"></i> Aplica Descuento</a>
+
+                                            <a class="dropdown-item pausarp" href="javascript:;" data-toggle="tooltip" data-placement="top" 
+                                        title="" id="7094820_36_vcxvcxvxcvcvcxv_23-08-2022_LNA_PP"><i class="fas fa-pause fa-fw"></i> Pausar</a>
+
+                                            <a class="dropdown-item noaccion" href="javascript:;" id="7094820_36_vcxvcxvxcvcvcxv_23-08-2022_LNA_AC"><i class="fas fa-anchor fa-fw "></i> Requiere fotos para Anclar</a> 
+
+
+                                         
+
+
+
+                                    
+                                </div>
+
+                            </div>
+                            
+                            <div class="btn-group ">
+
+                                <a class="btn btn-sm btn-info mpars" href="javascript:;" role="button" id="7094820_36_vcxvcxvxcvcvcxv_23-08-2022_LNA_RN"  ><i class="fas fa-recycle fa-fw"></i> Renovar</a>  
+                                
+                            </div>
+
+                            <div class="btn-group ">
+
+                                <a class="btn btn-sm btn-warning resaltarpub" href="javascript:;" role="button" data-fotos="NO" id="7094820_36_vcxvcxvxcvcvcxv_23-08-2022_LNA_RE" data-categoria="11" data-vip="NO"><i class="fas fa-paint-brush fa-fw"></i> Resaltar</a>  
+
+                            </div>
+
+                                                        
+
+                        </div>                            
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+
+                <div class="card-body">
+
+                    <h5 class="card-title mb-2">Mensajes recibidos v&iacute;a <i class="fa fa-whatsapp fa-lg fa-fw"></i> (0)</h5>
+
+                    <p class="card-text ">
+                        <small class="text-muted">
+                            <ul class="overflow-auto" style="height:150px;">
+                                                        <p class="card-text"><span class="text-muted">No hay registros</span></p>
+                                                        </ul>
+                        </small>
+                    </p>
+                    
+                </div>
+                
+            </div>            
+
+        </div>
+    </div>
+
+
+    <div class="card card-mpa mb-3  " style="max-width: 100%;" id="pub7094819">
+        <div class="row no-gutters">
+            <div class="col-md-3 ">
+                <div class=""></div>
+                <img src="/cache/180/fotodefectotc.png" alt="vcxvcxvxcvcvcxv" class="card-img">
+
+            </div>
+            <div class="col-md-5">
+                <div class="card-body" >
+                    <h5 class="card-title mb-2">vcxvcxvxcvcvcxv <span id="titpub-7094819" class="text-success"></span></h5>
+                    <p class="card-text"><b>RD$3,424 <s class="text-muted text-small"></s> <span class='text-danger'></span> </b></p>
+                    <p class="card-text">
+                        <small class="text-muted">
+
+                            <ul>                                         
+                                                
+                                <li><b>ID </b> 7094819, <b class="text-success"> <a href="/publicacion_7094819.html" target="_blanc">Vista Previa</a>  </b> </li>
+                                <li><b>Visitas actuales</b> (0), <b>acumuladas</b> (0) 
+                                 <i class="fas fa-info-circle infvisitas" style="cursor: pointer"></i></li>
+                                <li><b>Publicado  	</b>  20-08-2022 01:06 AM, <b>Visitado </b> 20-08-22 01:06 AM</li>
+                                                                                                 
+                                    <li><b><a href="/publicacion/7094819">Agrega Fotos</a></b> </li>							
+                                                                
+                                                                        <li><b><a href="/publicacion/7094819">Agrega video</a></b> </li>							                                    
+                                                                        <li><b><a href="javascript:;" class="mpaedicionrapida">Edici&oacute;n R&aacute;pida</a></b> | <b><a href="/publicacion/7094819">Edici&oacute;n Completa</a></b></li>
+                                    <li id="lblCat-7094819"><b>Categoría</b> Animales/Felinos 
+                                                                            </li>							
+                                 
+
+                            </ul>
+                        
+                        </small>
+
+                    </p>
+
+                    <p>
+
+                        <div class="mpaopc">
+                        
+ 
+
+                            <div class="btn-group dropdown ">
+                                <button type="button" class="btn btn-sm btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                     <i class="fas fa-cog fa-fw"></i> Opciones                                 </button>
+                                <div class="dropdown-menu dropdown-menu-right">
+
+                                     
+                                        
+                                        <a class="dropdown-item eliminarpub" href="javascript:;" data-msgeliminar="N" id="7094819_36_vcxvcxvxcvcvcxv_23-08-2022_LNA_RU"><i class="fas fa-trash-alt fa-fw"></i> Eliminar Publicaci&oacute;n</a>
+
+                                         
+    
+                                            <a class="dropdown-item noprevent" href="/publicacion/7094819"><i class="fas fa-pencil-alt fa-fw"></i> Modificar</a>
+
+                                                
+
+                                            <a class="dropdown-item resaltarpub" href="javascript:;" id="7094819_36_vcxvcxvxcvcvcxv_23-08-2022_LNA_VP" data-categoria="11" data-fotos="NO"><i class="fas fa-home fa-fw "></i> Poner en VIP</a>
+                                            
+                                            <a class="dropdown-item adesc" href="javascript:;" id="7094819_36_vcxvcxvxcvcvcxv_23-08-2022_LNA_3424.00"><i class="fas fa-tags fa-fw"></i> Aplica Descuento</a>
+
+                                            <a class="dropdown-item pausarp" href="javascript:;" data-toggle="tooltip" data-placement="top" 
+                                        title="" id="7094819_36_vcxvcxvxcvcvcxv_23-08-2022_LNA_PP"><i class="fas fa-pause fa-fw"></i> Pausar</a>
+
+                                            <a class="dropdown-item noaccion" href="javascript:;" id="7094819_36_vcxvcxvxcvcvcxv_23-08-2022_LNA_AC"><i class="fas fa-anchor fa-fw "></i> Requiere fotos para Anclar</a> 
+
+
+                                         
+
+
+
+                                    
+                                </div>
+
+                            </div>
+                            
+                            <div class="btn-group ">
+
+                                <a class="btn btn-sm btn-info mpars" href="javascript:;" role="button" id="7094819_36_vcxvcxvxcvcvcxv_23-08-2022_LNA_RN"  ><i class="fas fa-recycle fa-fw"></i> Renovar</a>  
+                                
+                            </div>
+
+                            <div class="btn-group ">
+
+                                <a class="btn btn-sm btn-warning resaltarpub" href="javascript:;" role="button" data-fotos="NO" id="7094819_36_vcxvcxvxcvcvcxv_23-08-2022_LNA_RE" data-categoria="11" data-vip="NO"><i class="fas fa-paint-brush fa-fw"></i> Resaltar</a>  
+
+                            </div>
+
+                                                        
+
+                        </div>                            
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+
+                <div class="card-body">
+
+                    <h5 class="card-title mb-2">Mensajes recibidos v&iacute;a <i class="fa fa-whatsapp fa-lg fa-fw"></i> (0)</h5>
+
+                    <p class="card-text ">
+                        <small class="text-muted">
+                            <ul class="overflow-auto" style="height:150px;">
+                                                        <p class="card-text"><span class="text-muted">No hay registros</span></p>
+                                                        </ul>
+                        </small>
+                    </p>
+                    
+                </div>
+                
+            </div>            
+
+        </div>
+    </div>
+
+
+    <div class="card card-mpa mb-3  " style="max-width: 100%;" id="pub7094818">
+        <div class="row no-gutters">
+            <div class="col-md-3 ">
+                <div class=""></div>
+                <img src="/cache/180/fotodefectotc.png" alt="fsdfsdfdsfdsffdsfds en La Concepción de La Vega" class="card-img">
+
+            </div>
+            <div class="col-md-5">
+                <div class="card-body" >
+                    <h5 class="card-title mb-2">fsdfsdfdsfdsffdsfds en La<br>Concepción de La Vega <span id="titpub-7094818" class="text-success"></span></h5>
+                    <p class="card-text"><b>RD$324,343 <s class="text-muted text-small"></s> <span class='text-danger'></span> </b></p>
+                    <p class="card-text">
+                        <small class="text-muted">
+
+                            <ul>                                         
+                                                
+                                <li><b>ID </b> 7094818, <b class="text-success"> <a href="/publicacion_7094818.html" target="_blanc">Vista Previa</a>  </b> </li>
+                                <li><b>Visitas actuales</b> (0), <b>acumuladas</b> (0) 
+                                 <i class="fas fa-info-circle infvisitas" style="cursor: pointer"></i></li>
+                                <li><b>Publicado  	</b>  18-08-2022 02:45 PM, <b>Visitado </b> 18-08-22 02:45 PM</li>
+                                                                                                 
+                                    <li><b><a href="/publicacion/7094818">Agrega Fotos</a></b> </li>							
+                                                                
+                                                                        <li><b><a href="/publicacion/7094818">Agrega video</a></b> </li>							                                    
+                                                                        <li><b><a href="javascript:;" class="mpaedicionrapida">Edici&oacute;n R&aacute;pida</a></b> | <b><a href="/publicacion/7094818">Edici&oacute;n Completa</a></b></li>
+                                    <li id="lblCat-7094818"><b>Categoría</b> Animales/Equinos 
+                                                                            </li>							
+                                 
+
+                            </ul>
+                        
+                        </small>
+
+                    </p>
+
+                    <p>
+
+                        <div class="mpaopc">
+                        
+ 
+
+                            <div class="btn-group dropdown ">
+                                <button type="button" class="btn btn-sm btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                     <i class="fas fa-cog fa-fw"></i> Opciones                                 </button>
+                                <div class="dropdown-menu dropdown-menu-right">
+
+                                     
+                                        
+                                        <a class="dropdown-item eliminarpub" href="javascript:;" data-msgeliminar="N" id="7094818_36_fsdfsdfdsfdsffdsfds en La Concepción de La Vega_21-08-2022_LNA_RU"><i class="fas fa-trash-alt fa-fw"></i> Eliminar Publicaci&oacute;n</a>
+
+                                         
+    
+                                            <a class="dropdown-item noprevent" href="/publicacion/7094818"><i class="fas fa-pencil-alt fa-fw"></i> Modificar</a>
+
+                                                
+
+                                            <a class="dropdown-item resaltarpub" href="javascript:;" id="7094818_36_fsdfsdfdsfdsffdsfds en La Concepción de La Vega_21-08-2022_LNA_VP" data-categoria="11" data-fotos="NO"><i class="fas fa-home fa-fw "></i> Poner en VIP</a>
+                                            
+                                            <a class="dropdown-item adesc" href="javascript:;" id="7094818_36_fsdfsdfdsfdsffdsfds en La Concepción de La Vega_21-08-2022_LNA_324343.00"><i class="fas fa-tags fa-fw"></i> Aplica Descuento</a>
+
+                                            <a class="dropdown-item pausarp" href="javascript:;" data-toggle="tooltip" data-placement="top" 
+                                        title="" id="7094818_36_fsdfsdfdsfdsffdsfds en La Concepción de La Vega_21-08-2022_LNA_PP"><i class="fas fa-pause fa-fw"></i> Pausar</a>
+
+                                            <a class="dropdown-item noaccion" href="javascript:;" id="7094818_36_fsdfsdfdsfdsffdsfds en La Concepción de La Vega_21-08-2022_LNA_AC"><i class="fas fa-anchor fa-fw "></i> Requiere fotos para Anclar</a> 
+
+
+                                         
+
+
+
+                                    
+                                </div>
+
+                            </div>
+                            
+                            <div class="btn-group ">
+
+                                <a class="btn btn-sm btn-info mpars" href="javascript:;" role="button" id="7094818_36_fsdfsdfdsfdsffdsfds en La Concepción de La Vega_21-08-2022_LNA_RN"  ><i class="fas fa-recycle fa-fw"></i> Renovar</a>  
+                                
+                            </div>
+
+                            <div class="btn-group ">
+
+                                <a class="btn btn-sm btn-warning resaltarpub" href="javascript:;" role="button" data-fotos="NO" id="7094818_36_fsdfsdfdsfdsffdsfds en La Concepción de La Vega_21-08-2022_LNA_RE" data-categoria="11" data-vip="NO"><i class="fas fa-paint-brush fa-fw"></i> Resaltar</a>  
 
                             </div>
 
@@ -540,7 +2617,7 @@ var usulogueado='1';
 			<div class="modal-body">
 				<form method="post" name="frmresaltar" id="frmresaltar" class="needs-validation" novalidate >
 					<input type="hidden" name="resaltararticulo_id" id="resaltararticulo_id" value="" >
-					<input type="hidden" name="uid" id="uid" value="3" >
+					<input type="hidden" name="uid" id="uid" value="36" >
 					<input type="hidden" name="Enviar" id="Enviar" >
 					<div class="form-group">
 						<label for="relblbalance" class="col-form-label">Balance.:</label>
@@ -580,7 +2657,11 @@ var usulogueado='1';
 		</div>
 	</div>
 </div>
-
+<style>
+#madmfotos .modal-dialog {
+    max-width: 45% !important;
+}
+</style>
 <div class="modal modal-fullscreen-xl" id="madmfotos" role="dialog" tabindex="-1" aria-labelledby="titulomodal" aria-hidden="true" >
 	<div class="modal-dialog">
 		<div class="modal-content">
@@ -590,16 +2671,33 @@ var usulogueado='1';
 					<span aria-hidden="true">&times;</span>
 				</button>
 			</div>
-			<span id="lbmmofotos" class="mt-2">Cantidad de imagenes: 5 de 5</span>
+			<span class="mt-2">Cantidad de im&aacute;genes <span id="lblfotossubidas"></span> de <span id="lbltotalfotos"></span></span>
 			<div class="modal-body">
-				<form method="post" name="frmadmfotos" id="frmadmfotos" class="needs-validation" novalidate >
-					<input type="hidden" name="resaltararticulo_id" id="resaltararticulo_id" value="" >
-					<input type="hidden" name="uid" id="uid" value="3" >
+				<form method="post" name="frmadmfotos" id="frmadmfotos" enctype="multipart/form-data">
+					<input type="hidden" name="admfotoarticulo_id" id="admfotoarticulo_id" value="" >
+					<input type="hidden" name="admfotostrfotos" id="admfotostrfotos" value="" >
+					<input type="hidden" name="admfotosrestafoto" id="admfotosrestafoto" value="" >
+
+					<input type="hidden" name="uid" id="uid" value="36" >
 					<input type="hidden" name="Enviar" id="Enviar" >
-					<div id="admfotos" class="fotos">
-                    </div>
-					<br>
+
+					<div id="admfotos" class="fotos"></div>
+
+					<div id="extrafotos" class="extrafotos">
+
+						        <span class="control-fileupload" title="Selecciona multiples de fotos en caso de ser mas de una">
+            <label for="fotos" id="lblfotos"><i class="fa fa-upload" aria-hidden="true"></i> Selecciona de 1 a <span id="totalfotos">5</span> fotos.</label>
+            <input name="fotos[]" type="file" id="fotos"  multiple="multiple" accept=".jpg, .jpeg, .png" data-cantidad="" >
+        </span>
+        
+        <div class="jFiler-items jFiler-row">
+            <ul class="jFiler-items-list jFiler-items-grid" id="preview"></ul>                            
+        </div>							
+						<br>
+					</div>
+					
 					<div class="modal-footer">
+						<button name="Enviaradmfotos" id="enviaradmfotos" type="submit" class="btn btn-success extrafotos">Actualizar Fotos</button>
 						<button type="button" class="btn btn-warning" data-dismiss="modal">Cerrar</button>						
 					</div>
 				</form>
@@ -871,7 +2969,7 @@ var usulogueado='1';
       <div class="modal-body text-center">
 
 	  			
-		<img src="/tmp/09-09-2022-02-03-41.png" />
+		<img src="/tmp/13-09-2022-12-30-19.png" />
 
       </div>
       <div class="modal-footer">
