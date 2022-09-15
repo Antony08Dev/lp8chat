@@ -316,9 +316,7 @@ span.jFiler-icon-file.f-audio {
 
 /* Thumbnails: Grid */
 .jFiler-items-grid .jFiler-item {
-    /* float: left; */
-    display: inline-block;
-    overflow: hidden;
+    float: left;
 }
 
 .jFiler-items-grid .jFiler-item .jFiler-item-container {

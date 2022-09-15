@@ -286,6 +286,13 @@ var usulogueado='1';
 }
 
 </style>
+<div class="container text-center py-5">
+    <div class="py-4">
+        <div class="progress">
+            <div id="barra" class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 15%" ></div>
+        </div>
+    </div>
+</div>
 <link rel="stylesheet" href="/css/filer.css" >
 <link rel="stylesheet" type="text/css" href="/css/lpfrmv8.css" >
 <h2 class="cards-header" >
