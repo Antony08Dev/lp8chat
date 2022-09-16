@@ -19,8 +19,8 @@ include "include/LP_Inicio.inc.php";
 <h2 class="cards-header" >
     KLK Messenger 
 </h2>
-    <!-- <link rel="stylesheet" href="css/klkmsgr.css"> -->
-    <?php include "busquedas.php";?>
+    <link rel="stylesheet" href="css/klkmsgr.css">
+    <?php include "plantilla2.inc.php";?>
 </div>
 </div>
 </div>
@@ -49,4 +49,55 @@ include "include/LP_Inicio.inc.php";
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 <script src="https://kit.fontawesome.com/a9b590928e.js" crossorigin="anonymous"></script>
+
+<script>
+    $(document).ready(function () {
+
+//document.write('\uD83D\uDE01');
+
+$("#klkmsg").emojioneArea({
+        container: "#klkmsg",
+        inline: true,
+        standalone: true
+    });
+
+$("#klkmsg").emojioneArea({
+  shortnames: true,
+  saveEmojisAs : "shortname",
+  searchPlaceholder: "¡Busca un emoji!"
+});
+
+$("#Enviar").on("click", function () {
+  console.log($("#klkmsg").val());
+
+  var data = {
+    Mensaje : $("#klkmsg").val()
+  }
+
+//   $.post("upload.php", data, function (res) {
+//     if (res == "true") {
+//       var mensaje = emojione.shortnameToImage($("#klkmsg").val());
+//       var p = $('<p>' + mensaje + '</p><br />')
+//       $("#contenedor-chat").append(p);
+//     }
+//     else {
+//       alert(res);
+//     }
+//  });
+
+});
+
+// setTimeout(function () {
+//   $("#contenedor-chat p").each(function () {
+//     var text = $(this).text();
+//     var mensaje = emojione.shortnameToImage(text);
+//     $(this).html(mensaje)
+//   });
+// }, 300);
+
+
+});
+
+                
+</script>
 </html>

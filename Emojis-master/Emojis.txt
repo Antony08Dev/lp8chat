@@ -1,0 +1,32 @@
+https://getemoji.com/
+https://unicode.org/emoji/charts/full-emoji-list.html
+https://apps.timwhitlock.info/emoji/tables/unicode
+
+HTML(Hex)
+&#xCode;
+
+HTML (Dec)
+&#Code;
+
+CSS:
+:after {
+  content: "\Code";
+}
+
+JS:
+document.write('\uSurrogates\uSurrogates')
+
+https://github.com/github/gemoji/blob/master/db/emoji.json
+
+EmojioneArea
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.1/emojionearea.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.1/emojionearea.min.js" charset="utf-8"></script>
+
+EmojiOne
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/emojione@4.0.0/extras/css/emojione.min.css"/>
+
+<script src="https://cdn.jsdelivr.net/npm/emojione@4.0.0/lib/js/emojione.min.js"></script>
+
+shortnames: true,
+saveEmojisAs : "shortname",
+searchPlaceholder: "¡Busca un emoji!"

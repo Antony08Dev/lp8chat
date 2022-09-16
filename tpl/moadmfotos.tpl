@@ -1,4 +1,4 @@
-
+<link rel="stylesheet" href="<?=Config::$cdn;?>/css/filer.css" >
 <div class="modal modal-fullscreen-xl" id="madmfotos" role="dialog" tabindex="-1" aria-labelledby="titulomodal" aria-hidden="true" >
 	<div class="modal-dialog">
 		<div class="modal-content">
@@ -8,17 +8,35 @@
 					<span aria-hidden="true">&times;</span>
 				</button>
 			</div>
-			<span id="lbmmofotos" class="mt-2">Cantidad de imagenes: 5 de 5</span>
+			<span class="mt-2">Cantidad de im&aacute;genes subidas <span id="lblfotossubidas"></span> de <span id="lbltotalfotos"></span></span>
 			<div class="modal-body">
-				<form method="post" name="frmadmfotos" id="frmadmfotos" class="needs-validation" novalidate >
-					<input type="hidden" name="resaltararticulo_id" id="resaltararticulo_id" value="" >
+				<form method="post" name="frmadmfotos" id="frmadmfotos" enctype="multipart/form-data">
+					<input type="hidden" name="admfotoarticulo_id" id="admfotoarticulo_id" value="" >
+					<input type="hidden" name="admfotostrfotos" id="admfotostrfotos" value="" >
+					<input type="hidden" name="admfotosrestafoto" id="admfotosrestafoto" value="" >
+
 					<input type="hidden" name="uid" id="uid" value="<?=isset($_SESSION['lp_uid']) ? $_SESSION['lp_uid'] : 0;?>" >
 					<input type="hidden" name="Enviar" id="Enviar" >
-					<div id="fotos" class="fotos">
-                    </div>
-					<br>
+
+					<div class="jFiler-items jFiler-row ">
+            			<ul class="jFiler-items-list jFiler-items-grid fotos" id="admfotos"></ul>                            
+        			</div>
+		
+					<div id="extrafotos" class="extrafotos">
+
+						<?php include("view/campofotos.tpl"); ?>
+							
+						<br>
+						<div class="progress">
+  							<div id="progresofoto" class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+					</div>
 					
 					<div class="modal-footer">
+						<p class="m-auto"><i class="fa fa-home fa-sm" ></i> Principal</p>
+						<p class="m-auto"><i class="fas fa-reply fa-sm" ></i> VolverPrincipal</p>
+						<p class="m-auto"><i class="fas fa-trash fa-sm"></i> Eliminar</p>
+						<button name="Enviaradmfotos" id="enviaradmfotos" type="submit" class="btn btn-success extrafotos">Actualizar Fotos</button>
 						<button type="button" class="btn btn-warning" data-dismiss="modal">Cerrar</button>						
 					</div>
 				</form>

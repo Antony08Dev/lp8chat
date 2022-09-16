@@ -1,32 +1,18 @@
-<link rel="stylesheet" href="/css/filer.css" >
-<style>
-#fotos {
-	display: block !important;
-	right: 1px;
-	top: 1px;
-	height: 34px;
-    width: 100%;
-    opacity: 0;
-	background: none;
-	position: absolute;
-    overflow: hidden;
-    z-index: 2;
-}
+<?php
+//parr($tplArticulo);
+if (isset($tplArticulo)) {
 
-.control-fileupload {
-	display: block;
-	border: 1px solid #d6d7d6;
-	background: #FFF;
-	border-radius: 4px;
-	width: 100%;
-	height: 45px;
-	line-height: 45px;
-	padding: 0px 10px 2px 10px;
-    overflow: hidden;
-    position: relative;
-    margin-bottom: 3px;
+    $dataId = "{$tplArticulo['id']}_{$tplArticulo['usuario_id']}_{$tplArticulo['articulo']}_{$tplArticulo['fechaf']}_{$tplArticulo['estatus']}_PU";
+    $totalFotos = Config::$arrProductos[$_SESSION['lp_usuplann']]['fotos'];
+    // cantidad de fotos que tiene subidas
+    $cantFotos = count(explode(",",$tplArticulo['fotos']));
+    // fotos restantes, total por plan menos subidas 
+    $restaFotos = $totalFotos - $cantFotos;    
+
 }
- </style>
+?>
+<link rel="stylesheet" href="<?=Config::$cdn;?>/css/filer.css" >
+<?=(isset($fotosfiles) and !empty($fotosfiles)) ? Funciones::jsScripts("var filerfiles=[{$fotosfiles}];\n") : "";?>
 <div class="card " >
     <div class="card-header <?=$tplColorbg;?>">
         <h4><?=($_SESSION['lp_estatus'] == "I") ? "<b>CUENTA INACTIVA, NO PUEDES PUBLICAR</b>" : $tplTitulo;?></h4>
@@ -181,15 +167,16 @@
                 
                     <label class="col-sm-2 col-form-label" for="fotos">Fotos</label>
                     <div class="col-sm-10">
-                        
-                        <span class="control-fileupload tt" title="Selecciona multiples de fotos en caso de ser mas de 1">
-                            <label for="fotos" id="lblfotos"><i class="fa fa-upload" aria-hidden="true"></i> Selecciona de 1 a <?=$arrCantFotosXPlan[$plan];?> fotos.</label>
-                            <input name="fotos[]" type="file" id="fotos"  multiple="multiple" accept=".jpg, .jpeg, .png" data-cantidad="<?=Config::$arrProductos[(isset($_SESSION['lp_usuplann']) and ($_SESSION['lp_usuplann'] != "PB")) ? $_SESSION['lp_usuplann'] : "PB"]['fotos'];?>"  >
-                        </span>
-                       
-                        <div class="jFiler-items jFiler-row">
-                            <ul class="jFiler-items-list jFiler-items-grid" id="preview"></ul>                            
-                        </div>
+                    <?php if (!isset($tplArticulo)) { 
+
+                        include("view/campofotos.tpl");
+
+                    } else { ?>
+
+                        <a href="javascript:;" class="admfotos" data-aid="<?=$tplArticulo['id'];?>" data-titulo="<?=$tplArticulo['articulo'];?>" data-fotos="<?=$tplArticulo['fotos'];?>" style="line-height: 2.4;" id="admfotos_<?=$tplArticulo['id'];?>">Administrar Fotos </a>
+
+                    <?php }  ?>
+
                     </div>                    
                 </div>
             
@@ -208,7 +195,7 @@
                     <label for="enviar" class="col-sm-2 col-form-label">&nbsp;</label>
                     <div class="col-sm-10">
                         <button name="Enviar" <?=($_SESSION['lp_estatus'] == "I") ? "disabled" : "";?> id="enviar" type="submit" id="Enviar" class="btn btn-success btn-lg">Enviar Datos</button>
-                        <?php if (isset($tplArticulo['id'])) { // boton solo para modificar ?> 
+                        <?php if (isset($tplArticulo['id'])) { // boton solo para modificar e ir a mi pulga?> 
                             <button name="Cancelar" id="cancelar" type="button" id="Cancelar" onclick="location.href='/mipulga';" class="btn btn-secondary btn-md">Cancelar</button>
                         <?php } ?>
                     </div>
@@ -218,3 +205,6 @@
         <?php }  ?>
     </div>
 </div>
+<?php if (isset($tplArticulo)) { 
+    include("view/moadmfotos.tpl");
+} ?>
