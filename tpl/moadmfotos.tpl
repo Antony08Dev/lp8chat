@@ -33,10 +33,12 @@
 					</div>
 					
 					<div class="modal-footer">
-						<p class="m-auto"><i class="fa fa-home fa-sm" ></i> Principal</p>
-						<p class="m-auto"><i class="fas fa-reply fa-sm" ></i> VolverPrincipal</p>
-						<p class="m-auto"><i class="fas fa-trash fa-sm"></i> Eliminar</p>
-						<button name="Enviaradmfotos" id="enviaradmfotos" type="submit" class="btn btn-success extrafotos">Actualizar Fotos</button>
+					<ul class="leyenda">
+						<li class="m-auto"><i class="fa fa-home fa-sm"></i>- Principal</li>
+						<li class="m-auto"><i class="fas fa-reply fa-sm"></i>- Mover</li>
+						<li class="m-auto"><i class="fas fa-trash fa-sm"></i>- Eliminar</li>
+					</ul>
+						<button name="Enviaradmfotos" id="enviaradmfotos" type="submit" class="btn btn-success extrafotos">Actualizar</button>
 						<button type="button" class="btn btn-warning" data-dismiss="modal">Cerrar</button>						
 					</div>
 				</form>

@@ -566,6 +566,20 @@ a.nav-link {
     #madmfotos .modal-dialog {
         max-width: 45% !important;
     }
+    #madmfotos .modal-footer ul{
+        display: flex;
+        margin: 0px 5px;
+    }
+    #madmfotos .modal-footer ul li {
+        margin: 0px 15px !important;
+    }
+}
+
+.modal-footer ul {
+    list-style: none;
+    margin-right: 15px !important;
+    padding: 0px 3px 0px 0px;
+    margin: 0px 0px 0px -10px;
 }
 
 /*stylos para el admin mi pulga*/
