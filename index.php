@@ -20,7 +20,7 @@ include "include/LP_Inicio.inc.php";
     KLK Messenger 
 </h2>
     <link rel="stylesheet" href="css/klkmsgr.css">
-    <?php include "plantilla2.inc.php";?>
+    <?php include "tpl/frmrecurrentes.tpl";?>
 </div>
 </div>
 </div>

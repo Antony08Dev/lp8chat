@@ -212,7 +212,11 @@ a.nav-link {
 }
 
 /* fin cintillos */
-
+.alert-dark {
+    background-color: #effcfe !important;
+    border-color: #c6c8ca !important;
+    border-radius: 1rem;
+}
 /* brillo para imagenes */
 /* .filtro-img { */
     /* filter: brightness(110%) grayscale(60%) saturate(2); */
