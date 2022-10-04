@@ -202,14 +202,14 @@ div.publicaciones-relacionadas-grid .cards {
 }
 @media (min-width: 576px) {
 	.carousel-item img {
-		min-height: 256px !important;
+		min-height: 350px !important;
 		max-height: 783px !important;
 	}
 }
 
 .carousel-item img {
-	min-height: 291px !important;
-	max-height: 300px !important;
+	min-height: 291px;
+	max-height: 300px;
 	object-fit: contain !important;
 }
 

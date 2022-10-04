@@ -3,6 +3,7 @@ var balancePines=0;
 var teclaAnterior = "";
 
 
+
 Number.prototype.formatMoney = function(c, d, t) {
     var n = this,
         c = isNaN(c = Math.abs(c)) ? 2 : c,
@@ -258,10 +259,9 @@ spOptions = {
 function validarFotos() {
     var fotos = document.getElementById("fotos");
     var imgRuta = fotos.value;
-    var extPermitidas = /(.PNG|.png|.jpg|.JPG|.JPEG|.jpeg)$/i;
+    var extPermitidas = /(.PNG|.png|.jpg|.JPG|.JPEG|.jpeg|.webp|.WEBP)$/i;
     var message = "";
     if ('files' in fotos) {
-        console.log(fotos.files);
         if (fotos.files.length > fotos.dataset.cantidad) {
                 alert('Debes seleccionar ' + fotos.dataset.cantidad + ' imagenes o menos');
         } else {
@@ -276,7 +276,7 @@ function validarFotos() {
     }
 }
 
-// funcion que muestra el preview
+// funcion que muestra el preview antes de subir en publicar
 function previewFotos(fotos) {
     document.getElementById('preview').innerHTML='';
     var cantidadFotos = document.getElementById("fotos");
@@ -290,17 +290,15 @@ function previewFotos(fotos) {
             var tamano = fotos.files[i].size / 1024;
             tamano = tamano.toFixed(1);
             document.getElementById('preview').innerHTML += miniaturaFotofiler(e.target.result,tamano,i);
-
-
         };   
         visor.readAsDataURL(fotos.files[i]);
     } 
     total = total / 1024;
     total = total.toFixed(1);
-    document.getElementById('lblfotos').innerHTML='<i class="fa fa-upload" aria-hidden="true"></i> Tienes ' + fotos.files.length + ' de ' + cantidadFotos + ' foto(s) = ' + total + 'kB' ;
+    document.getElementById('lblfotos').innerHTML='<i class="fa fa-upload" aria-hidden="true"></i> Tienes ' + fotos.files.length + ' de ' + cantidadFotos + ' foto(s) a subir = ' + total + 'kB' ;
 }
 
-// fruncion que crea miniatura filer de cada foto
+// fruncion que crea miniatura filer de cada foto usado en publicar
 function miniaturaFotofiler(url, tamano, idborrar) {
     var miniatura = 
         '<li class="jFiler-item">' +
@@ -320,10 +318,29 @@ function miniaturaFotofiler(url, tamano, idborrar) {
         '</li>';
     return miniatura;
 }
+// fruncion que crea miniatura filer de fotos subidas usadas en adminfotos
+function miniaturaAdminfotos(urlfoto, nombre, aid,eliminafoto,fotoid,texto) {
+    tamano = "";
+    var miniatura = 
+        '<li class="jFiler-item unapulgar">' +
+            '<div class="jFiler-item-container">' + 
+                '<div class="jFiler-item-thumb">' + 
+                    '<img src="' + urlfoto +'" >' + 
+                '</div>' + 
+                '<div class="jFiler-item-assets jFiler-row">' + 
+                    '<ul class="list-inline pull-left">' + 
+                        '<li><a href="javascript:;" class="text-muted cambiafoto" data-nombre="'+ nombre +'" data-aid="'+aid+'" name="' + aid + '"  id="' + fotoid +'">' + texto + '</a></li>' + 
+                    '</ul>' +                                 
+                    '<ul class="list-inline pull-right">' + 
+                        '<li><a href="javascript:;" class="text-muted eliminafoto" data-nombre="'+ nombre +'" data-aid="'+aid+'" name="' + aid + '"  id="' + eliminafoto +'"  title="Eliminar foto"><i class="fas fa-trash"></i></a></li>' + 
+                    '</ul>' + 
+                '</div>' + 
+            '</div>' + 
+        '</li>';
+    return miniatura;
+}
 
-
-/* elmina la una foto del preview */
-
+/* elmina la una foto del preview (fotos antes de subir) */
 function borrarPreview(foto) {
     var fotos = document.getElementById("fotos").files; 
     var fileBuffer = new DataTransfer();
@@ -361,7 +378,7 @@ $(document).ready(function() {
         }, {scope: 'public_profile,email'});
     });
     // verificar esto sisolo es usado en registro 
-    if ($("#frmregistro").length) {
+    if ($("#frmregistro, #frmsoporte, #frmmicuenta, #frmmsgarticulo, #frmformularios").length) {
         $('.phone_us').mask('(000) 000-0000');
         $('.maskdesc').mask('00');
         $('.date').mask('00/00/0000');
@@ -446,11 +463,11 @@ $(document).ready(function() {
     // formulario productos
     $("#producto").change(function() {
         optionTipo(this.value);
-        $("#cantidad, #formapago").val("");
+/*        $("#cantidad, #formapago").val("");
         if (this.value != '') {
             $("#divincluye").show();
             //incluyeProducto(this.value);
-        } else $("#listaincluye").hide();
+        } else $("#listaincluye").hide();*/
         // mostrar infoProducto usando arreglo arrInfoproductos
         x = this.value;
         if (x != 0) {
@@ -466,7 +483,26 @@ $(document).ready(function() {
             $("#infoproductos").html("<h6><b>Informaci&oacute;n adicional:</b></h6>");
             $("#infoproductos").append(ul);
 
-        } else $("#divinfoproductos").hide('slow');
+        } else $("#divinfoproductos").hide('fast');
+
+    }).change();
+
+    // formulario soporte
+    $("#areadeinteres").change(function() {
+        x = this.value;
+        if (x != 0) {
+            $("#divinfosoporte").show('slow');
+            m = arrInfosoporte[x].split('|');
+            var ul = document.createElement("ul");
+            for (var i = 0; i < m.length; i++) {
+                var li = document.createElement("li");
+                li.innerHTML = m[i];
+                ul.append(li);
+            }
+            $("#infosoporte").html("<h6><b>Recomendaciones a seguir:</b></h6>");
+            $("#infosoporte").append(ul);
+
+        } else $("#divinfosoporte").hide('slow');
 
     }).change();
     $("#cantidad, #formapago").change(function() {
@@ -618,13 +654,16 @@ $(document).ready(function() {
     });
     /* formulario modal msgarticulo enviado en los detalles al whatsapp del vendedor */
     $("#frmmsgarticulo").submit(function(e) {
+        console.log('entrando submit');
         e.preventDefault();
+        alert('aqui en submit');
         if ((this.nombre.value == "") || (this.telefono.value == "")) return;
         $.ajax({
             type: "POST",
             url: "/msgarticulo", 
             data: $("#frmmsgarticulo").serialize(),
             success: function(data) {
+                console.log(data);
                 $("#mmsgarticulo").modal('hide');
                 arrCampos = {};
                 $.each($("#frmmsgarticulo :input").serializeArray(), function(i, campo) {
@@ -801,6 +840,74 @@ $(document).ready(function() {
         
         return false;
     });
+    $(document).on('change','#admrotafoto',function(e) {
+        valor = (this.checked) ? "S" : "N";
+        valor = "ART_ROTAFOTO_"+valor+ "_"+ $("#admfotoarticulo_id").val();
+        ajaxccampo( valor);
+    });
+    /* formulario modal admfotos subir nuevas fotos desde mi pulga o publicar  */
+    $(document).on('submit','#frmadmfotos',function(e) {
+        e.preventDefault();
+        var fotos = document.getElementById("fotos");
+        if (fotos.files.length == 0) {
+             alertify.alert("Subir fotos adicionales","Debes seleccionar por lo menos una foto a subir.");
+             return false;
+        }
+        alertify.confirm('Agregar Fotos','Esta todo correcto?',function() {
+            var fd = new FormData($("#frmadmfotos")[0]);
+            var files = $('#fotos')[0].files; 
+            fd.append('file',files);
+            $.ajax({
+                type: "POST",
+                xhr: function() {
+                    var xhr = new window.XMLHttpRequest();
+                
+                    xhr.upload.addEventListener("progress", function(evt) {
+                      if (evt.lengthComputable) {
+                        var percentComplete = evt.loaded / evt.total;
+                        percentComplete = parseInt(percentComplete * 100);
+                        $("#progresofoto").attr("aria-valuenow",percentComplete);
+                        $("#progresofoto").attr("style","width: " + percentComplete + "%");
+                        $("#progresofoto").text(percentComplete + "%");
+                        if (percentComplete === 100) {
+                            alertify.success("Subida completada");
+                        }
+                      }
+                    }, false);
+                    return xhr;
+                },
+                url: "/admfotos", 
+                data: fd,
+                processData: false,
+                contentType: false,                
+                success: function(data) {
+                    if (data != 0) {
+                        $("#frmadmfotos #fotos").val("");
+                        previewFotos(document.getElementById("fotos")); 
+                        // actualiza cantidad foos en listado
+                        arrFotos = data.split(",");
+                        var cantFotos = arrFotos.length;
+                        $("#lblpublicadas" + $("#admfotoarticulo_id").val()).text(cantFotos);
+                        $("#img" + $("#admfotoarticulo_id").val()).attr("src","/f/" + arrFotos[0]);
+                        var objEnlace = document.getElementById("admfotos_" + $("#admfotoarticulo_id").val());
+                        // actualiza data fotos con el resultado devuelto en data
+                        $(objEnlace).attr("data-fotos",data);
+                        updLbladmfotos(objEnlace);
+                    } else if (data == -1) alertify.error('No subieron, trate nuevamente');
+                },
+                error: function(e) {
+                    alertify.alert("Agregar Fotos","Ocurrio un error inesperado, trate nuevamente, disculpas");
+                }
+            });
+        },function(){
+            $("#frmadmfotos #fotos").val("");
+            previewFotos(document.getElementById("fotos"));
+            alertify.error('Accion Cancelada');
+        });  
+        
+        return false;
+    });
+
 
     // valida campos en formulario
     (function() {

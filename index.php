@@ -1,26 +1,70 @@
 <?php
-include "include/LP_Inicio.inc.php";
+include "include/LP_admin.inc.php";
+$admin = 0;
 ?>
+<!-- inicio columna derecha listados -->
 <div class="right-column">
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+<!-- LISTADO DE OPCIONES PARA ADMIN-->
 <style>
 .left-column {
-    position: none;
+position: none;
 }
-.right-column {
+/* .right-column {
     padding: 0px;
     margin: 0px;
     box-sizing: content-box;
-}
-.card-group > .card{
+} */
+/* .card-group > .card{
     margin-bottom: 0px !important;
-} 
+}  */
+
+.apaga {
+    display: none;
+}
+
 </style>
-<h2 class="cards-header" >
-    KLK Messenger 
-</h2>
-    <link rel="stylesheet" href="css/klkmsgr.css">
-    <?php include "tpl/frmrecurrentes.tpl";?>
+<link rel="stylesheet" href="/css/filer.css" >
+<link rel="stylesheet" type="text/css" href="/css/lpfrmv8.css" >
+    <!-- <link rel="stylesheet" href="css/klkmsgr.css"> -->
+    <?php 
+switch($admin) {
+    case 0:
+        echo "<h2 class=\"cards-header\" >
+            Administrador La Pulga Virtual (328522)
+        </h2>";
+        include "view/adminusu.php";
+        break;
+    case 1:
+        include "view/admfaq.php";
+        break;
+    case 2:
+            include "tpl/filasusuadm.php";
+        break;
+    case 3:
+        echo "<h2 class=\"cards-header\" >
+        Solicitudes a <b>Procesar</b>, pines, planes, renovaciones, AO (206)
+        </h2>";
+            include "view/procesapro.php";
+        break;
+    case 4:
+        echo "<h2 class=\"cards-header\" >
+        Tickets a <b>Procesar</b>,  Soporte a usuarios (16)
+        </h2>";
+            include "view/admticket.php";
+        break;
+    case 5:
+        // echo "<style> ul { columns: 3; -webkit-columns: 3; -moz-columns: 3; list-style: none;}</style>";
+        include "view/admperfil.php";
+        break;
+        case 6:
+            echo "<h2 class=\"cards-header\" >
+                Administrador La Pulga Virtual (328522)
+            </h2>";
+            include "tpl/filasusuadm.php";
+            break;
+}
+?>
 </div>
 </div>
 </div>

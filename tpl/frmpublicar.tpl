@@ -5,7 +5,9 @@ if (isset($tplArticulo)) {
     $dataId = "{$tplArticulo['id']}_{$tplArticulo['usuario_id']}_{$tplArticulo['articulo']}_{$tplArticulo['fechaf']}_{$tplArticulo['estatus']}_PU";
     $totalFotos = Config::$arrProductos[$_SESSION['lp_usuplann']]['fotos'];
     // cantidad de fotos que tiene subidas
-    $cantFotos = count(explode(",",$tplArticulo['fotos']));
+    if ($tplArticulo['fotos'] != "") $cantFotos = count(explode(",",$tplArticulo['fotos']));
+    else $cantFotos = 0;
+
     // fotos restantes, total por plan menos subidas 
     $restaFotos = $totalFotos - $cantFotos;    
 
@@ -32,7 +34,7 @@ if (isset($tplArticulo)) {
 
         <?php } else { ?>
 
-            <form action="/publicar" name="frmformularios" id="frmformularios" method="POST" class="needs-validation" novalidate enctype="multipart/form-data">
+            <form action="/publicar" name="frmpublicar" id="frmpublicar" method="POST" class="needs-validation" novalidate enctype="multipart/form-data">
                 <?php if (isset($tplArticulo['id'])) { ?> 
                 <input type="hidden" name="id" id="id" value="<?=$tplArticulo['id'];?>" />
                 <input type="hidden" name="modifica" id="modifica" value="Modificar" />
@@ -173,7 +175,7 @@ if (isset($tplArticulo)) {
 
                     } else { ?>
 
-                        <a href="javascript:;" class="admfotos" data-aid="<?=$tplArticulo['id'];?>" data-titulo="<?=$tplArticulo['articulo'];?>" data-fotos="<?=$tplArticulo['fotos'];?>" style="line-height: 2.4;" id="admfotos_<?=$tplArticulo['id'];?>">Administrar Fotos </a>
+                        <a href="javascript:;" class="admfotos" data-aid="<?=$tplArticulo['id'];?>" data-titulo="<?=$tplArticulo['articulo'];?>" data-fotos="<?=$tplArticulo['fotos'];?>" style="line-height: 2.4;" id="admfotos_<?=$tplArticulo['id'];?>">Administrar mis <?=$cantFotos;?> Fotos </a>
 
                     <?php }  ?>
 
