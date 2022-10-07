@@ -1,7 +1,8 @@
 <?php
 include "include/LP_admin.inc.php";
-$admin = 0;
+$admin = 5;
 ?>
+&nbsp;
 <!-- inicio columna derecha listados -->
 <div class="right-column">
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>

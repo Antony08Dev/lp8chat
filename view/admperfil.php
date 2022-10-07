@@ -70,8 +70,7 @@
 
         <a href="javascript:;" class="moadcomusu pull-right btn btn-info" style="margin-left:10px;"><i
                 class="fa fa-comments"></i>Comentario a jose</a>
-        <a href="javascript:;" class="float-right btn btn-warning"><i
-                class="fa fa-eye-slash"></i>Penalizar a jose</a>
+        <a href="javascript:;" class="float-right btn btn-warning"><i class="fa fa-eye-slash"></i>Penalizar a jose</a>
         <div class="table table-responsive borderb">
             <table class="table table-bordered table-striped table-hover">
                 <tr>
