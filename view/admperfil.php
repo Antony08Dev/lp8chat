@@ -67,26 +67,10 @@
             No&nbsp;<input type="radio" name="paga" id="no" class="ppaga" value="USU_PAGA_N_330112" checked>
         </label>
         <!-- //comentar y penalizar usuario -->
-
-        <a href="javascript:;" class="moadcomusu pull-right btn btn-info" style="margin-left:10px;"><i
-                class="fa fa-comments"></i>Comentario a jose</a>
-        <a href="javascript:;" class="float-right btn btn-warning"><i class="fa fa-eye-slash"></i>Penalizar a jose</a>
         <div class="table table-responsive borderb">
-            <table class="table table-bordered table-striped table-hover">
-                <tr>
-                    <th colspan="4">
-                        <h3>Comentarios (0)</h3>
-                    </th>
-                </tr>
-                <tr>
-                    <th class='col-md-5'>Comentario | <a href="javascript:;" class="moadcomusu"> Agregar</a></th>
-                    <th>Fecha</th>
-                    <th>Operador</th>
-                    <th>Seguimiento</th>
-                </tr>
-                <tr>
-                    <td colspan="3"><b>No registros encontrados<b></td>
-                </tr>
+        <table class="table table-bordered table-striped table-hover">
+                <?php include("admpublicaciones.php"); ?>
+                </tbody>
             </table>
         </div>
 

@@ -112,6 +112,7 @@ function ajaxFavoritos(id,accion) {
 		type: "GET",
 		data:({id:id,accion:accion}),
 		success: function(data) {
+			console.log(data);
 			if (depura) console.log(data);
 			if (data == '-2') {
                 /* parametros */
@@ -211,7 +212,6 @@ function eliminarChat(e) {
 // function que actualiza un chat com visto al entrar
 function actualizaChatvisto(e) {
 	e.preventDefault();
-	alert('entrando ');
 	var url = this.href;
 	$.ajax({
 		url: ajaxfn.klkmessenger,
@@ -219,7 +219,6 @@ function actualizaChatvisto(e) {
 		data:({id:$(this).attr("data-mid"),sufijo:$(this).attr("data-sufijo"),accion:'UKLKLEIDO'}),
 		success: function(data) {
 			//if (depura) 
-			console.log(data);
 			//window.location.href = url;
 		}
 	});	
@@ -275,8 +274,7 @@ function cambiaPosicionfoto() {
 				// actualiza la imagen en mi pulga
 				if (cantFotos == 0) foto = "fotodefectotn.png";
 				else foto = arrFotos[0];
-				console.log(foto);
-				$("#img" + aid).attr("src","/cache/180/" + foto);
+				$("#img" + aid).attr("src","/f/" + foto);
 				$("#lblpublicadas" + aid).text(cantFotos);
 				// actualiza labels y valores del formulario admfotos
 				objEnlace = $("#admfotos_" + aid);
@@ -289,7 +287,6 @@ function cambiaPosicionfoto() {
 	} else {
 		// reorganiza arreglo
 		arrFotos.unshift( primeraFoto );
-		console.log(primeraFoto);
 		fotos = "ART_FOTOS_"+arrFotos.join(',')+ "_"+ aid;
 		// oculta la foto seleccionada
 		var pic = $( id ).closest("li.unapulgar").clone().hide();
@@ -300,7 +297,7 @@ function cambiaPosicionfoto() {
 			contain_fotos.find(".unapulgar").first().before( pic );
 			contain_fotos.find(".unapulgar").first().show("slow");
 			// cambia la imagen en listado mi pulga
-			$("#img" + aid).attr("src","/cache/180/" + primeraFoto);
+			$("#img" + aid).attr("src","/f/" + primeraFoto);
 			$(".cambiafoto i").removeClass("fa fa-home fa-lg").attr("title","Convertir en Principal");	
 			$(".cambiafoto i").addClass("fas fa-reply fa-lg");	
 			$(id + " i").removeClass("fas fa-reply fa-lg").attr("title","Foto Principal");	
@@ -339,9 +336,13 @@ function updLbladmfotos(obj) {
 	$("#progresofoto").hide();
 	$("#progresofoto").attr("style","width: 0%");
 	// valores usados en el formulario moadmfotos para posteo y actualizacion
-	// campos del formulario modal admfotos total, cantidad, resta, strfotos 
+	// campos del formulario modal admfotos total, cantidad, resta, strfotos rota foto
 	$("#admfotoarticulo_id").val($(obj).attr("data-aid"));
 	$("#admfotostrfotos").val($(obj).attr("data-fotos"));	
+	$("#admrotafoto").val($(obj).attr("data-rotafoto"));
+	// prende o apaga el check
+	$("#admrotafoto").attr("checked", ($(obj).attr("data-rotafoto") == "S"));
+
 	// string con las fotos subidas y arreglo de fotos para crear miniaturas
 	var aid = $(obj).attr("data-aid");
 	var fotos = $(obj).attr("data-fotos");
@@ -432,7 +433,9 @@ $(document).ready(function() {
 			$("#mrecomendaciones").modal("show");
 		}
 	});	
-
+	$("a.conmsg").mouseover(function() {
+		//$(this).attr("title","Click para contactar via WhatsApp");
+	});
 	/* compartir qr */
 	$(".moqrcodigo").click(function(e) {
 		e.preventDefault();
@@ -444,8 +447,11 @@ $(document).ready(function() {
 	$(".momsgarticulo").click(function(e) {
 		e.preventDefault();
 		var valor = this.id;
+		console.log(valor);
         var arrValor = valor.split('_');
 		var id = arrValor[0];
+		console.log($("#logueado").val());
+		alert('entonces');
 		if($("#mmsgarticulo").length) {
 			$("#articulo_id").val(arrValor[0]);
 			$("#telefonows").val(arrValor[1]);
@@ -497,14 +503,18 @@ $(document).ready(function() {
 	});	
 
 	// buscador en klk
-	$("#buscarklk").keyup(function() {
+	$("#buscarklk, #buscarmarcas").keyup(function() {
 		_this = this;
 		// Show only matching TR, hide rest of them
-		$.each($("#chats li"), function() {                   
+		$.each($("#chats li, #listamarcas option"), function() {                   
 			if($(this).text().toLowerCase().indexOf($(_this).val().toLowerCase()) === -1) $(this).hide();
 			else $(this).show();
 		});
 	});	
+
+	$("#listamarcas option").on("click",function() {
+		console.log($(this).attr("data-id"));
+	});
 
     /* formulario modal klkmessegner usado en los detalles  */
     

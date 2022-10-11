@@ -13,7 +13,6 @@
                 <b>Email.: </b><a
                     href="mailto:<?=$arrRegistro['EMAIL'];?>;<?=$arrRegistro['EMAILS'];?>"><?=$arrRegistro['EMAIL'];?></a>
                 | <a href="/admin-perfilusuario?uid=<?=$arrRegistro['ID'];?>&tipo=modificaUsuEmail">M</a>
-
             </li>
             <li>
                 <b>Telefono(s).: </b>
@@ -72,81 +71,65 @@
                     href="http://www.ip-tracker.org/locator/ip-lookup.php?ip=<?=0//$arrRegistro['IPADDRESS'];?>"><?=0//$arrRegistro['IPADDRESS'];?></a>
             </li>
         </ul>
-        <?php if ($lista->Usuario['RENDATOS'] != "") { ?>
-        <b>Renovaciones.: </b><?=$lista->Usuario['RENDATOS'];?></a><br>
-        <?php } if ($lista->Usuario['USUPLAN'] == "LPE") { ?>
-        <h3>Resumen Cuenta</h3>
-        <ul class="ulcol col3 borderb">
-            <?=$lista->resumenExpreso($lista->Usuario['ID'],true);?>
-        </ul>
-        <?php } ?>
+        <b>Renovaciones.: </b> <strong>Renovaciones.: </strong> Hasta.: 20-03-2020 12:25 PM Estatus=A, Lun=6 Mar=6
+        Mier=6 Jue=6 Vie=6 Sab=6 Dom=6
+        <br>
         <b>Paga Plan.: </b>
-        <label for="si">
-            Si&nbsp;<input type="radio" name="paga" id="si" class="ppaga" value="USU_PAGA_S_<?=$lista->Usuario['ID'];?>"
-                <?=($lista->Usuario['PAGA'] == 'S') ? "checked" : "";?>>
+        Si&nbsp;<input type="radio" name="paga" id="si" class="ppaga" value="USU_PAGA_S_330112">
         </label>
-
         <label for="no">
-            No&nbsp;<input type="radio" name="paga" id="no" class="ppaga" value="USU_PAGA_N_<?=$lista->Usuario['ID'];?>"
-                <?=($lista->Usuario['PAGA'] == 'N') ? "checked" : "";?>>
+            No&nbsp;<input type="radio" name="paga" id="no" class="ppaga" value="USU_PAGA_N_330112" checked>
         </label>
         <!-- //comentar y penalizar usuario -->
         <a href="javascript:;" class="moadcomusu float-right btn btn-info" style="margin-left:10px;"><i
                 class="fa fa-comments"></i>Comentario a <?=$arrRegistro['NOMBRE'];?></a>
-        <a href="javascript:;" class="float-right btn btn-warning"><i class="fa fa-eye-slash"></i>Penalizar a
-            <?=$arrRegistro['NOMBRE'];?></a>
-        <?php if ($lista->Usuario['PNOMBRE'] != '') { ?>
-        <hr>
+        <a href="javascript:;" class="moadpenalidades float-right btn btn-warning"><i
+                class="fa fa-eye-slash"></i>Penalizar a <?=$arrRegistro['NOMBRE'];?></a>
         <ul class="ulcol col3 borderb" id="adperusu2">
             <li>
-                <b>Plan hasta.: </b><?=$lista->Usuario['USUHASTA'];?>
+                <b>Plan hasta.: </b>2023-05-31 11:30:58 </li>
+            <li>
+                <b>Visitas.: </b>192370 </li>
+            <li>
+                <b>Video.: </b>No tiene </li>
+            <li>
+                <b>Tipo.: </b>Vehículos </li>
+            <li>
+                <b>Visitada.: </b>27-09-2022 11:47 AM </li>
+            <li>
+                <b>Facebook.: </b>No tiene </li>
+            <li>
+                <b>Plan Nombre.: </b><a href="/tienda/usuario/99860" target="_blank">NELSON AUTOS</a>
             </li>
             <li>
-                <b>Tipo.:
-                </b><?=isset($arrCategorias[$lista->Usuario['TIPO']]) ? $arrCategorias[$lista->Usuario['TIPO']] : "No aplica";?>
-            </li>
-
-            <li>
-                <b>Plan Nombre.: </b><a href="/tienda/usuario/<?=$lista->Usuario['ID'];?>"
-                    target="_blank"><?=$lista->Usuario['PNOMBRE'];?></a>
-            </li>
-            <li>
-                <b>Visitas.: </b><?=$lista->Usuario['VISITAS'];?>
-            </li>
-            <li>
-                <b>Visitada.: </b><?=$lista->Usuario['VISITADA'];?>
-            </li>
-            <li>
-                <b>Descripción.: </b><?=$lista->Usuario['DESCRIPCION'];?>
-            </li>
-            <li>
-                <b>Video.:
-                </b><?=($lista->Usuario['URLVIDEO']) ? "<a target=\"http://www.youtube.com\" href=\"{$lista->Usuario['URLVIDEO']}\" title=\"{$lista->Usuario['URLVIDEO']}\">Ver</a>" : "No tiene";?>
-            </li>
-            <li>
-                <b>Facebook.:
-                </b><?=($lista->Usuario['URLFB']) ? "<a target=\"http://www.facebook.com\" href=\"{$lista->Usuario['URLFB']}\" title=\"{$lista->Usuario['URLFB']}\">Ver</a>" : "No tiene";?>
-            </li>
+                <b>Descripción.: </b>Compramos y vendemos vehiculos
+                nuevos y usados y te recibimos
+                tu vehiculo
+                gran variedades de marcas a los
+                mejores precios del mercado
+                visitanos y lo comprobaras.
+                Atenciones personalizadas. Ven
+                y deja de andar a pie. </li>
         </ul>
-        <?php } elseif(($lista->Usuario['USUPLAN'] != 'PB') and ($lista->Usuario['USUPLAN'] != 'LPE')) echo "<h3>Faltan datos del PLAN <a href=\"javascript:;\" class=\"idplinfo\" id=\"{$lista->Usuario['ID']}\">Agregar defecto</a></h3>"; ?>
+        <hr>
         <div class="table table-responsive borderb">
             <table class="table table-bordered table-striped table-hover">
                 <thead>
-                <tr>
-                    <th colspan="4">
-                        <h3>Comentarios (<?=0//$lista->cuantos;?>)</h3>
-                    </th>
-                </tr>
-                <tr>
-                    <th class='col-md-5'>Comentario | <a href="javascript:;" class="moadcomusu"> Agregar</a></th>
-                    <th>Fecha</th>
-                    <th>Operador</th>
-                    <th>Seguimiento</th>
-                </tr>
+                    <tr>
+                        <th colspan="4">
+                            <h3>Comentarios (<?=0//$lista->cuantos;?>)</h3>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th class='col-md-5'>Comentario | <a href="javascript:;" class="moadcomusu"> Agregar</a></th>
+                        <th>Fecha</th>
+                        <th>Operador</th>
+                        <th>Seguimiento</th>
+                    </tr>
                 </thead>
                 <tr>
-                <td></td>
-                <td>tpllistado</td>
+                    <td></td>
+                    <td>tpllistado</td>
                 </tr>
                 <?="variable comentada"//$tpllistado;?>
             </table>

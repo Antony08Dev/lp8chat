@@ -37,7 +37,7 @@ switch($admin) {
         include "view/adminusu.php";
         break;
     case 1:
-        include "view/admfaq.php";
+        include "view/admticket.php";
         break;
     case 2:
             include "tpl/filasusuadm.php";
@@ -56,7 +56,7 @@ switch($admin) {
         break;
     case 5:
         // echo "<style> ul { columns: 3; -webkit-columns: 3; -moz-columns: 3; list-style: none;}</style>";
-        include "view/admperfil.php";
+        include "view/admmarcas.php";
         break;
         case 6:
             echo "<h2 class=\"cards-header\" >
@@ -64,6 +64,16 @@ switch($admin) {
             </h2>";
             include "tpl/filasusuadm.php";
             break;
+            case 7:
+                echo "<h2 class=\"cards-header\" >
+                    Administrador La Pulga Virtual (328522)
+                </h2>";
+                include "tpl/filasusuadm.php";
+                break;
+                case 8:
+                    // echo "<style> ul { columns: 3; -webkit-columns: 3; -moz-columns: 3; list-style: none;}</style>";
+                    include "plantilla2.inc.php";
+                    break;
 }
 ?>
 </div>
