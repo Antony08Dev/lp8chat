@@ -1,6 +1,6 @@
 <?php
 include "include/LP_admin.inc.php";
-$admin = 5;
+$admin = 10;
 ?>
 &nbsp;
 <!-- inicio columna derecha listados -->
@@ -29,6 +29,25 @@ position: none;
 <link rel="stylesheet" type="text/css" href="/css/lpfrmv8.css" >
     <!-- <link rel="stylesheet" href="css/klkmsgr.css"> -->
     <?php 
+    // The Regular Expression filter
+$reg_exUrl = "(((f|ht){1}tp://)[-a-zA-Z0-9@:%_+.~#?&//=]+)";
+
+// The Text you want to filter for urls
+$text = "The text you want to http://googlecloud.com http://google.com hfilte goes here. http://google.com";
+
+// Check if there is a url in the text
+if(preg_match($reg_exUrl, $text, $url)) {
+
+       // make the urls hyper links
+    echo $text."<br>";
+    echo preg_replace($reg_exUrl, "<a href=\"{$url[2]}\">{$url[2]}</a> ", $text);
+
+} else {
+
+       // if no urls in the text just return the text
+    echo $text;
+
+}
 switch($admin) {
     case 0:
         echo "<h2 class=\"cards-header\" >
@@ -57,23 +76,31 @@ switch($admin) {
     case 5:
         // echo "<style> ul { columns: 3; -webkit-columns: 3; -moz-columns: 3; list-style: none;}</style>";
         include "view/admmarcas.php";
-        break;
-        case 6:
-            echo "<h2 class=\"cards-header\" >
+    break;
+    case 6:
+        echo "<h2 class=\"cards-header\" >
                 Administrador La Pulga Virtual (328522)
             </h2>";
-            include "tpl/filasusuadm.php";
-            break;
-            case 7:
-                echo "<h2 class=\"cards-header\" >
-                    Administrador La Pulga Virtual (328522)
-                </h2>";
-                include "tpl/filasusuadm.php";
-                break;
-                case 8:
-                    // echo "<style> ul { columns: 3; -webkit-columns: 3; -moz-columns: 3; list-style: none;}</style>";
-                    include "plantilla2.inc.php";
-                    break;
+    include "tpl/filasusuadm.php";
+    break;
+    case 7:
+        echo "<h2 class=\"cards-header\" >
+            Administrador La Pulga Virtual (328522)
+            </h2>";
+    include "tpl/filasusuadm.php";
+    break;
+    case 8:
+        // echo "<style> ul { columns: 3; -webkit-columns: 3; -moz-columns: 3; list-style: none;}</style>";
+        include "plantilla2.inc.php";
+    break;
+    case 9:
+        // echo "<style> ul { columns: 3; -webkit-columns: 3; -moz-columns: 3; list-style: none;}</style>";
+        include "view/admcintillo.php";
+    break;
+    case 10:
+        // echo "<style> ul { columns: 3; -webkit-columns: 3; -moz-columns: 3; list-style: none;}</style>";
+        include "tpl/admfaq.html";
+    break;
 }
 ?>
 </div>

@@ -1,0 +1,47 @@
+FALTA
+
+<-Lp Admin
+    -Usuarios
+        -enlace mensajes
+        -enlace retirar
+        -enlace activar
+        -enlace (MU) modificar Usuarios
+        -Falta tabla historial de pines
+        -enlace historial publicaciones 
+        -enlace historial de penaldades
+    /> 
+
+    -Perfil Usuarios
+        -enlace modificar correo 
+        -enlace mensajes klkmsg
+    />
+
+    -Admin publicaciones
+        -enlace de la publicacion
+        -variable reshasta indefinida
+        -funcionamiento de las check box 
+        -Reajustar acciones y enlaces
+    />
+
+    -Admin Procesaproductos (!completado!)
+
+    -Klk Messenger (FALTA)
+
+    -Area de Oferta 
+        -Revisar Enlace UID
+    />
+
+    -Admin Marcas
+        -Revisar base de datos de marcas (faltan marcas en el formulario)
+        -los modelos se duplican al actualizar uno 
+        -modelo se queda en el campo al ser eliminado
+    />
+
+    -Admin Faq
+        -agragar atributo target_blank
+    />
+->
+
+<- La Pulga Virtua 
+    -Adquiere Productos
+        - revisar leyendas select Productos
